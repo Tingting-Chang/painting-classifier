@@ -1,0 +1,9 @@
+*.pyc
+*~
+.Rhistory
+*.jpg
+*.png
+*.jpeg
+*.csv
+.ipynb_checkpoints
+
