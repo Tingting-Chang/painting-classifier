@@ -16,7 +16,7 @@ from StringIO import StringIO
 PROJECT_NAME = 'painting-classifier'
 BUCKET_NAME = 'painting-classifier-data'
 
-bucket = storate.Client(project = PROJECT_NAME).bucket(BUCKET_NAME)
+bucket = storage.Client(project = PROJECT_NAME).bucket(BUCKET_NAME)
 
 def get_sizes_painting(df_data, image_dir):
 	sizes = []
