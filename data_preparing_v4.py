@@ -5,6 +5,7 @@ from google.cloud import storage
 from StringIO import StringIO
 from PIL import Image
 from sklearn import preprocessing
+import sys
 
 
 PROJECT_NAME = 'painting-classifier'
