@@ -44,14 +44,14 @@ def get_resized_img_colors(file_list, image_dir):
 
 # possibly call it with ['gogh_van', 'rubens']
 def get_net_data(painters = None):
-	painting_info_clean = pd.read_csv('./data/painting_info_clean.csv')
+	df_data = pd.read_csv('./data/painting_info_clean.csv')
 
 	# pick two author for the simple test
 	if painters is not None:
 		if isinstance(painters, int):
-			painters = list(painting_info_clean['short_name'].value_counts()[:painters])
+			painters = list(df_data['short_name'].value_counts()[:painters])
 		if isinstance(painters, list):
-			df_data = painting_info_clean[painting_info_clean['short_name'].isin(painters)]
+			df_data = df_data[df_data['short_name'].isin(painters)]
 
 	# get dummies for all the painters
 	y = pd.get_dummies(df_data.short_name)
