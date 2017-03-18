@@ -12,7 +12,7 @@ def neural_net_images(initial_rate=0.04, output_classes = 3,input_width=200, inp
 
 	# image
 	image = Sequential()
-	image.add(InputLayer((input_width, input_height, 3), name = 'images_colors'))  # 3*200*200
+	image.add(InputLayer((3, input_width, input_height), name = 'images_colors'))  # 3*200*200
 	image.add(Conv2D(32, (5, 5), activation = 'relu')) # 32*196*196
 	image.add(MaxPooling2D(pool_size = (2, 2))) #32*98*98
 	image.add(Conv2D(64, (5, 5), activation = 'relu')) # 64*94*94

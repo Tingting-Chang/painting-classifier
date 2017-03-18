@@ -20,8 +20,8 @@ import sys
 
 def get_image_data(image_path):
 	im = Image.open(image_path)
-	return np.array(im.getdata(), dtype = np.float32).reshape(1, im.height, im.width, -1) + np.zeros((1, 1, 1, 3))
-
+	image = np.array(im.getdata(), dtype = np.float32).reshape(1, im.height, im.width, -1) + np.zeros((1, 1, 1, 3))
+	return image.swapaxes(1, 3).swapaxes(2, 3)
 
 def get_resized_img_colors(file_list, image_dir):
 	#CURSOR_UP_ONE = '\x1b[1A'
