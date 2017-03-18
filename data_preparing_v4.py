@@ -79,8 +79,17 @@ def get_net_data(painters = None):
 	images_stats = scaler.transform(images_stats)
 
 	images_colors = get_resized_img_colors(df_all['file_name'], 'data/resized_200/')
-
-
-	return {'images_colors': images_colors, 'images_stats': images_stats, 
+	net_data = {'images_colors': images_colors, 'images_stats': images_stats, 
 					'response': y, 'painters': dummies_cols, 'indices': df_all[['short_name', 'file_name']]}
+
+	return net_data
+
+
+
+def get_not_net_data(painters = None):
+	net_data = get_net_data(painters)
+	raw_image = net_data['images_colors'].reshape(-1, 3*200*200)
+	raw_image = np.hstack((raw_image, net_data['images_stats']))
+
+	return raw_image, net_data['indices']['short_name'], net_data['indices']
 
