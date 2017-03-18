@@ -8,7 +8,7 @@ from keras.optimizers import Adadelta
 import tensorflow as tf
 
 
-def neural_net_images(initial_rate=0.04, output_classes = 2,input_width=200, input_height=200):
+def neural_net_images(initial_rate=0.04, output_classes = 3,input_width=200, input_height=200):
 
 	# image
 	image = Sequential()
@@ -39,7 +39,7 @@ def neural_net_images(initial_rate=0.04, output_classes = 2,input_width=200, inp
 
 
 
-def train_network(images_colors, images_stats, y, num_painters = 2):
+def train_network(images_colors, images_stats, y, num_painters = 3):
 
 	net = neural_net_images(output_classes = num_painters)
 	history = net.fit({'images_colors': images_colors, 'images_stats': images_stats}, y, validation_split = 0.2)
