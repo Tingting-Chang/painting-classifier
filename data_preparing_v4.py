@@ -10,7 +10,7 @@ from sklearn import preprocessing
 PROJECT_NAME = 'painting-classifier'
 BUCKET_NAME = 'painting-classifier-data'
 
-bucket = storage.Clinet(project = PROJECT_NAME).bucket(BUCKET_NAME)
+bucket = storage.Client(project = PROJECT_NAME).bucket(BUCKET_NAME)
 
 
 def get_image_data(image_path):
