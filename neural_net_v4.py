@@ -7,7 +7,7 @@ from keras.layers import InputLayer, Convolution2D, MaxPooling2D, Dense, Dropout
 from keras.optimizers import Adadelta
 import tensorflow as tf
 
-import data_preparing
+import data_preparing_v4 as data_preparing
 
 
 def neural_net_images(initial_rate=0.04, input_width=200, input_height=200):
@@ -43,7 +43,7 @@ def neural_net_images(initial_rate=0.04, input_width=200, input_height=200):
 
 def main():
 	
-	images_colors, images_stats = get_net_data()
+	images_colors, images_stats, y = data_preparing.get_net_data()
 
 	net = neural_net_images()
 	history = net.fit({'images_colors': images_colors, 'images_stats': images_stats}, y, validation_split = 0.2)

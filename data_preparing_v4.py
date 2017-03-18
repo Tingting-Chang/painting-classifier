@@ -18,14 +18,14 @@ def get_image_data(image_path):
 	return np.array(im.getdata(), dtype = np.float32).reshape(1, im.height, im.width, -1) + np.zeros((1, 1, 1, 3))
 
 
-def get_resized_img_colors(file_folder, image_dir):
+def get_resized_img_colors(file_list, image_dir):
 	#CURSOR_UP_ONE = '\x1b[1A'
 	ERASE_LINE = '\x1b[2K'
 	images = []
 	format_str = ERASE_LINE + '\rLoading images: %d/%d'
-	total_imgs = len(file_folder)
+	total_imgs = len(file_list)
 	processed = 0
-	for img in file_folder:
+	for img in file_list:
 		try:
 			img_pixels = get_image_data('resized_200/' + img)
 			images.append(img_pixels)
@@ -42,11 +42,16 @@ def get_resized_img_colors(file_folder, image_dir):
 		return images
 
 
-def get_net_data():
+# possibly call it with ['gogh_van', 'rubens']
+def get_net_data(painters = None):
 	painting_info_clean = pd.read_csv('./data/painting_info_clean.csv')
 
 	# pick two author for the simple test
-	df_data = painting_info_clean[painting_info_clean.short_name.isin(['gogh_van', 'rubens'])]
+	if painters is not None:
+		if isinstance(painters, int):
+			painters = list(painting_info_clean['short_name'].value_counts()[:painters])
+		if isinstance(painters, list):
+			df_data = painting_info_clean[painting_info_clean['short_name'].isin(painters)]
 
 	# get dummies for all the painters
 	y = pd.get_dummies(df_data.short_name)
@@ -65,9 +70,4 @@ def get_net_data():
 	images_colors = get_resized_img_colors(df_data['file_name'], 'data/resized_200/')
 
 
-	return images_colors, images_stats
-
-
-
-get_net_data()
-
+	return images_colors, images_stats, y
