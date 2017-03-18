@@ -80,7 +80,7 @@ def images_colors(file_names, image_dir):
 	except BaseException as e:
 	    sys.stderr.write('Error loading photo %s\n%s\n' % (img_fn, e))
 	    sys.stderr.flush()
-	sys.stdout.write('\n')
+    sys.stdout.write('\n')
     photos = np.vstack(photos) / 255
 
     return photos
