@@ -39,15 +39,21 @@ def neural_net_images(initial_rate=0.04, output_classes = 3,input_width=200, inp
 
 
 
-def train_network(images_colors, images_stats, y, num_painters = 3):
+def train_network(data):
 
-	net = neural_net_images(output_classes = num_painters)
-	history = net.fit({'images_colors': images_colors, 'images_stats': images_stats}, y, validation_split = 0.2)
+	y = data['response']
+	painters = data['painters']
+	del data['response']
+	del data['painters']
+	indices = data['indices']
+	del data['indices']
+	net = neural_net_images(output_classes = len(painters))
+	history = net.fit(data, y, validation_split = 0.2)
 	
 	net_predicted = net.predict_classes({'images_colors': images_colors, 'images_stats': images_stats})
 	net_evaluate = net.evaluate({'images_colors': images_colors, 'images_stats': images_stats}, y)
 
-	net_predicted.to_csv('./data/net_predicted.csv')
-	net_evaluate.to_csv('./data/net_evaluate.csv')
-
-	return net, history
+	pd.concat([indices.reset_index(drop = True), 
+		pd.DataFrame({'prediction': [painters[x] for x in net_predicted]})], axis = 1).to_csv('./data/net_predicted.csv', index = False)
+	
+	return net, history, net_evaluate

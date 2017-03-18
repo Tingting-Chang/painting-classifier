@@ -72,4 +72,6 @@ def get_net_data(painters = None):
 	images_colors = get_resized_img_colors(df_data['file_name'], 'data/resized_200/')
 
 
-	return images_colors, images_stats, y
+	return {'images_colors': images_colors, 'images_stats': images_stats, 
+					'response': y, 'painters': dummies_cols, 'indices': df_data[['short_name', 'file_name']]}
+
