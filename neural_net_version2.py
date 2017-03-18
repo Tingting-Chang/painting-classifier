@@ -18,10 +18,6 @@ BUCKET_NAME = 'painting-classifier-data'
 
 bucket = storate.Client(project = PROJECT_NAME).bucket(BUCKET_NAME)
 
-# get your data
-painting_info_clean = pd.read_csv('./data/painting_info_clean.csv')
-df_data = painting_info_clean[painting_info_clean.short_name.isin(['gogh_van', 'rubens'])]
-
 def get_sizes_painting(df_data, image_dir):
 	sizes = []
 	processed = 0
@@ -84,6 +80,7 @@ def images_colors(file_names, image_dir):
 	except BaseException as e:
 	    sys.stderr.write('Error loading photo %s\n%s\n' % (img_fn, e))
 	    sys.stderr.flush()
+	sys.stdout.write('\n')
     photos = np.vstack(photos) / 255
 
     return photos
@@ -92,23 +89,27 @@ def get_image_data(image_path):
     im = Image.open(StringIO(bucket.blob(image_path).download_as_string()))
     return np.array(im.getdata(), dtype = np.float32).reshape(1, im.height, im.width, -1) + np.zeros((1, 1, 1, 3))
 
-y = pd.get_dummies(df_data.short_name)
-dummies_cols = y.columns
-y = np.array(y, dtype = np.float32)
+def run():
+	# get your data
+	painting_info_clean = pd.read_csv('./data/painting_info_clean.csv')
+	df_data = painting_info_clean[painting_info_clean.short_name.isin(['gogh_van', 'rubens'])]
 
+	y = pd.get_dummies(df_data.short_name)
+	dummies_cols = y.columns
+	y = np.array(y, dtype = np.float32)
 
+	sizes_paintings = pd.read_csv('data/images_sizes_2325.csv')
+	sizes_paintings = pd.merge(df_data[['file_name']], sizes_paintings, how = 'left', on='file_name')
+	photo_stats = np.array(sizes_paintings[['width', 'height']], dtype = np.float32)
 
-sizes_paintings = get_sizes_painting(df_data, 'data/images/')
-photo_stats = np.array(sizes_paintings[['width', 'height']], dtype = np.float32)
+	# balance image data: width, height
+	scaler = preprocessing.StandardScaler().fit(photo_stats)
+	photo_stats = scaler.transform(photo_stats)
 
-# balance image data: width, height
-scaler = preprocessing.StandardScaler().fit(photo_stats)
-photo_stats = scaler.transform(photo_stats)
+	photos = images_colors(df_data['file_name'], 'data/resized_200/')
 
-photos = images_colors(df_data, 'data/resized_200/')
+	net = neural_net_photo_version2()
 
-net = neural_net_photo_version2()
-
-history2 = net.fit({'photo': photos, 'photo_stats': photo_stats}, y, validation_split = 0.2)
-net.predict_classes({'photo': photos, 'photo_stats': photo_stats})
-net.evaluate({'photo': photos, 'photo_stats': photo_stats}, y)
+	history2 = net.fit({'photo': photos, 'photo_stats': photo_stats}, y, validation_split = 0.2)
+	net.predict_classes({'photo': photos, 'photo_stats': photo_stats})
+	net.evaluate({'photo': photos, 'photo_stats': photo_stats}, y)
