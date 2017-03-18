@@ -91,5 +91,7 @@ def get_not_net_data(painters = None):
 	raw_image = net_data['images_colors'].reshape(-1, 3*200*200)
 	raw_image = np.hstack((raw_image, net_data['images_stats']))
 
-	return raw_image, net_data['indices']['short_name'], net_data['indices']
+	not_net_data = {'images_colors': raw_image, 'short_name': net_data['indices']['short_name'], 'file_name': net_data['indices']['file_name']}
+
+	return not_net_data
 
