@@ -37,10 +37,10 @@ def get_resized_img_colors(file_list, image_dir):
 			sys.stderr.write('Error Loading Image %s\n%s\n' % (img, e))
 			sys.stderr.flush()
 
-		sys.stdout.write('\n')
-		images = np.vstack(images) / 255
+	sys.stdout.write('\n')
+	images = np.vstack(images) / 255
 
-		return images
+	return images
 
 
 # possibly call it with ['gogh_van', 'rubens']
@@ -50,7 +50,7 @@ def get_net_data(painters = None):
 	# pick two author for the simple test
 	if painters is not None:
 		if isinstance(painters, int):
-			painters = list(df_data['short_name'].value_counts()[:painters])
+			painters = list(df_data['short_name'].value_counts().index[:painters])
 		if isinstance(painters, list):
 			df_data = df_data[df_data['short_name'].isin(painters)]
 
@@ -62,6 +62,7 @@ def get_net_data(painters = None):
 
 	# get images' width & height
 	sizes_paintings = pd.read_csv('./data/images_sizes_2325.csv')
+	sizes_paintings = pd.merge(df_data[['file_name']], sizes_paintings, how = 'left', on='file_name')
 	images_stats = np.array(sizes_paintings[['width', 'height']], dtype = np.float32)
 
 	# balance image data: width, height

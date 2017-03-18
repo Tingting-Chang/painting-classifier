@@ -7,14 +7,12 @@ from keras.layers import InputLayer, Convolution2D, MaxPooling2D, Dense, Dropout
 from keras.optimizers import Adadelta
 import tensorflow as tf
 
-import data_preparing_v4 as data_preparing
 
-
-def neural_net_images(initial_rate=0.04, input_width=200, input_height=200):
+def neural_net_images(initial_rate=0.04, output_classes = 2,input_width=200, input_height=200):
 
 	# image
 	image = Sequential()
-	image.add(InputLayer((input_width, input_height, 3), name = 'image'))  # 3*200*200
+	image.add(InputLayer((input_width, input_height, 3), name = 'images_colors'))  # 3*200*200
 	image.add(Convolution2D(32, 5, 5, activation = 'relu')) # 32*196*196
 	image.add(MaxPooling2D(pool_size = (2, 2))) #32*98*98
 	image.add(Convolution2D(64, 5, 5, activation = 'relu')) # 64*94*94
@@ -26,26 +24,24 @@ def neural_net_images(initial_rate=0.04, input_width=200, input_height=200):
 	image.add(Flatten())
 
 	img_size = Sequential()
-	img_size.add(InputLayer((2, ), name = 'photo_stats'))
+	img_size.add(InputLayer((2, ), name = 'images_stats'))
 	
 	img_merged = Sequential()
 	img_merged.add(Merge([image, img_size], mode = 'concat')) #6043
 	img_merged.add(Dense(1000, activation = 'relu')) # 1000
 	img_merged.add(Dropout(0.5))
 	img_merged.add(Dense(200, activation = 'relu')) # 200
-	img_merged.add(Dense(2, activation = 'softmax')) 
+	img_merged.add(Dense(output_classes, activation = 'softmax')) 
 	adadelta = Adadelta(lr = initial_rate)
-	img_merged.compile(optimizers = adadelta, loss = 'categorical_crossentropy', metrics = ['accuracy'])
+	img_merged.compile(optimizer = adadelta, loss = 'categorical_crossentropy', metrics = ['accuracy'])
 
 	return img_merged
 
 
 
-def main():
-	
-	images_colors, images_stats, y = data_preparing.get_net_data()
+def train_network(images_colors, images_stats, y, num_painters = 2):
 
-	net = neural_net_images()
+	net = neural_net_images(output_classes = num_painters)
 	history = net.fit({'images_colors': images_colors, 'images_stats': images_stats}, y, validation_split = 0.2)
 	
 	net_predicted = net.predict_classes({'images_colors': images_colors, 'images_stats': images_stats})
@@ -54,6 +50,4 @@ def main():
 	net_predicted.to_csv('./data/net_predicted.csv')
 	net_evaluate.to_csv('./data/net_evaluate.csv')
 
-
-main()
-
+	return net, history
