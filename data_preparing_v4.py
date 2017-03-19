@@ -48,8 +48,11 @@ def get_resized_img_colors(file_list, image_dir):
 
 
 # possibly call it with ['gogh_van', 'rubens']
-def get_net_data(painters = None):
-	df_data = pd.read_csv('./data/painting_info_clean.csv')
+def get_net_data(painters = None, train = True):
+	if train:
+		df_data = pd.read_csv('./data/train_data.csv')
+	else:
+		df_data = pd.read_csv('./data/test_data.csv')
 
 	# pick two author for the simple test
 	if painters is not None:
@@ -59,35 +62,32 @@ def get_net_data(painters = None):
 			df_data = df_data[df_data['short_name'].isin(painters)]
 
 	# get images' width & height
-	sizes_paintings = pd.read_csv('./data/images_sizes_2325.csv')
-	width = sizes_paintings.width
-	height = sizes_paintings.height
+	width = df_data.width
+	height = df_data.height
 
 	ratio_filter = np.logical_and(width / height <= 2, height / width <= 2)
-	sizes_paintings = sizes_paintings[ratio_filter]
-
-	df_all = pd.merge(df_data, sizes_paintings, how = 'inner', on='file_name')
-	images_stats = np.array(df_all[['width', 'height']], dtype = np.float32)
+	df_data = df_data[ratio_filter]
 
 	# get dummies for all the painters
-	y = pd.get_dummies(df_all.short_name)
+	y = pd.get_dummies(df_data.short_name)
 	dummies_cols = y.columns
 	y = np.array(y, dtype = np.float32)
 
 	# balance image data: width, height
+	images_stats = df_data.iloc[:, -2::]
 	scaler = preprocessing.StandardScaler().fit(images_stats)
 	images_stats = scaler.transform(images_stats)
 
-	images_colors = get_resized_img_colors(df_all['file_name'], 'data/resized_200/')
+	images_colors = get_resized_img_colors(df_data['file_name'], 'data/resized_200/')
 	net_data = {'images_colors': images_colors, 'images_stats': images_stats, 
-					'response': y, 'painters': dummies_cols, 'indices': df_all[['short_name', 'file_name']]}
+					'response': y, 'painters': dummies_cols, 'indices': df_data[['short_name', 'file_name']]}
 
 	return net_data
 
 
 
-def get_not_net_data(painters = None):
-	net_data = get_net_data(painters)
+def get_not_net_data(painters = None, train = True):
+	net_data = get_net_data(painters, train)
 	raw_image = net_data['images_colors'].reshape(-1, 3*200*200)
 	raw_image = np.hstack((raw_image, net_data['images_stats']))
 
