@@ -3,9 +3,8 @@ import numpy as np
 from PIL import Image
 import re, sys, time, os
 from keras.models import Sequential
-from keras.layers import InputLayer, Conv2D, MaxPooling2D, Dense, Dropout, Flatten, Merge
+from keras.layers import InputLayer, Convolution2D, MaxPooling2D, Dense, Dropout, Flatten, Merge
 from keras.optimizers import Adadelta
-import tensorflow as tf
 
 
 def neural_net_images(initial_rate=0.04, output_classes = 3,input_width=200, input_height=200):
@@ -13,12 +12,12 @@ def neural_net_images(initial_rate=0.04, output_classes = 3,input_width=200, inp
 	# image
 	image = Sequential()
 	image.add(InputLayer((3, input_width, input_height), name = 'images_colors'))  # 3*200*200
-	image.add(Conv2D(32, (5, 5), activation = 'relu')) # 32*196*196
+	image.add(Convolution2D(32, 5, 5, activation = 'relu')) # 32*196*196
 	image.add(MaxPooling2D(pool_size = (2, 2))) #32*98*98
-	image.add(Conv2D(64, (5, 5), activation = 'relu')) # 64*94*94
+	image.add(Convolution2D(64, 5, 5, activation = 'relu')) # 64*94*94
 	image.add(MaxPooling2D(pool_size=(2, 2))) # 64*47*47
 	image.add(Dropout(0.2))
-	image.add(Conv2D(64, (4, 4), activation = 'relu')) # 64*44*44
+	image.add(Convolution2D(64, 4, 4, activation = 'relu')) # 64*44*44
 	image.add(MaxPooling2D(pool_size = (2, 2))) #64*22*22
 	image.add(Dropout(0.3))
 	image.add(Flatten()) #30976
@@ -39,7 +38,7 @@ def neural_net_images(initial_rate=0.04, output_classes = 3,input_width=200, inp
 
 
 
-def train_network(data):
+def train_network(data, epochs = 100):
 	data = data.copy()
 	y = data['response']
 	painters = data['painters']
@@ -48,7 +47,8 @@ def train_network(data):
 	indices = data['indices']
 	del data['indices']
 	net = neural_net_images(output_classes = len(painters))
-	history = net.fit(data, y, validation_split = 0.2)
+	history = net.fit(data, y, validation_split = 0.2,
+			nb_epoch = epochs, batch_size = 64)
 	
 	net_predicted = net.predict_classes(data)
 	net_evaluate = net.evaluate(data, y)
