@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 from scrapy import Spider, Request
 from athenaeum.items import PaintingItem, AuthorItem
-from athenaeum.pipelines import DATA_PATH
-from athenaeum.settings import DOWNLOAD_DELAY
+#from athenaeum.pipelines import DATA_PATH
+#from athenaeum.settings import DOWNLOAD_DELAY
 import re, sys, urllib, os, time, threading
 from concurrent.futures import ThreadPoolExecutor
 
@@ -10,23 +10,25 @@ class AthenaeumSpiderSpider(Spider):
     name = "athenaeum-spider"
     allowed_domains = ["the-athenaeum.org"]
     start_urls = ['http://www.the-athenaeum.org/art/counts.php?s=cd&m=a']
-    images_folder = 'images_athenaeum'
+    #images_folder = 'images_athenaeum'
 
-    def __init__(self, *args, **kwargs):
-        super(AthenaeumSpiderSpider, self).__init__(*args, **kwargs)
-        self.photo_downloader = ThreadPoolExecutor(max_workers = 1)
+    #def __init__(self, *args, **kwargs):
+        #super(AthenaeumSpiderSpider, self).__init__(*args, **kwargs)
+        #self.photo_downloader = ThreadPoolExecutor(max_workers = 1)
     
-    def __del__(self):
-        self.photo_downloader.shutdown()
-        super(AthenaeumSpiderSpider, self).__del__()
+    #def __del__(self):
+        #self.photo_downloader.shutdown()
+        #super(AthenaeumSpiderSpider, self).__del__()
     
     def parse(self, response):
         for row in response.xpath('/html/body/div[@id="wrapper_no_sb_1024"]/table[1]//tr[(@class = "r1" or @class = "r2") and child::td[3]/@class = "pd"]'):
             try:
                 tds = row.xpath('td')
                 author = AuthorItem()
-                last_name, first_name = re.sub(r'\s\s+', ' ', tds[0].xpath('a/text()').extract_first()).strip().split(', ', 1)
+                names = re.sub(r'\s\s+', ' ', tds[0].xpath('a/text()').extract_first()).strip().split(', ', 1)
+                last_name = names[0]
                 last_name = last_name[0] + last_name[1:].lower()
+                first_name = names[1] if len(names) > 1 else ''
                 author['last_name'], author['first_name'] = last_name, first_name
                 bio_url = response.urljoin(tds[0].xpath('a/@href').extract_first())
                 author['bio_url'] = bio_url
@@ -57,11 +59,17 @@ class AthenaeumSpiderSpider(Spider):
     
     def parse_bio(self, response):
         author = response.meta['author_item']
-        author['bio_info'] = '\n'.join([''.join(x.xpath('text()').extract()) for x in response.xpath('//div[@id="topcontent"]/table/tr[1]/td[2]/p')])
+        author['bio_info'] = '\n'.join([''.join(x.xpath('descendant-or-self::text()').extract())
+                                        for x in response.xpath('//div[@id="topcontent"]/table/tr[1]/td[2]/p')])
         yield author
     
     def parse_art_list_starter(self, response):
         other_pages = response.xpath('/html/body/div[@id="wrapper_no_sb_1024"]/div[@class="subtitle"]/a')
+        # for authors with only 1 painting/item
+        if not other_pages and response.xpath('//div[@id="scholar"]/div[@id="generalInfo"]/table'):
+            self.parse_painting(response)
+            return
+        
         self.parse_art_list(response)
         
         if other_pages:
@@ -100,7 +108,7 @@ class AthenaeumSpiderSpider(Spider):
                     painting['height_uom'] = height_width_match.group(2)
                     painting['width'] = float(height_width_match.group(3))
                     painting['width_uom'] = height_width_match.group(4)
-                else:
+                elif row.xpath('td[2]/text()').extract_first().strip() != 'Unknown':
                     self.logger.warning('Unrecognized dimension format at id=%d: %s' % (painting['painting_id'],
                                                         row.xpath('td[2]/text()').extract_first().strip()))
             elif key == 'Medium:':
@@ -110,18 +118,18 @@ class AthenaeumSpiderSpider(Spider):
             elif key != 'Artist age:' and key != 'Entered by:':
                 self.logger.warning('Article info key not parsed at id=%d: %s' % (painting['painting_id'], key))
         yield painting
-        self.photo_downloader.submit(self.download_painting, painting['painting_url'],
-                                     painting['author_id'], painting['painting_id'])
+        #self.photo_downloader.submit(self.download_painting, painting['painting_url'],
+                                     #painting['author_id'], painting['painting_id'])
     
-    def download_painting(self, url, author_id, painting_id):
-        local_directory = DATA_PATH + self.images_folder + '/%d/' % author_id
-        if not os.path.exists(local_directory):
-            os.makedirs(local_directory)
-        local_address = local_directory + '%d.jpg' % painting_id
-        try:
-            timer_thread = threading.Thread(target = time.sleep, args = (DOWNLOAD_DELAY / 2.0,))
-            timer_thread.start()
-            urllib.urlretrieve(url, local_address)
-            timer_thread.join(DOWNLOAD_DELAY)
-        except BaseException as e:
-            self.logger.error('Unable to download painting author=%d, id=%d: %s' % (author_id, painting_id, str(e)))
+    #def download_painting(self, url, author_id, painting_id):
+        #local_directory = DATA_PATH + self.images_folder + '/%d/' % author_id
+        #if not os.path.exists(local_directory):
+            #os.makedirs(local_directory)
+        #local_address = local_directory + '%d.jpg' % painting_id
+        #try:
+            #timer_thread = threading.Thread(target = time.sleep, args = (DOWNLOAD_DELAY / 2.0,))
+            #timer_thread.start()
+            #urllib.urlretrieve(url, local_address)
+            #timer_thread.join(DOWNLOAD_DELAY)
+        #except BaseException as e:
+            #self.logger.error('Unable to download painting author=%d, id=%d: %s' % (author_id, painting_id, str(e)))

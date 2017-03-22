@@ -21,6 +21,7 @@ class PaintingItem(Item):
     width_uom = Field()
     article_type = Field()
     medium = Field()
+    image_out = Field()
     
 class AuthorItem(Item):
     author_id = Field()

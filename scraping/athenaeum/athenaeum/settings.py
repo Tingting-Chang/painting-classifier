@@ -16,8 +16,18 @@ NEWSPIDER_MODULE = 'athenaeum.spiders'
 
 LOG_LEVEL = "INFO"
 
+DATA_PATH = '../../data/'
+#DATA_PATH = '/home/domingos/Documents/NYCDSA/projects/paintings/data/'
+
+IMAGES_STORE = DATA_PATH + 'images_athenaeum'
+
+IMAGES_THUMBS = {'resized_200': (200, 200)}
+
+#IMAGES_URLS_FIELD = 'painting_url'
+#IMAGES_RESULT_FIELD = 'image_out'
+
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'athenaeum (+http://www.yourdomain.com)'
+USER_AGENT = 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -28,9 +38,9 @@ ROBOTSTXT_OBEY = True
 # Configure a delay for requests for the same website (default: 0)
 # See http://scrapy.readthedocs.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-DOWNLOAD_DELAY = 5
+# DOWNLOAD_DELAY = 3
 # The download delay setting will honor only one of:
-CONCURRENT_REQUESTS_PER_DOMAIN = 3
+CONCURRENT_REQUESTS_PER_DOMAIN = 8
 # CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
@@ -68,6 +78,8 @@ CONCURRENT_REQUESTS_PER_DOMAIN = 3
 ITEM_PIPELINES = {
     'athenaeum.pipelines.AuthorPipeline': 300,
     'athenaeum.pipelines.PaintingPipeline': 301,
+    'athenaeum.pipelines.PaintingDownloadPipeline': 200,
+    #'scrapy.pipelines.images.ImagesPipeline': 200,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
