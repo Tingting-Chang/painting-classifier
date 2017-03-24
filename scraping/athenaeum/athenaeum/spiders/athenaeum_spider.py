@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
 from scrapy import Spider, Request
-from athenaeum.items import PaintingItem, AuthorItem
-#from athenaeum.pipelines import DATA_PATH
-#from athenaeum.settings import DOWNLOAD_DELAY
-import re, sys, urllib, os, time, threading
-from concurrent.futures import ThreadPoolExecutor
+from athenaeum.items import PaintingItem, AuthorItem, PaintingDownloadItem
+from athenaeum.pipelines import PaintingPipeline, AuthorPipeline, PaintingDownloadPipeline
+from athenaeum.settings import IMAGES_STORE
+#from athenaeum.settings import DATA_PATH, DOWNLOAD_DELAY
+import re, sys, urllib, os, time#, threading
+#from concurrent.futures import ThreadPoolExecutor
+import pandas as pd
 
 class AthenaeumSpiderSpider(Spider):
     name = "athenaeum-spider"
@@ -12,9 +14,23 @@ class AthenaeumSpiderSpider(Spider):
     start_urls = ['http://www.the-athenaeum.org/art/counts.php?s=cd&m=a']
     #images_folder = 'images_athenaeum'
 
-    #def __init__(self, *args, **kwargs):
-        #super(AthenaeumSpiderSpider, self).__init__(*args, **kwargs)
+    def __init__(self, *args, **kwargs):
+        super(AthenaeumSpiderSpider, self).__init__(*args, **kwargs)
         #self.photo_downloader = ThreadPoolExecutor(max_workers = 1)
+        self.scraped_artists = set()
+        self.scraped_paintings = set()
+        if os.path.exists(AuthorPipeline.filename):
+            df = pd.read_csv(AuthorPipeline.filename)
+            for author_id in df['author_id']:
+                self.scraped_artists.add(author_id)
+            self.logger.debug('Found %d artists already scraped.' % len(self.scraped_artists))
+        if os.path.exists(PaintingPipeline.filename):
+            for df in pd.read_csv(PaintingPipeline.filename, chunksize = 10000):
+                for author_id, painting_id in zip(df['author_id'], df['painting_id']):
+                    self.scraped_paintings.add((author_id, painting_id))
+            self.logger.debug('Found %d paintings already scraped.' % len(self.scraped_paintings))
+        if df is not None:
+            del df
     
     #def __del__(self):
         #self.photo_downloader.shutdown()
@@ -50,7 +66,8 @@ class AthenaeumSpiderSpider(Spider):
                 art_list_url = response.urljoin(tds[2].xpath('a/@href').extract_first())
                 author['author_id'] = int(re.match(r'.*\?ID=(\d+)$', tds[0].xpath('a/@href').extract_first()).group(1))
                 
-                yield Request(bio_url, meta = {'author_item': author}, callback = self.parse_bio)
+                if author['author_id'] not in self.scraped_artists:
+                    yield Request(bio_url, meta = {'author_item': author}, callback = self.parse_bio)
                 
                 yield Request(art_list_url, meta = {'author_id': author['author_id']}, callback = self.parse_art_list_starter)
                 
@@ -67,10 +84,18 @@ class AthenaeumSpiderSpider(Spider):
         other_pages = response.xpath('/html/body/div[@id="wrapper_no_sb_1024"]/div[@class="subtitle"]/a')
         # for authors with only 1 painting/item
         if not other_pages and response.xpath('//div[@id="scholar"]/div[@id="generalInfo"]/table'):
-            self.parse_painting(response)
+            painting_id = int(re.match(r'.*\?ID=(\d+)&msg', response.url).group(1))
+            not_in_csv = (response.meta['author_id'], painting_id) in self.scraped_paintings
+            not_downloaded = not os.path.exists(os.path.join(IMAGES_STORE,
+                            PaintingDownloadPipeline.athenaeum_file_path(response.meta['author_id'], painting_id)))
+            if not_in_csv or not_downloaded:
+                response.meta['store_to_csv'] = not_in_csv
+                for elem in self.parse_painting(response):
+                    yield elem
             return
         
-        self.parse_art_list(response)
+        for elem in self.parse_art_list(response):
+            yield elem
         
         if other_pages:
             urlMatch = re.match(r'(.*p=)(\d+)$', other_pages[-1].xpath('@href').extract_first())
@@ -83,15 +108,22 @@ class AthenaeumSpiderSpider(Spider):
     def parse_art_list(self, response):
         for row in response.xpath('/html/body/div[@id="wrapper_no_sb_1024"]/table[1]//tr[@class = "r1" or @class = "r2"]'):
             try:
-                yield Request(response.urljoin(row.xpath('td[2]/div[@class="list_title"]/a/@href').extract_first()),
-                              meta = {'author_id': response.meta['author_id']}, callback = self.parse_painting)
+                url = row.xpath('td[2]/div[@class="list_title"]/a/@href').extract_first()
+                painting_id = int(re.match(r'.*\?ID=(\d+)$', url).group(1))
+                not_in_csv = (response.meta['author_id'], painting_id) not in self.scraped_paintings
+                not_downloaded = not os.path.exists(os.path.join(IMAGES_STORE,
+                            PaintingDownloadPipeline.athenaeum_file_path(response.meta['author_id'], painting_id)))
+                if not_in_csv or not_downloaded:
+                    yield Request(response.urljoin(url),
+                                  meta = {'author_id': response.meta['author_id'], 'store_to_csv': not_in_csv},
+                                  callback = self.parse_painting)
             except BaseException as e:
                 self.logger.error('Unable to parse article row: ' + row.extract_first() + '\n' + str(e))
     
     def parse_painting(self, response):
         painting = PaintingItem()
         painting['author_id'] = response.meta['author_id']
-        painting['painting_id'] = int(re.match(r'.*\?ID=(\d+)$', response.url).group(1))
+        painting['painting_id'] = int(re.match(r'.*\?ID=(\d+)(?:&msg.*)?$', response.url).group(1))
         painting['painting_title'] = response.xpath('//div[@id="title"]/text()').extract_first()
         painting['painting_url'] = response.urljoin(response.xpath('//a[child::div/@class="subtitle_10px"]/@href').extract_first())
         for row in response.xpath('//div[@id="scholar"]/div[@id="generalInfo"]/table/tr'):
@@ -117,7 +149,8 @@ class AthenaeumSpiderSpider(Spider):
                 painting['medium'] = medium[1].strip() if len(medium) > 1 else None
             elif key != 'Artist age:' and key != 'Entered by:':
                 self.logger.warning('Article info key not parsed at id=%d: %s' % (painting['painting_id'], key))
-        yield painting
+        
+        yield painting if response.meta['store_to_csv'] else PaintingDownloadItem(painting)
         #self.photo_downloader.submit(self.download_painting, painting['painting_url'],
                                      #painting['author_id'], painting['painting_id'])
     

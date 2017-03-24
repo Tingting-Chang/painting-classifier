@@ -78,7 +78,7 @@ CONCURRENT_REQUESTS_PER_DOMAIN = 8
 ITEM_PIPELINES = {
     'athenaeum.pipelines.AuthorPipeline': 300,
     'athenaeum.pipelines.PaintingPipeline': 301,
-    'athenaeum.pipelines.PaintingDownloadPipeline': 200,
+    'athenaeum.pipelines.PaintingDownloadPipeline': 400,
     #'scrapy.pipelines.images.ImagesPipeline': 200,
 }
 
