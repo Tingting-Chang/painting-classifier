@@ -7,6 +7,9 @@
 *.csv
 .ipynb_checkpoints
 *.DS_Store
-./data/images*
-./data/resized_200
+data/images*/
+data/resized_200/
+data/zipped*
+*.z*
+/budget
 
