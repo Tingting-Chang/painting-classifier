@@ -3,8 +3,8 @@
 from sklearn.utils import shuffle as skshuffle
 from pandas.core.generic import NDFrame
 
-from .preprocessors import Preprocessor
-from .generators import Generator
+#from .preprocessors import Preprocessor
+#from .generators import Generator
 
 def shuffle(X, y = None):
     if isinstance(X, dict):

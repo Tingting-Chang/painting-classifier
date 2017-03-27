@@ -90,7 +90,7 @@ class Dummifier(object):
     def __init__(self, output_cols = None, **kwargs):
         self.output_cols = output_cols
         self.kwargs = kwargs
-        self.output_cols_fitted
+        self.output_cols_fitted = None
     
     def fit(self, data):
         if self.output_cols is None:
@@ -136,7 +136,7 @@ class CategoricalFilter(object):
         self.column = column
     
     def fit(self, data):
-        self.classes = data[self.column].value_counts().index[:top_categories]
+        self.classes = data[self.column].value_counts().index[:self.top_categories]
     
     def transform(self, data):
         return data[data[self.column].isin(self.classes)]

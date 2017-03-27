@@ -1,7 +1,5 @@
 import threading
 
-import loaders as l
-
 from . import shuffle, subset
 
 class Generator(object):

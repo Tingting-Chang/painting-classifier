@@ -1,5 +1,3 @@
-import features
-
 import numpy as np
 from pandas.io.json import read_json
 from pandas import DataFrame, get_dummies, read_csv

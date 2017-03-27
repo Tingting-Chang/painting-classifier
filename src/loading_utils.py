@@ -13,7 +13,7 @@ def get_image_path(author_id, painting_id, thumb = 'full'):
 
 def get_image_array(image_path):
     im = Image.open(image_path)
-    return np.array(im.getdata(), dype = np.float32).reshape(im.width, im.height, NUM_CHANNELS) / 255
+    return np.array(im.getdata(), dtype = np.float32).reshape(im.width, im.height, NUM_CHANNELS) / 255
 	
 def random_crop(np_image, width, height):
     x_offset = np.random.randint(np_image.shape[0] - width + 1)
@@ -31,7 +31,7 @@ def get_image_crops_batch(list_paths, dict_sizes):
         if height is None:
             height = min([image.shape[1] for image in full_sized])
         result[size_name] = np.vstack([
-                random_crop(image, width, heigth).reshape(1, widht, height, NUM_CHANNELS)
+                random_crop(image, width, height).reshape(1, width, height, NUM_CHANNELS)
                 for image in full_sized])
     return result
 

@@ -51,7 +51,7 @@ def neural_net1(num_classes = 3, initial_rate=0.04,
     resized_200 = Conv2D(resized_filters3, kernel_size = (3, 3), strides = (1, 1),
                          activation = activations_conv)(resized_200) #10*10*rf3
     resized_200_max = MaxPooling2D((2, 2))(resized_200) #5*5*rf3
-    average_200_avg = AveragePooling2D((2, 2))(resized_200) #5*5*rf3
+    resized_200_avg = AveragePooling2D((2, 2))(resized_200) #5*5*rf3
     resized_200 = Concatenate()([resized_200_max, resized_200_avg]) #5*5*2rf3
     resized_200 = Flatten()(resized_200)
     resized_200 = Dense(resized_dense1, activation = activations_dense)(resized_200)
