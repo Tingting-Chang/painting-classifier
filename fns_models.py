@@ -3,7 +3,8 @@ import numpy as np
 import os
 import re
 import random
-
+from matplotlib import pyplot as plt
+from PIL import Image
 
 # Pick top 3 authors
 def get_top_author(num_author=3):
@@ -39,6 +40,37 @@ def get_top_author(num_author=3):
     return train, train_labels, test, test_labels
 
 # train, train_labels, test, test_labels = get_top_author(3)
+
+def get_top_movement(num_movements = 3):
+    movement_hist_train = pd.read_csv('data/movement_hist_train.csv')
+    movement_hist_test = pd.read_csv('data/movement_hist_test.csv')
+    
+    print "[INFO] The size of train histogram for Random Forest" + str(movement_hist_train.shape)
+    print "[INFO] The size of test histogram for Random Forest" + str(movement_hist_test.shape)
+
+    movement_hist_train.iloc[:,3:-1] = movement_hist_train.iloc[:, 3:-1]\
+        .apply(lambda x: x.astype(np.float) / (x.sum()/3), axis = 1, raw = True)
+
+    movement_hist_test.iloc[:,3:-1] = movement_hist_test.iloc[:, 3:-1]\
+            .apply(lambda x: x.astype(np.float) / (x.sum()/3), axis = 1, raw = True)
+    
+    mv_index = movement_hist_train['sup_art_movement'].value_counts().index[:num_movements]
+    train = movement_hist_train[movement_hist_train['sup_art_movement'].isin(mv_index)]
+    test = movement_hist_test[movement_hist_test['sup_art_movement'].isin(mv_index)]
+    
+    train_label = movement_hist_train['sup_art_movement']
+    test_label = movement_hist_test['sup_art_movement']
+    
+    print 'top movement for train:\n %s ' % str(train['sup_art_movement'].value_counts())
+    print '-' * 50
+    print 'top movement for test:\n %s ' % str(test['sup_art_movement'].value_counts())
+
+    movement_test = movement_hist_test.drop(['author_id', 'painting_id', 'sup_art_movement'], axis=1)
+    movement_train = movement_hist_train.drop(['author_id', 'painting_id', 'sup_art_movement'], axis=1)
+
+    return train, train_label, test, test_label
+
+# train, train_label, test, test_label = get_top_movement(3)
 
 def result_table(y_true, y_pred):
     rslt = y_true  == y_pred
