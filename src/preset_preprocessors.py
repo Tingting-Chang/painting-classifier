@@ -26,5 +26,26 @@ def images_generator_author(num_authors):
     prep.with_pipeline('full').set_loader(relay).add_operation(operations.Selector(['author_id', 'painting_id']))
     prep.with_pipeline('indices').set_loader(relay).add_operation(operations.Selector(['author_id', 'painting_id']))
     generator = Generator(prep, {'resized_200': loading_utils.ImageLoaderGenerator('resized_200'),
-                            'full': loading_utils.ImageLoaderGenerator('full')}, operations.SeparateDictKey('response'))
+                            'full': loading_utils.ImageLoaderGenerator('half')}, operations.SeparateDictKey('response'))
+    return generator, response_dummifier
+
+def images_generator_movement(num_authors):
+    loader = loaders.CSVLoader('data/athenaeum_painting_movement_train.csv', 'data/athenaeum_painting_movement_test.csv')
+    prep = Preprocessor()
+    prep.with_pipeline('input').set_loader(
+            loader.select_loader(['author_id', 'painting_id', 'sup_art_movement', 'height_px', 'width_px']))
+    prep.add_operation(operations.CategoricalFilter('sup_art_movement', top_categories = 3))
+    prep.add_operation(loading_utils.HeightWidthRatio()).add_operation(operations.ColumnDrop(['height_px', 'width_px']))
+    relay = consumers.SimpleDataRelay()
+    prep.set_consumer(relay)
+    prep.with_pipeline('metadata').set_loader(relay).add_operation(operations.Selector(['height_width_ratio']))
+    prep.add_operation(operations.ToNdarray()).add_operation(skprep.StandardScaler())
+    response_dummifier = operations.Dummifier() # columns can be recovered by calling response_dummifier.get_output_columns()
+    prep.with_pipeline('response').set_loader(relay).add_operation(operations.Selector('sup_art_movement'))
+    prep.add_operation(response_dummifier).add_operation(operations.ToNdarray())
+    prep.with_pipeline('resized_200').set_loader(relay).add_operation(operations.Selector(['author_id', 'painting_id']))
+    prep.with_pipeline('full').set_loader(relay).add_operation(operations.Selector(['author_id', 'painting_id']))
+    prep.with_pipeline('indices').set_loader(relay).add_operation(operations.Selector(['author_id', 'painting_id']))
+    generator = Generator(prep, {'resized_200': loading_utils.ImageLoaderGenerator('resized_200'),
+                            'full': loading_utils.ImageLoaderGenerator('half')}, operations.SeparateDictKey('response'))
     return generator, response_dummifier

@@ -13,12 +13,12 @@ def get_image_path(author_id, painting_id, thumb = 'full'):
 
 def get_image_array(image_path):
     im = Image.open(image_path)
-    return np.array(im.getdata(), dtype = np.float32).reshape(im.width, im.height, NUM_CHANNELS) / 255
+    return np.array(im.getdata(), dtype = np.float32).reshape(1, im.width, im.height, NUM_CHANNELS) / 255
 	
 def random_crop(np_image, width, height):
-    x_offset = np.random.randint(np_image.shape[0] - width + 1)
-    y_offset = np.random.randint(np_image.shape[1] - height + 1)
-    return np_image[x_offset:(x_offset + width), y_offset:(y_offset + height)]
+    x_offset = np.random.randint(np_image.shape[1] - width + 1)
+    y_offset = np.random.randint(np_image.shape[2] - height + 1)
+    return np_image[:, x_offset:(x_offset + width), y_offset:(y_offset + height)]
 
 def get_image_crops_batch(list_paths, dict_sizes):
     full_sized = [get_image_array(path) for path in list_paths]
@@ -26,13 +26,12 @@ def get_image_crops_batch(list_paths, dict_sizes):
     for size_name, size in dict_sizes.items():
         width = size[0]
         if width is None:
-            width = min([image.shape[0] for image in full_sized])
+            width = min([image.shape[1] for image in full_sized])
         height = size[1]
         if height is None:
-            height = min([image.shape[1] for image in full_sized])
+            height = min([image.shape[2] for image in full_sized])
         result[size_name] = np.vstack([
-                random_crop(image, width, height).reshape(1, width, height, NUM_CHANNELS)
-                for image in full_sized])
+                random_crop(image, width, height) for image in full_sized])
     return result
 
 def get_image_crop_batch_from_df(df, dict_sizes):
