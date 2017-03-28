@@ -3,7 +3,7 @@ import os, sys
 
 from keras.models import load_model
 from keras.callbacks import CSVLogger, ReduceLROnPlateau, EarlyStopping, ModelCheckpoint
-
+from ..enqueuer import Enqueuer
 
 
 
@@ -46,10 +46,19 @@ def fit_generator(net, train_generator, valid_generator = None, plot=False,
     lrreducer = ReduceLROnPlateau(factor = 0.2, patience = lr_reduce_after)
     callbacks = [checkpoint, logger, earlystopping, lrreducer]
     
-    history = net.fit_generator(train_generator, steps_per_epoch = train_generator.n_batches(),
-            nb_epoch = epochs, callbacks = callbacks, validation_data = valid_generator,
+    enqueued_train_generator = Enqueuer(train_generator, workers = nb_worker,
+                max_q_size = max_q_size)
+
+    if valid_generator:
+        enqueued_valid_generator = Enqueuer(valid_generator, workers = nb_worker,
+                max_q_size = max_q_size)
+    else:
+        enqueued_valid_generator = None
+    
+    history = net.fit_generator(enqueued_train_generator, steps_per_epoch = train_generator.n_batches(),
+            epochs = epochs, callbacks = callbacks, validation_data = enqueued_valid_generator,
             validation_steps = valid_generator.n_batches() if valid_generator is not None else None,
-            max_q_size=max_q_size, nb_worker=nb_worker)
+            max_q_size=1, workers=1, pickle_safe = False)
 
     if plot:
         plot_net(history)
