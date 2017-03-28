@@ -61,31 +61,32 @@ def neural_net1(num_classes = 3, initial_rate=0.04,
     # Full sized (cropped), first subnet #
     ######################################
     full1 = Conv2D(full1_filters1, kernel_size = (4, 4), strides = (2, 2),
-                   activation = activations_conv)(image_full_input)
+                   activation = activations_conv)(image_full_input) # min 64
     full1_max = MaxPooling2D((3, 3), strides = (2, 2))(full1)
-    full1_avg = AveragePooling2D((3, 3), strides = (2, 2))(full1)
+    full1_avg = AveragePooling2D((3, 3), strides = (2, 2))(full1) # min 31
     full1 = Concatenate()([full1_max, full1_avg])
     full1 = Conv2D(full1_filters2, kernel_size = (3, 3), strides = (2, 2),
-                    activation = activations_conv)(full1)
+                    activation = activations_conv)(full1) # min 15
     full1_max = MaxPooling2D((3, 3), strides = (2, 2))(full1)
-    full1_avg = AveragePooling2D((3, 3), strides = (2, 2))(full1)
+    full1_avg = AveragePooling2D((3, 3), strides = (2, 2))(full1) # min 7
     
-    #early_1_max = GlobalMaxPooling2D()(full1)
-    #early_1_avg = GlobalAveragePooling2D()(full1)
+    early_1_max = GlobalMaxPooling2D()(full1)
+    early_1_avg = GlobalAveragePooling2D()(full1)
     
     full1 = Concatenate()([full1_max, full1_avg])
     full1 = Conv2D(full1_filters3, kernel_size = (3, 3), strides = (2, 2),
-                    activation = activations_conv)(full1)
-    full1_max = MaxPooling2D((3, 3), strides = (2, 2))(full1)
-    full1_avg = AveragePooling2D((3, 3), strides = (2, 2))(full1)
-    full1g_max = GlobalMaxPooling2D()(full1)
-    full1g_avg = GlobalAveragePooling2D()(full1)
-    full1 = Concatenate()([full1_max, full1_avg])
-    full1 = Conv2D(full1_filters4, kernel_size = (3, 3), strides = (2, 2),
-                    activation = activations_conv)(full1)
-    full1_max = GlobalMaxPooling2D()(full1)
+                    activation = activations_conv)(full1) # min 3
+    #full1_max = MaxPooling2D((3, 3), strides = (2, 2))(full1)
+    #full1_avg = AveragePooling2D((3, 3), strides = (2, 2))(full1)# min 7
+    #full1g_max = GlobalMaxPooling2D()(full1)
+    #full1g_avg = GlobalAveragePooling2D()(full1)
+    #full1 = Concatenate()([full1_max, full1_avg])
+    #full1 = Conv2D(full1_filters4, kernel_size = (3, 3), strides = (2, 2),
+    #                activation = activations_conv)(full1)# min 3
+    full1_max = GlobalMaxPooling2D()(full1)# min 1
     full1_avg = GlobalAveragePooling2D()(full1)
-    full1 = Concatenate()([full1g_max, full1g_avg, full1_max, full1_avg])
+    #full1 = Concatenate()([full1g_max, full1g_avg, full1_max, full1_avg])
+    full1 = Concatenate()([early_1_max, early_1_avg, full1_max, full1_avg])
     full1 = Dense(full1_dense1, activation = activations_dense)(full1)
     full1 = Dropout(full1_dropout)(full1)
     
