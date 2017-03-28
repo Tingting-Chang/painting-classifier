@@ -51,22 +51,23 @@ def result_table(y_true, y_pred):
     return test_data_df
 
 
-def plot_bo(f, bo):
-    xs = [x["x"] for x in bo.res["all"]["params"]]
-    ys = bo.res["all"]["values"]
+def plot_columns(sample_painting):
+    if len(sample_painting) > 8:
+        sample_painting = sample_painting.sample(8)
 
-    mean, sigma = bo.gp.predict(np.arange(len(f)).reshape(-1, 1), return_std=True)
-    
-    plt.figure(figsize=(16, 9))
-    plt.plot(f)
-    plt.plot(np.arange(len(f)), mean)
-    plt.fill_between(np.arange(len(f)), mean+sigma, mean-sigma, alpha=0.1)
-    plt.scatter(bo.X.flatten(), bo.Y, c="red", s=50, zorder=10)
-    plt.xlim(0, len(f))
-    plt.ylim(f.min()-0.1*(f.max()-f.min()), f.max()+0.1*(f.max()-f.min()))
-    plt.show()
-
-
+    size = len(sample_painting)
+    y = 1 if size <= 4 else 2
+    x = size if y == 1 else (size + 1) // 2
+    f, ax = plt.subplots(y, x, figsize = (20,15))
+    for i in range(size):
+        im = Image.open('data/images_athenaeum/full/%d/%d.jpg' % (sample_painting.iloc[i]['author_id'],
+                                                                  sample_painting.iloc[i]['painting_id']))
+        if size == 1:
+            ax.imshow(im)
+        elif y == 1:
+            ax[i].imshow(im)
+        else:
+            ax[i / x, i % x].imshow(im)
 
 
 
