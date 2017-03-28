@@ -19,7 +19,7 @@ class Enqueuer(object):
         self.wait_time = wait_time
 
     def start(self):
-        with lock:
+        with self.lock:
             if self.executor is not None:
                 self.executor.shutdown(wait = False)
             self.executor = ThreadPoolExecutor(max_workers = self.workers)
@@ -32,7 +32,7 @@ class Enqueuer(object):
     def next(self):
         with self.lock:
             if len(self.queue) > 0:
-                execution = self.pop(0)
+                execution = self.queue.pop(0)
                 while not execution.done():
                     time.sleep(self.wait_time)
                 to_return = execution.result()
@@ -42,8 +42,8 @@ class Enqueuer(object):
                 raise StopIteration
     
     def _submit_to_queue(self):
-        with lock:
-            while len(self.queue) < max_q_size:
-                self.queue.append(executor.submit(generator.next))
+        with self.lock:
+            while len(self.queue) < self.max_q_size:
+                self.queue.append(self.executor.submit(self.generator.next))
                 #self.submitted += 1
     

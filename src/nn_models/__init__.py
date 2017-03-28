@@ -48,10 +48,12 @@ def fit_generator(net, train_generator, valid_generator = None, plot=False,
     
     enqueued_train_generator = Enqueuer(train_generator, workers = nb_worker,
                 max_q_size = max_q_size)
+    enqueued_train_generator.start()
 
     if valid_generator:
         enqueued_valid_generator = Enqueuer(valid_generator, workers = nb_worker,
                 max_q_size = max_q_size)
+        enqueued_valid_generator.start()
     else:
         enqueued_valid_generator = None
     
