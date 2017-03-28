@@ -5,6 +5,14 @@ from PIL import Image
 from sklearn import preprocessing
 import sys, os, re
 
+import multiprocessing
+
+try:
+    cpus = multiprocessing.cpu_count()
+except NotImplementedError:
+    cpus = 2   # arbitrary default
+
+
 IMAGES_PATH = 'data/images_athenaeum'
 NUM_CHANNELS = 3
 
@@ -22,15 +30,16 @@ def get_image_array(author_id, painting_id, thumb = 'full'):
         if min(im.width, im.height) < MIN_DIMS:
             ratio = float(MIN_DIMS) / min(im.width, im.height)
             im = im.resize((int(im.width * ratio), int(im.height * ratio)), Image.LANCZOS)
-    return np.array(im.getdata(), dtype = np.float32).reshape(1, im.width, im.height, NUM_CHANNELS) / 255
+    return ref, np.array(im.getdata(), dtype = np.float32).reshape(1, im.width, im.height, NUM_CHANNELS) / 255
 	
 def random_crop(np_image, width, height):
     x_offset = np.random.randint(np_image.shape[1] - width + 1)
     y_offset = np.random.randint(np_image.shape[2] - height + 1)
-    return np_image[:, x_offset:(x_offset + width), y_offset:(y_offset + height)]
+    return ref, np_image[:, x_offset:(x_offset + width), y_offset:(y_offset + height)]
 
 def get_image_crops_batch(list_ids, dict_sizes):
-    full_sized = [get_image_array(*id_) for id_ in list_ids]
+    pool = multiprocessing.Pool(processes=cpus)
+    full_sized = pool.map(lambda id_: get_image_array(*id_), list_ids)
     result = {}
     for size_name, size in dict_sizes.items():
         width = size[0]
@@ -39,8 +48,7 @@ def get_image_crops_batch(list_ids, dict_sizes):
         height = size[1]
         if height is None:
             height = min([image.shape[2] for image in full_sized])
-        result[size_name] = np.vstack([
-                random_crop(image, width, height) for image in full_sized])
+        result[size_name] = np.vstack(pool.map(lambda image: random_crop(image, width, height), full_sized))
     return result
 
 #def get_image_crop_batch_from_df(df, dict_sizes):
