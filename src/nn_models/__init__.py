@@ -49,11 +49,11 @@ def fit_generator(net, train_generator, valid_generator = None, plot=False,
     history = net.fit_generator(train_generator, steps_per_epoch = train_generator.n_batches(),
             nb_epoch = epochs, callbacks = callbacks, validation_data = valid_generator,
             validation_steps = valid_generator.n_batches() if valid_generator is not None else None,
-            max_q_size=max_q_size, nb_worker=nb_worker, pickle_safe = True)
+            max_q_size=max_q_size, nb_worker=nb_worker)
 
     if plot:
         plot_net(history)
-    return net, history
+    return history
 
 def predict_generator(net, generator, output_cols, ids):
     y_pred = net.predict_generator(generator, steps = generator.n_batches(),
