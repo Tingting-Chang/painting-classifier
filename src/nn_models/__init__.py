@@ -60,7 +60,7 @@ def fit_generator(net, train_generator, valid_generator = None, plot=False,
     history = net.fit_generator(train_generator, steps_per_epoch = train_generator.n_batches(),
             epochs = epochs, callbacks = callbacks, validation_data = valid_generator,
             validation_steps = valid_generator.n_batches() if valid_generator is not None else None,
-            max_q_size=10, workers=1, pickle_safe = False)
+            max_q_size=1, workers=1, pickle_safe = False)
 
     if plot:
         plot_net(history)

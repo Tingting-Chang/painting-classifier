@@ -13,7 +13,7 @@ def images_generator_author(num_authors):
     prep = Preprocessor()
     prep.with_pipeline('input').set_loader(
             loader.select_loader(['author_id', 'painting_id', 'height_px', 'width_px']))
-    prep.add_operation(operations.CategoricalFilter('author_id', top_categories = 3))
+    prep.add_operation(operations.CategoricalFilter('author_id', top_categories = num_authors))
     prep.add_operation(loading_utils.HeightWidthRatio()).add_operation(operations.ColumnDrop(['height_px', 'width_px']))
     relay = consumers.SimpleDataRelay()
     prep.set_consumer(relay)
@@ -29,12 +29,12 @@ def images_generator_author(num_authors):
                             'full': loading_utils.ImageLoaderGenerator('half')}, operations.SeparateDictKey('response'))
     return generator, response_dummifier
 
-def images_generator_movement(num_authors):
+def images_generator_movement(num_movements):
     loader = loaders.CSVLoader('data/athenaeum_painting_movement_train.csv', 'data/athenaeum_painting_movement_test.csv')
     prep = Preprocessor()
     prep.with_pipeline('input').set_loader(
             loader.select_loader(['author_id', 'painting_id', 'sup_art_movement', 'height_px', 'width_px']))
-    prep.add_operation(operations.CategoricalFilter('sup_art_movement', top_categories = 3))
+    prep.add_operation(operations.CategoricalFilter('sup_art_movement', top_categories = num_movements))
     prep.add_operation(loading_utils.HeightWidthRatio()).add_operation(operations.ColumnDrop(['height_px', 'width_px']))
     relay = consumers.SimpleDataRelay()
     prep.set_consumer(relay)
