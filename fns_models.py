@@ -58,15 +58,15 @@ def get_top_movement(num_movements = 3):
     train = movement_hist_train[movement_hist_train['sup_art_movement'].isin(mv_index)]
     test = movement_hist_test[movement_hist_test['sup_art_movement'].isin(mv_index)]
     
-    train_label = movement_hist_train['sup_art_movement']
-    test_label = movement_hist_test['sup_art_movement']
+    train_label = train['sup_art_movement']
+    test_label = test['sup_art_movement']
     
     print 'top movement for train:\n %s ' % str(train['sup_art_movement'].value_counts())
     print '-' * 50
     print 'top movement for test:\n %s ' % str(test['sup_art_movement'].value_counts())
 
-    movement_test = movement_hist_test.drop(['author_id', 'painting_id', 'sup_art_movement'], axis=1)
-    movement_train = movement_hist_train.drop(['author_id', 'painting_id', 'sup_art_movement'], axis=1)
+    test = test.drop(['author_id', 'painting_id', 'sup_art_movement'], axis=1)
+    train = train.drop(['author_id', 'painting_id', 'sup_art_movement'], axis=1)
 
     return train, train_label, test, test_label
 
