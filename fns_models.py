@@ -72,6 +72,26 @@ def get_top_movement(num_movements = 3):
 
 # train, train_label, test, test_label = get_top_movement(3)
 
+def movement_encod(train_labels, test_labels):
+    from sklearn.preprocessing import LabelEncoder
+
+    le = LabelEncoder()
+    le.fit(train_labels)
+    le.classes_
+    train_labels_encd = le.transform(train_labels)
+    test_labels_encd = le.transform(test_labels)
+    
+    print "[INFO] the original train labels: %s" % str(train_labels.unique())
+    print "[INFO] the encoded labels: %s" % str(train_labels_encd)
+    
+    print '-' * 50
+    print "[INFO] the original train labels: %s" % str(test_labels.unique())
+    print "[INFO] the encoded labels: %s" % str(test_labels_encd)
+    
+    return train_labels_encd, test_labels_encd
+
+
+    
 def result_table(y_true, y_pred):
     rslt = y_true  == y_pred
 
