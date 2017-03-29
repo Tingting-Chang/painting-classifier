@@ -12,6 +12,7 @@ try:
 except NotImplementedError:
     cpus = 2   # arbitrary default
 
+pool = multiprocessing.Pool(processes=cpus)
 
 IMAGES_PATH = 'data/images_athenaeum'
 NUM_CHANNELS = 3
@@ -33,7 +34,7 @@ def get_image_array(author_id, painting_id, thumb = 'full'):
         if min(im.width, im.height) < MIN_DIMS:
             ratio = float(MIN_DIMS) / min(im.width, im.height)
             im = im.resize((int(im.width * ratio), int(im.height * ratio)), Image.LANCZOS)
-    return ref, np.array(im.getdata(), dtype = np.float32).reshape(1, im.width, im.height, NUM_CHANNELS) / 255
+    return np.array(im.getdata(), dtype = np.float32).reshape(1, im.width, im.height, NUM_CHANNELS) / 255
 
 class RandomCrop(object):
     def __init__(self, width, height):
@@ -46,10 +47,9 @@ class RandomCrop(object):
 def random_crop(np_image, width, height):
     x_offset = np.random.randint(np_image.shape[1] - width + 1)
     y_offset = np.random.randint(np_image.shape[2] - height + 1)
-    return ref, np_image[:, x_offset:(x_offset + width), y_offset:(y_offset + height)]
+    return np_image[:, x_offset:(x_offset + width), y_offset:(y_offset + height)]
 
 def get_image_crops_batch(list_ids, dict_sizes):
-    pool = multiprocessing.Pool(processes=cpus)
     full_sized = pool.map(get_image_array_unpack, list_ids)
     result = {}
     for size_name, size in dict_sizes.items():
