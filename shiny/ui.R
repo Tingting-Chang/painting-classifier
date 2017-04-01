@@ -1,32 +1,24 @@
-#
-# This is the user-interface definition of a Shiny web application. You can
-# run the application by clicking 'Run App' above.
-#
-# Find out more about building applications with Shiny here:
-# 
-#    http://shiny.rstudio.com/
-#
 
-library(shiny)
-library(shinydashboard)
-
-# Define UI for application that draws a histogram
 shinyUI(dashboardPage(
   
-  # Application title
   dashboardHeader(title = "Ink Scrapers"),
   
-  # Sidebar with a slider input for number of bins 
   dashboardSidebar(sidebarMenu(id="menu",
                menuItem("Data Exploration", tabName = "xplore", icon = icon("bar-chart-o")),
                menuItem("Who painted this?", tabName = "game", icon = icon("gamepad")),
-               menuItem("Exploring similarities", tabName = "kmeans", icon = icon("picture-o")))),
+               menuItem("Exploring similarities", tabName = "kmeans", icon = icon("paint-brush")))),
   dashboardBody(
     tabItems(
       tabItem(tabName = "xplore",
               "Introduction"),
       tabItem(tabName = "game",
-              "Game"),
+              h2("Who painted this?"),
+              p("If you know a thing or two about paintings, it's time to put your skills to the test,
+                by comparing yourself with the machine learning model we developed."),
+              p(strong(textOutput("points")), style = 'align:right'),
+              fixedRow(column(8, imageOutput("painting", height = 800)),
+                       column(4,
+                              p("radio buttons")))),
       tabItem(tabName = "kmeans",
               "K-means"))
   )
