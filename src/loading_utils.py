@@ -7,13 +7,6 @@ import sys, os, re
 
 import multiprocessing
 
-try:
-    cpus = multiprocessing.cpu_count()
-except NotImplementedError:
-    cpus = 2   # arbitrary default
-
-pool = multiprocessing.Pool(processes=cpus)
-
 IMAGES_PATH = 'data/images_athenaeum'
 NUM_CHANNELS = 3
 
@@ -88,3 +81,9 @@ class ImageLoaderGenerator(object):
     def __call__(self, data):
         return get_image_thumb_batch_from_df(data, self.thumb)
 
+try:
+    cpus = multiprocessing.cpu_count()
+except NotImplementedError:
+    cpus = 2   # arbitrary default
+
+pool = multiprocessing.Pool(processes=cpus)
