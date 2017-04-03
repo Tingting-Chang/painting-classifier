@@ -12,15 +12,19 @@ library(shinydashboard)
 
 # Define UI for application that draws a histogram
 shinyUI(dashboardPage(
-  
+  skin = "green",
   # Application title
   dashboardHeader(title = "Ink Scrapers"),
   
   # Sidebar with a slider input for number of bins 
-  dashboardSidebar(sidebarMenu(id="menu",
-               menuItem("Data Exploration", tabName = "xplore", icon = icon("bar-chart-o")),
+  dashboardSidebar(sidebarMenu(id="sideBarMenu",
+               menuItem("ReadMe", tabName = "readme", icon = icon("mortar-board"), selected=TRUE
+               ),                
+               menuItem("Data Exploration", tabName = "xplore", icon = icon("bar-chart-o"),
+                        menuSubItem("Raw Data", tabName = 'rawDataPlt')),
                menuItem("Who painted this?", tabName = "game", icon = icon("gamepad")),
                menuItem("Exploring similarities", tabName = "kmeans", icon = icon("picture-o")))),
+  
   dashboardBody(
     tabItems(
       tabItem(tabName = "xplore",
@@ -30,4 +34,6 @@ shinyUI(dashboardPage(
       tabItem(tabName = "kmeans",
               "K-means"))
   )
+  
+  
 ))
