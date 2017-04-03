@@ -1,6 +1,28 @@
 
 
 shinyServer(function(input, output) {
+  # Data for 
+  # painting.sample <- reactive({
+  #   painting_type %>% filter(article_type == input$type)
+  # })
+  
+  
+  # Raw Image
+  output$hwratio <- renderPlot({
+    ggplot(painting_sizes, aes(x = log2(height)-log2(width))) + 
+      stat_density(geom = 'line') +
+      coord_cartesian(xlim=c(-2, 2)) +
+      xlab('') +
+      ggtitle('Distribution of Log-Ratio between Height and Width')
+  })
+  output$imgtype <- renderGvis({
+    gvisBarChart(painting_type, options = list(hAxis = "{logScale: true}",
+                                               height = 300))
+  })
+  
+  
+  
+  
    cur_painter <- -1
    cur_painting <- -1
    
