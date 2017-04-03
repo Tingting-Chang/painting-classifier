@@ -19,6 +19,8 @@ painting_type <- painting_sizes %>% group_by(article_type) %>%
 type_col <- unlist(painting_type %>% select(article_type))
 names(type_col) <- NULL
 
+
+
 # function(article_type) {
 #   sample_painting = paintings[paintings['article_type'] == article_type].sample(8)
 # 

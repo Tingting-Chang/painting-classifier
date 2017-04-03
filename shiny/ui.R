@@ -54,8 +54,12 @@ shinyUI(dashboardPage(
               h2("Who painted this?"),
               p("If you know a thing or two about paintings, it's time to put your skills to the test,
                 by comparing yourself with the machine learning model we developed."),
-              p(strong(textOutput("points")), style = 'align:right'),
-              fixedRow(column(8, imageOutput("painting", height = 800)),
+              htmlOutput("points"),
+              tags$head(tags$style(
+                type="text/css",
+                "#painting img {max-height: 400px; max-width: 100%; height: auto, width: auto}"
+              )),
+              fixedRow(column(8, imageOutput("painting")),
                        column(4,
                               p("radio buttons")))),
       tabItem(tabName = "kmeans",
