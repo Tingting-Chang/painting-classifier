@@ -56,26 +56,17 @@ SamplePainting <- function(article_type) {
 
 
 # data for kmeans
-get_paintings_around_centroid <- function(color_hist, centroid, num_paintings) {
-  # d <- function(row, centroid) return(sum((row - centroid) ** 2))
-  # distances <- apply(color_hist[, 3:33], 1, d)
-  
-  
-  return(head(sort(distances, descreasing=TRUE)), num_paintings)
-}
+kmeans_data <- read.csv('../data/color_hist_kmeans_distance.csv')
+label_col <- seq(0:6)
 
-set.seed(2017)
-irisCluster <- kmeans(color_hist[, 3:33], 7, nstart = 20)
-irisCluster
+KmeansPainting <- function(label) {
+  k <- kmeans_data[kmeans_data$kmeans_labels == label, ]
+  return(head(sort(k$distance_to_centroid), 10))
+}  
 
-get_paintings_around_centroid(color_hist, kmeans_centers[1, ], 4)
-data = color_hist[, 3:33]
-distances = c()
-for(i in 1:nrow(data)) {
-  distances[i] <- sum((data[i, ] - kmeans_centers[1, ]) ** 2)
-}
-
-head(sort(distances, descreasing=TRUE)), num_paintings 
+kmeans.10 <- kmeans_data %>% group_by(kmeans_labels) %>%
+  arrange(distance_to_centroid) %>%
+  top_n()
 
 
 

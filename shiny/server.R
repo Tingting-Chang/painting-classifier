@@ -68,6 +68,13 @@ shinyServer(function(input, output) {
     
   })
   
+  # Painting Kmeans
+  output$kmeansPlt <- renderText({
+    kmean_painting <- KmeansPainting(input$label)
+    
+    outHtml
+  })
+  
   
 
    cur_painter <- -1
