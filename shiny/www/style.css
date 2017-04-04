@@ -1,0 +1,27 @@
+
+.sample-wrapper {
+	border: 1px solid green;
+}
+
+.sample-sizes {
+	max-width: 200px;
+	max-height: 200px;
+	padding: 10px;
+	margin-left: 15px;
+}
+
+.cell {
+	display: inline-block;
+}
+
+.default-image {
+	max-width: 100%;
+	max-height: 700px;
+}
+
+#painting img {
+	max-height: 400px; 
+	max-width: 100%; 
+	height: auto;
+	width: auto;
+}

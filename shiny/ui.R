@@ -16,25 +16,23 @@ shinyUI(dashboardPage(
                menuItem("Github",icon = icon("github"),
                         badgeLabel = "Like", badgeColor = "green",
                         href = "https://github.com/Tingting-Chang/painting-classifier")
-               
-               
                ),
                hr(),
                conditionalPanel("input.sideBarMenu == 'paintingSam'",
-                                
-                                         selectizeInput(
-                                           inputId = 'type',
-                                           label = '',
-                                           choices = type_col,
-                                           options = list(
-                                             placeholder = 'Select a type of paintings',
-                                             onInitialize = I('function() { this.setValue(""); }')
-                                           ),
-                                           selected=1
-                                         ))
-               ),
+                                selectizeInput(
+                                  inputId = 'type',
+                                  label = '',
+                                  choices = type_col,
+                                  options = list(
+                                    placeholder = 'Select a type of paintings',
+                                    onInitialize = I('function() { this.setValue(""); }')
+                                    ),
+                                  selected=1))),
                
   dashboardBody(
+    tags$head(
+      tags$link(rel = "stylesheet", type = "text/css", href = "style.css")
+    ),
     tabItems(
       tabItem(tabName = "readme",
               "Introduction"),
@@ -45,25 +43,27 @@ shinyUI(dashboardPage(
                                  plotOutput("hwratio")
                         ),
                         tabPanel(h5("Image counts per type"),
-                                 htmlOutput("imgtype"))
+                                 htmlOutput("imgtype")),
+                        tabPanel(h5("Top 20 authors"),
+                                 htmlOutput("topauthors")),
+                        tabPanel(h5("Per nationality"),
+                                 htmlOutput("nations")),
+                        tabPanel(h5("Frequent media"),
+                                 htmlOutput("medias"))
                 ))),
       tabItem(tabName = "paintingSam",
-              fluidRow(
-              )),
+              htmlOutput("paintPlt")
+              ),
+      tabItem(tabName = "kmeans",
+              "K-means")),
       tabItem(tabName = "game",
               h2("Who painted this?"),
               p("If you know a thing or two about paintings, it's time to put your skills to the test,
                 by comparing yourself with the machine learning model we developed."),
               htmlOutput("points"),
-              tags$head(tags$style(
-                type="text/css",
-                "#painting img {max-height: 400px; max-width: 100%; height: auto, width: auto}"
-              )),
               fixedRow(column(8, imageOutput("painting")),
                        column(4,
-                              p("radio buttons")))),
-      tabItem(tabName = "kmeans",
-              "K-means"))
+                              p("radio buttons"))))
   )
   
   
