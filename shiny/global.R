@@ -57,16 +57,16 @@ SamplePainting <- function(article_type) {
 
 # data for kmeans
 kmeans_data <- read.csv('../data/color_hist_kmeans_distance.csv')
-label_col <- seq(0:6)
+label_col <- seq(0,6)
 
-KmeansPainting <- function(label) {
-  k <- kmeans_data[kmeans_data$kmeans_labels == label, ]
-  return(head(sort(k$distance_to_centroid), 10))
-}  
+KmeansPainting <- function(label, num_paintings = 10) {
+  return(kmeans_data %>% filter(kmeans_labels == label) %>%
+           arrange(distance_to_centroid) %>% head(num_paintings))
+}
 
-kmeans.10 <- kmeans_data %>% group_by(kmeans_labels) %>%
-  arrange(distance_to_centroid) %>%
-  top_n()
+# kmeans.10 <- kmeans_data %>% group_by(kmeans_labels) %>%
+#   arrange(distance_to_centroid) %>%
+#   top_n(10)
 
 
 

@@ -26,18 +26,19 @@ shinyUI(dashboardPage(
                                   options = list(
                                     placeholder = 'Select a type of paintings',
                                     onInitialize = I('function() { this.setValue(""); }')
-                                    ),
-                                  selected=1)),
-               onditionalPanel("input.sideBarMenu == 'kmeans'",
+                                    ))),
+               conditionalPanel("input.sideBarMenu == 'kmeans'",
                                selectizeInput(
                                  inputId = 'label',
-                                 label = '',
+                                 label = 'Cluster',
                                  choices = label_col,
                                  options = list(
                                    placeholder = 'Select a label of clusters',
-                                   onInitialize = I('function() { this.setValue(""); }')
+                                   onInitialize = I('function() { this.setValue(0); }')
                                  ),
-                                 selected=1))),
+                                 selected=0),
+                               sliderInput("kmeans_num_paintings", label = "Number of paintings",
+                                           min = 5, max = 50, value = 10))),
                
   dashboardBody(
     tags$head(
@@ -66,7 +67,7 @@ shinyUI(dashboardPage(
               ),
       tabItem(tabName = "kmeans",
               "K-means",
-              htmlOutput("kmeansPlt"))),
+              htmlOutput("kmeansPlt")),
       tabItem(tabName = "game",
               h2("Who painted this?"),
               p("If you know a thing or two about paintings, it's time to put your skills to the test,
@@ -78,4 +79,4 @@ shinyUI(dashboardPage(
   )
   
   
-))
+)))

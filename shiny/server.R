@@ -70,9 +70,16 @@ shinyServer(function(input, output) {
   
   # Painting Kmeans
   output$kmeansPlt <- renderText({
-    kmean_painting <- KmeansPainting(input$label)
+    kmean_painting <- KmeansPainting(input$label, input$kmeans_num_paintings)
     
-    outHtml
+    outKHtml <- "<div class=\"sample-wrapper\">"
+    # outKHtml <- paste0(outKHtml, "<p>", nrow(kmean_painting), "</p>")
+    for(i in 1:nrow(kmean_painting)) {
+      outKHtml <- paste0(outKHtml, "<div class=\"cell\"><image src=\"",
+                        image_path_html(kmean_painting$author_id[i], kmean_painting$painting_id[i]),
+                        "\" class = \"sample-sizes\"></div>")
+    }
+    paste0(outKHtml, "</div>")
   })
   
   
