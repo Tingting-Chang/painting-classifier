@@ -9,10 +9,11 @@ shinyUI(dashboardPage(
                menuItem("ReadMe", tabName = "readme", icon = icon("mortar-board"), selected=TRUE
                ),                
                menuItem("Data Exploration", tabName = "xplore", icon = icon("bar-chart-o"),
-                        menuSubItem("Raw Data", tabName = 'rawDataPlt'),
-                        menuSubItem("Painting Sample", tabName = 'paintingSam')),
-               menuItem("Who painted this?", tabName = "game", icon = icon("gamepad")),
+                        menuSubItem("EDA", tabName = 'rawDataPlt'),
+                        menuSubItem("Painting Sample", tabName = 'paintingSam'),
+                        menuSubItem("Painting Location", tabName = 'paintingLoc')),
                menuItem("Exploring similarities", tabName = "kmeans", icon = icon("picture-o")),
+               menuItem("Who painted this?", tabName = "game", icon = icon("gamepad")),
                menuItem("Github",icon = icon("github"),
                         badgeLabel = "Like", badgeColor = "green",
                         href = "https://github.com/Tingting-Chang/painting-classifier")
@@ -62,6 +63,8 @@ shinyUI(dashboardPage(
                         tabPanel(h5("Frequent media"),
                                  htmlOutput("medias"))
                 ))),
+      tabItem(tabName = "paintingLoc",
+              htmlOutput("paintingLoc")),
       tabItem(tabName = "paintingSam",
               htmlOutput("paintPlt")
               ),

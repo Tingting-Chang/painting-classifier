@@ -50,6 +50,16 @@ shinyServer(function(input, output) {
                                 titleTextStyle="{color:'green',fontName:'Courier',fontSize:16}"))
   })
   
+  # Painting Locations
+  output$paintingLoc <- renderGvis({
+    gvisMap(geolocation,locationvar="latlon",tipvar="location_str",
+                     options=list(displayMode = "Markers", 
+                                  mapType='normal', 
+                                  colorAxis = "{colors:['red', 'grey']}",
+                                  useMapTypeControl=TRUE, enableScrollWheel='TRUE'))
+    
+  })
+  
   # Painting Samples
   output$paintPlt <- renderText({
     if(input$type == '') {

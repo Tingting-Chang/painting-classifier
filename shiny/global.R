@@ -64,9 +64,10 @@ KmeansPainting <- function(label, num_paintings = 10) {
            arrange(distance_to_centroid) %>% head(num_paintings))
 }
 
-# kmeans.10 <- kmeans_data %>% group_by(kmeans_labels) %>%
-#   arrange(distance_to_centroid) %>%
-#   top_n(10)
+
+# geolocation map
+geolocation = read.csv('../data/geolocation_map.csv')
+geolocation <- geolocation %>% mutate(latlon = paste(latitude, longitude, sep=":"))
 
 
 
