@@ -1,0 +1,1990 @@
+location_str,latitude,longitude
+"Chicago, United States",41.8755546,-87.6244211
+"Copenhagen, Denmark",55.6867243,12.5700724
+"Oxford, United Kingdom",51.7520131,-1.2578498
+"Washington, United States",38.8949549,-77.0366455
+"Miami, Florida, United States",25.7742658,-80.1936588
+"Richmond, United Kingdom",51.4613531,-0.3032766
+"Moscow, Russian Federation",55.7506828,37.6174976
+"St Petersburg, Russian Federation",59.9387318,30.3162286
+"Kiev, Ukraine",50.4501071,30.5240501
+"Kharkov, Ukraine",49.9902794,36.2303893
+"Tula, Russian Federation",54.1930321,37.61754
+"Almaty, Kazakhstan",43.21984255,76.9183518874968
+"Donetsk, Ukraine",48.0158753,37.8013407
+"Tver, Russian Federation",56.858675,35.9208284
+"Chelyabinsk, Russian Federation",55.1598408,61.4025547
+"Ryazan, Russian Federation",54.66989795,39.6882768282671
+"Kirov, Russian Federation",58.6035257,49.6639029
+"Florence, Italy",43.7698712,11.2555757
+"Paris, France",48.8566101,2.3514992
+"Milan, Italy",45.4667971,9.1904984
+"Williamstown, MA, United States",42.712207,-73.2035985
+"Boston, United States",42.3604823,-71.0595677
+"Edinburgh, United Kingdom",55.9495628,-3.1914971
+"Berlin, Germany",52.5170365,13.3888599
+"Ottawa, Canada",45.4210328,-75.6900218
+"Avignon, France",43.9493143,4.8060329
+"London, United Kingdom",51.5073219,-0.1276473
+"Città del Vaticano, Vatican City State)",41.9008795,12.4509301
+"Ajaccio, France",41.9263991,8.7376029
+"Rome, Italy",41.85233365,12.6308541512038
+"New York, United States",40.7305991,-73.9865811
+"Madrid, Spain",40.4167047,-3.7035824
+"Bergamo, Italy",45.6945115,9.669839
+"Cracovie, Poland",50.0619474,19.9368564
+"Warsaw, Poland",52.2319237,21.0067265
+"Poznan, Poland",52.4082663,16.9335199
+"Pittsburgh, Pennsylvania, United States",40.4416941,-79.990086
+"Saitama, Japan",36.0183923,139.281463787943
+"Baltimore, Maryland, United States",39.2908816,-76.6107589
+"Tokyo, Japan",34.2255804,139.294774527387
+"Toledo, OH, United States",41.6786754,-83.5127282
+"St. Gallen, Switzerland",47.4250593,9.3765878
+"Zurich, Switzerland",47.3685586,8.5404434
+"Philadelphia, PA, United States",39.9523993,-75.1635898
+"The Hague, Netherlands",52.0799838,4.3113461
+"Oberlin, United States",41.2939386,-82.2173785
+"Houston, TX, United States",29.7589382,-95.3676973
+"Goteborg, Sweden",57.7072326,11.9670171
+"Cleveland, Ohio, United States",41.5051613,-81.6934445
+"Fort Worth, TX, United States",32.753177,-97.3327458
+"San Francisco, California, United States",37.7792808,-122.4192362
+"Milwaukee, WS, United States",,
+"Columbus, Ohio, United States",39.9622601,-83.0007064
+"Hamilton, Ontario, Canada",43.255205,-79.8682019
+"Hamburg, Germany",53.550341,10.000654
+"Dublin, Ireland",53.3497645,-6.2602731
+"Santa Barbara, California, United States",34.4221319,-119.7026672
+"Wellesley, Massachusetts, United States",42.2964859,-71.292557
+"St. Petersburg, Russian Federation",59.9387318,30.3162286
+"Santa Clara, California, United States",37.3541132,-121.9551743
+"Naples, Italy",40.8359336,14.2487826
+"Arnhem, Netherlands",52.0056642,5.87623450776413
+"Chantilly, France",49.1939579,2.4632567
+"Wichita, Kansas, United States",37.6922361,-97.3375447
+"Strasbourg, France",48.584614,7.7507127
+"Winston-Salem, North Carolina, United States",36.0998131,-80.2440517
+"Ballarat, Victoria, Australia",-37.5622631,143.8607215
+"Leipzig, Germany",51.3391827,12.3810549
+"Youngstown, Ohio, United States",41.0997803,-80.6495193
+"Utica, New York, United States",43.1009031,-75.232664
+"St. Louis, MO, United States",38.6337716,-90.2416547
+"Adelaide, Australia",-34.9274283,138.599899
+"Royal Leamington Spa, United Kingdom",52.2921548,-1.5356985
+"Penzance, United Kingdom",50.1213173,-5.5329265
+"Shelburne, Vermont, United States",44.380803,-73.2276539
+"Maryland, United States",39.5162234,-76.9382068
+"San Diego, California, United States",32.7174209,-117.1627713
+"Saratov Region, Russian Federation",,
+"Shadrinsk, Russian Federation",56.0873643,63.6294827
+"Rotherham, Greater Sheffield, United Kingdom",,
+"Geneva, Switzerland",46.2017559,6.1466014
+"Andover, United States",42.65717,-71.1408775
+"Sheffield, United Kingdom",53.3806626,-1.4702277
+United Kingdom,54.7023545,-3.2765752
+"Hampton Court, United Kingdom",54.6885213,-5.9043578
+"Amsterdam, Netherlands",52.3745403,4.89797550561798
+"Colchester, United Kingdom",51.8931303,0.9046293
+Italy,42.6384261,12.674297
+"Bilbao, Spain",43.2629489,-2.9349458
+"Smolensk, Russian Federation",54.77897005,32.0471812191562
+"Kostroma, Russian Federation",57.7679158,40.9269141
+"Cincinnati, Ohio, United States",39.1014537,-84.5124601
+"Leeds, United Kingdom",53.7974185,-1.543794
+"Seville, Spain",37.3886303,-5.995317
+"Southampton, United Kingdom",50.9025349,-1.4041889
+"Bath, United Kingdom",51.3813864,-2.3596962
+"Pontypool, United Kingdom",51.7026571,-3.032751
+Isle of Man,54.2358167,-4.51459864569825
+"Stafford, United Kingdom",52.8063157,-2.1163817
+"Washington, DC, United States",38.8949549,-77.0366455
+"Munich, Germany",48.1371079,11.5753822
+"Pasadena, CA, United States",34.1476452,-118.1444778
+"Vienna, Austria",48.2083537,16.3725042
+"Krakow, Poland",50.0619474,19.9368564
+"Brunswick, Germany",52.2639962,10.5252669
+"Venice, Italy",45.4371908,12.3345899
+"Dundee, United Kingdom",56.4593653,-2.9735212
+"Hove, United Kingdom",50.8286917,-0.1745743
+"Tenero-Contra, Switzerland",46.1841146,8.8453084
+"San Francisco, United States",37.7792808,-122.4192362
+"New York City, United States",40.7305991,-73.9865811
+"Rennes, France",48.1113387,-1.6800197
+"Aberdeen, United Kingdom",57.1452452,-2.0913744
+"Minneapolis, Minnesota, United States",44.9772995,-93.2654691
+"New York City, New York, United States",40.7305991,-73.9865811
+"Newport News, Virginia, United States",37.016827,-76.4505195
+"Williamsburg, Virginia, United States",37.2707028,-76.7074501
+"Hanover, Germany",52.3744779,9.7385532
+"Ascona, Switzerland",46.1554222,8.7707865
+"Bournemouth, United Kingdom",50.74467035,-1.85798080318094
+"Cambridge, United Kingdom",52.2033051,0.124862
+"Birkenhead,Greater Liverpool, United Kingdom",51.5488859,-0.110098421791647
+"Dnepropetrovsk, Ukraine",48.4680221,35.0417711
+"Basel, Switzerland",47.5581077,7.5878261
+"New York, New York, United States",40.7305991,-73.9865811
+"Detroit, United States",42.3486635,-83.0567374
+"Glasgow, United Kingdom",55.856656,-4.2435816
+"Stoke-on-Trent, United Kingdom",53.0162014,-2.1812606
+"New Haven, Connecticut, United States",41.3082138,-72.9250517
+"Rotterdam, Netherlands",51.92779805,4.48862326925829
+"Ghent, Belgium",51.0538286,3.7250121
+"Dresden, Germany",51.0493286,13.7381437
+"Manchester, United Kingdom",53.4791301,-2.2441008
+"Essen, Germany",51.457087,7.011429
+"Grenoble, France",45.182151,5.7274722
+"Sunderland, Greater Newcastle, United Kingdom",,
+"Gateshead, Greater Newcastle, United Kingdom",,
+"Ramsgate, United Kingdom",51.3344829,1.4227153
+"Lancaster, United Kingdom",54.0484068,-2.7990344
+"Preston, United Kingdom",53.7589938,-2.7051617
+"Oldham, United Kingdom",53.5415797,-2.114783
+"Derby, United Kingdom",52.9212617,-1.476149
+"Carlisle, United Kingdom",54.8948478,-2.936231
+"Hull, United Kingdom",53.7435722,-0.3394757
+"Wolverhampton, United Kingdom",52.5847651,-2.1275669
+"Merthyr Tydfil, United Kingdom",51.7490624,-3.3786182
+"Bradford, England",53.7941567,-1.7494777
+"Belfast, United Kingdom",54.5969869,-5.9300991
+"Northampton, United Kingdom",52.2385239,-0.9024929
+"Oslo, Norway",59.9132694,10.7391112
+"Bergen, Norway",60.3943532,5.325551
+"Los Angeles, California, United States",34.054935,-118.2444759
+"Montauban, France",44.0175835,1.3549991
+"Melbourne, Australia",-37.8142175,144.9631608
+"Toulouse, France",43.6044622,1.4442469
+"Paisley, Renfrewshire, United Kingdom",55.8481954,-4.4249328
+"Norfolk, Virginia, United States",36.8889933,-76.2481623
+"Dundee, Scotland",56.4593653,-2.9735212
+"Cambridge, Greater Boston, Massachusetts, United States",,
+"Lisbon, Portugal",38.7077926,-9.136506
+"Cherbourg, France",49.51271975,-1.57550423914609
+"Birmingham, United Kingdom",52.4776875,-1.8948515
+"Montpellier, France",43.6112422,3.8767337
+"Tours, France",47.3900474,0.6889268
+"Los Angeles, United States",34.054935,-118.2444759
+"Mulheim an der Ruhr, Germany",51.4272925,6.8829192
+"Bonn, Germany",50.735851,7.10066
+"Wien-Innere Stadt, Austria",48.1983738,16.366388
+"Memphis, Tennessee, United States",35.1490215,-90.0516284
+"Stockholm, Sweden",59.3251172,18.0710935
+"Balsta, Sweden",59.5682821,17.5294675
+"Bristol, United Kingdom",51.453493,-2.5973936
+"DeLand, Florida, United States",29.0195145,-81.2941416253978
+"Knutsford, United Kingdom",53.3078742,-2.3720506
+"Auckland, New Zealand, New Zealand",-36.8534664,174.7655514
+"Barnard Castle, United Kingdom",54.5443517,-1.9238694
+"Bologna, Italy",44.4936714,11.3430347
+"Swansea, United Kingdom",51.6211442,-3.946775
+"Wimborne Minster, United Kingdom",50.7995189,-1.9873389
+"Indianapolis, Indiana, United States",39.7683331,-86.1583501
+"Rouen, France",49.4404591,1.0939658
+"Modena, Italy",44.6458885,10.9255707
+"Bury St Edmunds, United Kingdom",52.2460367,0.7125173
+"Kislovodsk, Russian Federation",43.9143583,42.7237033
+"Poltava, Ukraine",49.5897423,34.5507948
+"Kaluga, Russian Federation",54.5101087,36.2598115
+"Baku, Azerbaijan",40.3754289,49.8328549
+"Lviv, Ukraine",49.841952,24.0315921
+"Montreal. Quebec, Canada",45.4972159,-73.6103641
+"Bari, Italy",41.1257843,16.8620293
+"Potsdam, Germany",52.4009309,13.0591397
+"Ludwigsburg, Greater Stuttgart, Germany",,
+"Carcassonne, France",43.2130358,2.3491069
+"Nuremberg, Germany",49.453872,11.077298
+"Perth, United Kingdom",56.3956402,-3.4345333
+"Fife, United Kingdom",56.3333331,-3.0
+"Kilmarnock, United Kingdom",55.6101306,-4.4985358
+"Maybole, United Kingdom",55.3535872,-4.6843309
+"York, United Kingdom",53.9590555,-1.081536
+"Liverpool, United Kingdom",53.4054719,-2.9805391
+"Kirklees, West Yorkshire, United Kingdom",53.6988806,-1.64162642290372
+"Southport, United Kingdom",53.6475988,-3.004175
+"Canberra, Australia",-35.2975905,149.1012676
+"Cologne, Germany",50.938361,6.959974
+"Dordrecht, Netherlands",51.7689546,4.68678905674013
+"Doncaster, United Kingdom",53.5227681,-1.1335311
+"Haverfordwest, United Kingdom",51.8023297,-4.9651073
+"Cardiff, United Kingdom",51.4816546,-3.1791933
+"Salzburg, Austria",47.7981346,13.0464806
+"Chastleton, United Kingdom",51.9599665,-1.6409203
+"Peterborough, United Kingdom",52.5738875,-0.24167
+"Lewes, United Kingdom",50.8741265,0.0121129
+"Rochdale, Greater Manchester, United Kingdom",53.6153659,-2.155756
+"Lucerne, Switzerland",,
+"Morlaix, France",48.5824932,-3.8331971
+"Aberystwyth, United Kingdom",52.4143113,-4.0816845
+"Bridgwater, United Kingdom",51.1283378,-3.0037045
+"Barnsley, United Kingdom",53.5527719,-1.4827754
+"Omsk, Russian Federation",54.9913752,73.3714883
+"Kassel, Germany",51.3090209,9.4762981
+"Odessa, Ukraine",46.4846583,30.732564
+"Heidelberg, Germany",49.4093582,8.694724
+"Omaha, Nebraska, United States",41.2587317,-95.9378731
+"Le Havre, France",49.4938975,0.1079732
+"Honfleur, France",49.4197222,0.2338889
+"Seattle, Washington, United States",47.6038321,-122.3300623
+"Sarasota, Florida, United States",27.3364347,-82.5306526
+"Philadelphia, Pennsylvania, United States",39.9523993,-75.1635898
+"Nizhni Novgorod, Russian Federation",56.3285709,44.003504
+"Laval, France",48.0710377,-0.7723498
+"Berdyansk, Ukraine",46.9782791,36.7808059200313
+"Oberschleißheim, Germany",48.2549383,11.5546058
+"Dusseldorf, Germany",51.2254018,6.7763137
+"Mannheim, Germany",49.489591,8.467236
+"Ulan-Ude, Russian Federation",51.8357478,107.583657
+"Petrozavodsk, Russian Federation",61.7900373,34.3900084
+"Syktyvkar, Russian Federation",61.7411382,50.7258324313668
+"Tomsk, Russian Federation",56.4887123,84.9523238
+"Arkhangelsk, Russian Federation",64.5430227,40.5371212
+"Cherepovets, Russian Federation",59.1286965,37.9163892
+"Neuchatel, Switzerland",46.9895828,6.9292641
+"Alencon, France",48.4312059,0.0911374
+"Dieppe, France",49.9246182,1.0791444
+"Hastings, United Kingdom",50.8553888,0.5824703
+"Beverley, United Kingdom",53.8425488,-0.4315676
+"Newcastle-upon-Tyne, United Kingdom",54.9770924,-1.6142058
+"Maidstone, United Kingdom",51.2748258,0.5231646
+"Rye, United Kingdom",50.9511871,0.7327667
+"Worcester, United States",42.2625932,-71.8022933
+"Daytona Beach, Florida, United States",29.2108147,-81.022833
+"Amherst, Massachusetts, United States",42.3803676,-72.5231429
+"Boulogne-sur-Mer, France",50.7259985,1.6118771
+"Lille, France",50.6305089,3.0706414
+"Saint Lo, France",49.1157004,-1.0906636
+"Bayeux, France",49.2764624,-0.7024737
+"Madison, United States",43.074761,-89.3837612
+"Caen, France",49.1828008,-0.3690814
+"Lausanne, Switzerland",46.5218269,6.6327025
+"Dallas, Texas, United States",32.7762719,-96.7968558
+"Budapest, Hungary",47.4983815,19.0404707
+"Soissons, France",49.3816667,3.3236111
+"San Antonio, Texas, United States",29.4246002,-98.4951404
+"Northampton, Massachusetts, United States",42.3190227,-72.6306343
+"Bolton, United Kingdom",53.577694,-2.4288873
+"Egham, United Kingdom",51.4312585,-0.5473084
+"Darlington, United Kingdom",54.5352721,-1.55332700062043
+"Haarlem, Netherlands",52.38370575,4.64355969655963
+"Port Sunlight, United Kingdom",53.3553842,-2.9971675
+"Torbay, United Kingdom",50.446247,-3.53949971419379
+"Bamburgh, United Kingdom",55.6074722,-1.7141345
+"Greenwich, United Kingdom",52.0367323,1.168934
+"South Shields, United Kingdom",54.9987414,-1.4321847
+"Grimsby, United Kingdom",53.5677371,-0.0736288
+"Dinton, United Kingdom",51.7905964,-0.8929425
+"Bern, Switzerland",46.9482713,7.4514512
+"Winterthur, Switzerland",47.4991723,8.7291498
+"Aarau, Switzerland",47.3927146,8.0444448
+"Lausanne, Tuvalu",,
+"Lode, Greater Cambridge, United Kingdom",,
+"Montrose, United Kingdom",56.7124645,-2.4676098
+"Milngavie, Greater Glasgow, United Kingdom",,
+"Winchester, United Kingdom",51.0612766,-1.3131691
+"Niterói, Brazil",-22.883237,-43.1154551
+"São Paulo, Brazil",-23.5506506,-46.6333823
+"Rio de Janeiro, Brazil",-22.9110136,-43.2093726
+"Besancon, France",47.237953,6.0243246
+"Nantes, France",47.2186371,-1.5541361
+"Utrecht, Netherlands",52.08095165,5.12768031549829
+"Aarhus, Denmark",56.1496278,10.2134046
+"Ribe, Denmark",55.3284036,8.7647838
+"Malmö, Sweden",55.6052931,13.0001566
+"Compiègne, France",49.4179497,2.8263171
+"Quarndon, United Kingdom",52.9656832,-1.5019748
+"Farnham, United Kingdom",51.2151749,-0.7984853
+"Conway, New Hampshire, United States",43.979475,-71.1206819
+"Brodie, United Kingdom",57.5928032,-3.7108262
+"Cheltenham, United Kingdom",51.8995685,-2.0711558
+"Wallington, Northumbria, United Kingdom",,
+"Dagenham, United Kingdom",51.5413271,0.1481142
+"Narbonne, France",43.182806,3.0043128
+"State College, Pennsylvania, United States",40.794026,-77.8606974
+"Montgomery, Alabama, United States",32.3669656,-86.3006484
+"Enniskillen, United Kingdom",54.3448538,-7.6389364
+"Neuss, Greater Dusseldorf, Germany",,
+"Atami, Japan",35.08992,139.059891
+"Kurashiki, Japan",34.584474,133.774635
+"Atlanta, Georgia, United States",33.7490987,-84.3901848
+"Nottingham, United Kingdom",52.9534161,-1.1492772
+"Enniscorthy, Ireland",52.5011493,-6.5674943
+"Sevenoaks, United Kingdom",51.2719654,0.1914386
+"Charlecote, United Kingdom",52.2082377,-1.6143891
+"Lydiard Tregoze, United Kingdom",51.5411081,-1.85882369435226
+"Sydney, Australia",-33.8548156,151.2164539
+"Antwerp, Belgium",51.2211097,4.3997081
+"Helsinki, Finland",60.1674086,24.9425683
+"Joanneum, Austria",47.068454,15.4376258293788
+"Brussels, Belgium",50.8465565,4.351697
+"Banbury, United Kingdom",52.0601807,-1.3402794
+"Lemgo, Germany",52.0280674,8.9012894
+"Nivå, Greater Copenhagen, Denmark",,
+"Frankfurt, Germany",50.110653,8.682093
+"Lynchburg, Virginia, United States",37.40088,-79.1844922945909
+"Tuscaloosa, United States",33.2668398,-87.4862181
+"Oakland, California, United States",37.8044557,-122.2713562
+"Denver, Colorado, United States",39.7391536,-104.9847033
+"Blackpool, United Kingdom",53.8245483,-3.03731989502197
+"Eastbourne, United Kingdom",50.7733195,0.259146559219269
+"Yaroslavl, Russian Federation",57.6263877,39.8933705
+"Vladimir, Russian Federation",56.1288899,40.4075203
+"Kazan, Russian Federation",55.76041925,49.1902944737668
+"Samara, Russian Federation",53.1986275,50.113988
+"Nizhny Tagil, Russian Federation",57.905149,59.9508466
+"Astrakhan, Russian Federation",46.3498548,48.0315682
+"Serpukhov, Russian Federation",54.9155247,37.4195533
+"Ulyanovsk, Russian Federation",54.3107593,48.3642771
+"Blue Mountain Lake, United States",43.8553412,-74.443493
+"Perth, Australia",-31.952712,115.8604796
+"Brighton, United Kingdom",50.8220399,-0.137406
+"Binghamton, New York, United States",42.096968,-75.9143409
+"Tyntesfield, Greater Bristol, United Kingdom",,
+"Accrington, Greater Blackburn, United Kingdom",,
+"Egham, Greater London, United Kingdom",51.3750889,-0.2199492
+"Conwy, United Kingdom",53.14642505,-3.75913454221729
+"Bury, Greater Manchester, United Kingdom",53.5964097,-2.2904085
+"Leighton Buzzard, United Kingdom",51.9172564,-0.6583481
+"Schwerin, Germany",53.6288297,11.4148038
+"Tallinn, Estonia",59.4372155,24.7453688
+"Raleigh, North Carolina, United States",35.7803977,-78.6390988
+"Sibiu, Romania",45.7973912,24.1519202
+"Amiens, France",49.8941708,2.2956951
+"Karlsruhe, Germany",49.0140679,8.4044366
+"Douai, France",50.3703683,3.0761377
+"Angers, France",47.4739884,-0.5515587
+"Bordeaux, France",44.841225,-0.5800363
+"Versailles, Greater Paris, France",,
+"Enschede, Netherlands",52.22336325,6.87059566409799
+"München, Germany",48.1371079,11.5753822
+"Philadelphia, United States",39.9523993,-75.1635898
+"Padiham, United Kingdom",53.7980615,-2.3107383
+"Toronto, Canada",43.6529206,-79.3849007
+"Turku, Finland",60.4517531,22.2670522
+"Hartford, Connecticut, United States",41.7645491,-72.6908672
+"Prague, Czech Republic",50.0874654,14.4212503
+"Tampere, Finland",61.4980214,23.7603118
+"Kansas City, Missouri, United States",39.0844687,-94.5630297
+"Nimes, France",43.8374249,4.3600687
+"Stuttgart, Germany",48.7784485,9.1800132
+"Johannesburg, South Africa",-26.2049999,28.049722
+"Jerusalem, Israel",31.78911765,35.2229730135452
+"Otterlo, Netherlands",52.07695895,5.79304570048683
+"Louisville, Kentucky, United States",38.2542376,-85.7594069
+"Lyon, France",45.7578137,4.8320114
+"Belgrade, Serbia",44.8178787,20.4568089
+"Portland, Oregon, United States",45.5202471,-122.6741948
+"Baden, Switzerland",47.4736827,8.3086822
+"Ipswich, England",52.0579495,1.1526345
+"Wuppertal, Germany",51.264018,7.1780374
+"Bremen, Germany",53.0758196,8.8071646
+"Springfield, Massachusetts, United States",42.1014831,-72.5898109
+"Buffalo, United States",42.8867166,-78.8783921
+"Honolulu, Hawaii, United States",21.304547,-157.8556763
+"Simferopol, Russian Federation",45.03946475,33.9700025138578
+"Feodosia, Russian Federation",,
+"Washington D.C., United States",38.8949549,-77.0366455
+"Champaign, Illinois, United States",40.1164205,-88.2433828
+"Vologda, Russian Federation",59.2188765,39.8932762
+"Reims, France",49.2577886,4.031926
+"Sevastopol, Russian Federation",44.6054434,33.5220842
+"Armidale, New South Wales, Australia",-30.41250485,151.940139839798
+"Hiroshima, Japan",34.3916058,132.4518156
+"Québec City, Québec, Canada",46.8257374,-71.2349113
+"Irvine, California, United States",33.6856969,-117.8259818
+"Palm Desert, California, United States",33.7288179,-116.382571
+"Stalybridge, Greater Manchester, United Kingdom",53.4840214,-2.0562535
+"Leicester, United Kingdom",52.6367811,-1.1312288
+"Coventry, United Kingdom",52.4081812,-1.5104769
+"Stockport, United Kingdom",53.407901,-2.1602429
+"St Helier, Jersey",49.1856637,-2.1102276
+"Reading, United Kingdom",51.4580216,-0.9673726
+"Disley, United Kingdom",53.35826,-2.0359286
+"Salford, United Kingdom",53.4877463,-2.289192
+"Ivanovo, Russian Federation",56.9984452,40.9737394
+"Minsk, Belarus",53.902334,27.5618791
+"Marburg, Germany",50.8117327,8.7757742
+"Halberstadt, Germany",51.8926561,11.0554519
+"Langenselbold, Germany",50.1780857,9.0433074
+"Provincetown, MA, United States",42.058436,-70.1786374
+"Manchester, New Hampshire, United States",42.9956397,-71.454789
+"Charleston, South Carolina, United States",32.7876012,-79.9402727
+"Fredericton, New Brunswick, Canada",45.9646491,-66.6437528
+"Kleinburg, Ontatio, Canada",,
+"Lodz, Poland",51.7687323,19.4569911
+"Farmington, Connecticut, United States",41.7198216,-72.8320434
+"Dijon, France",47.3215806,5.0414701
+"Tel Aviv, Israel",32.0804808,34.7805274
+"Shizuoka, Japan",34.8566552,138.4855544
+"West Palm Beach, Florida, United States",26.7153425,-80.0533745
+"Portland, Maine, United States",43.6610277,-70.2548595
+"Niigata, Japan",37.645058,138.7674345
+"Richmond, United States",37.5385087,-77.4342799
+"Phoenix, Arizona, United States",33.4485866,-112.0773455
+"New Orleans, Louisiana, United States",29.9499323,-90.0701155
+"Princeton, New Jersey, United States",40.3492744,-74.6592957
+"Freiburg, Germany",47.9960901,7.8494005
+"Krefeld, Germany",51.3331205,6.5623343
+"New Britain, Connecticut, United States",41.68174355,-72.7881464300835
+"Flint, Michigan, United States",43.0171773,-83.7236023
+"Saint Petersburg, Greater Tampa, Florida, United States",,
+"Baltimore, United States",39.2908816,-76.6107589
+"Ein Harod, Guernsey",,
+"Bendorf, Germany",50.4238296,7.5732901
+"Dunedin, New Zealand, New Zealand",,
+"Rochester, New York, United States",43.157285,-77.6152139
+"Des Moines, Iowa, United States",41.5910641,-93.6037148
+"Gainseville, Florida, United States",28.9713742,-82.4887545
+"Newark, New Jersey, United States",40.735657,-74.1723666
+"South Bend, Indiana, United States",41.6833813,-86.2500065
+"Pontoise, Greater Paris, France",,
+"Lauder, United Kingdom",55.7192073,-2.747782
+"Dyrham, United Kingdom",51.4819441,-2.3799691
+"St Etienne, France",45.4401467,4.3873058
+"San Marino, California, United States",34.1215947,-118.1057393
+"Dayton, Ohio, United States",39.7589478,-84.1916068
+"Yamagata, Japan",38.4746705,140.083237
+"Vernon, France",49.0917814,1.4886571
+"Sakura, Greater Chiba, Japan",,
+"Colmar, France",48.0777517,7.3579641
+"Peebles, United Kingdom",55.6517553,-3.1885455
+"Berwick-upon-Tweed, United Kingdom",55.7743076,-2.0106646
+"Quimper, France",47.9960325,-4.1024781
+"Rueil-Malmaison, Greater Paris, France",,
+"Montargis, France",47.9990047,2.7364119
+"Pittsfield, Massachusetts, United States",42.4500967,-73.2453784
+"Craigievar, United Kingdom",51.90458225,1.18990969188295
+"Cholet, France",47.0617293,-0.8801348
+"Stirling, United Kingdom",56.1181242,-3.9360011
+"Bayonne, France",43.4933379,-1.4750989
+"Annapolis, Maryland, United States",38.9786401,-76.4927859
+"Wilmington, DE, United States",39.745947,-75.5465889
+"Birmingham, Alabama, United States",33.5206824,-86.8024325
+"Marseille, France",43.2961743,5.3699525
+"Orihuela, Spain",38.0906911,-0.9466129
+"Valencia, Spain",39.4699014,-0.3759512
+"Orléans, France",47.9027336,1.9086066
+"Barcelona, Spain",41.3825596,2.1771353
+"Pau, France",43.2957547,-0.3685667
+"Chartres, France",48.4470039,1.4866387
+"Tournai, Belgium",50.60566,3.3878259
+"Bucharest, Romania",44.4361414,26.1027202
+"New Bedford, Massachusetts, United States",41.6362152,-70.9342049
+"Poole, United Kingdom",50.74018055,-1.95377373524348
+"Burnley, United Kingdom",53.7907262,-2.2439195
+"Valenciennes, France",50.3594889,3.5266657
+"Plymouth, United Kingdom",50.3712659,-4.1425657
+"Ponce, Puerto Rico",18.011564,-66.6139579
+"Troyes, France",48.2971626,4.0746257
+"Saint-Tropez, France",43.2727191,6.6405225
+"Exeter, United Kingdom",50.7256471,-3.526661
+"Teignmouth, United Kingdom",50.5462698,-3.4959272
+"Southend-on-Sea, United Kingdom",51.54063195,0.716114672519414
+"Truro, United Kingdom",50.2627515,-5.0520466
+"Portsmouth, United Kingdom",50.8036831,-1.0756139
+"Cowes, United Kingdom",50.7576505,-1.30356941060816
+"Luxembourg, Luxembourg",49.8158683,6.1296751
+"Bedford, United Kingdom",52.1363806,-0.467504
+"Bruges, Belgium",51.2082905,3.2261497
+"Springfield, MA, United States",42.1014831,-72.5898109
+"Ithica, New York, United States",,
+"Solothurn, Switzerland",47.2081355,7.5384045
+"Assisi, Italy",43.0711952,12.6146669
+"Vatican City, Vatican City State)",41.9008795,12.4509301
+"Padua, Italy",45.4077172,11.8734455
+"Fort Worth, United States",32.753177,-97.3327458
+"Bentonville, Arkansas, United States",36.3728538,-94.2088171
+"Gelsenkirchen, Greater Essen, Germany",,
+"Wakefield, United Kingdom",53.6825669,-1.5000465
+"Arrington, United Kingdom",52.1349573,-0.0629219
+"Montreal, Quebec, Canada",45.4972159,-73.6103641
+"Laguna Beach, California, United States",33.5420888,-117.7834146
+"Ottawa, Ontario, Canada",45.4210328,-75.6900218
+"Scottsdale, Arizona, United States",33.5091215,-111.8992364
+"Khanty-Mansiisk, Russian Federation",61.0034602,69.0191573
+"Stavropol, Russian Federation",45.0433245,41.9690934
+"Veliky Novgorod, Russian Federation",58.5209862,31.2757862
+"Iowa City, Iowa, United States",41.6612561,-91.5299105
+"Hamilton, United Kingdom",55.7759095,-4.0334419
+"Royal Tunbridge Wells, United Kingdom",51.1371483,0.2673446
+"Blackburn, United Kingdom",53.7497193,-2.4797542
+"Osnabrück, Germany",52.266837,8.049741
+"Rendsburg, Germany",54.3046701,9.6645115
+"Calderdale, United Kingdom",53.7198506,-1.96234146284041
+"Cupar, United Kingdom",56.3193913,-3.0116598
+"Saint Andrews, United Kingdom",56.3403902,-2.7955843
+"Cortona, Italy",43.2752976,11.9850623
+"Altenburg, Germany",50.9852411,12.4340988
+"Rolandseck, Germany",50.6314951,7.2068912
+"Petworth, United Kingdom",50.9895265,-0.594729272524101
+"Ponce, Puerto Rico, United States",18.011564,-66.6139579
+"Parma, Italy",44.8013678,10.3280833
+"Genoa, Italy",44.40726,8.9338624
+"Chatsworth, United Kingdom",51.5678011,0.579638
+"Chenonceau, France",49.4020415,2.81639075311332
+"South Harting, United Kingdom",50.969434,-0.8819101
+"London, England",51.5073219,-0.1276473
+"Dudley, United Kingdom",52.5114727,-2.0820102
+"Newstead Village, United Kingdom",55.5998126,-2.6961649
+"Alcester, United Kingdom",52.2176183,-1.8684417
+"Boston, United Kingdom",52.9770408,-0.0239835
+"Greenock, Inverclyde Council, United Kingdom",,
+"Grasmere, United Kingdom",54.4593879,-3.0243656
+"Town Centre, United Kingdom",51.7641189,-0.226135
+"Senlis, France",49.2065404,2.5846582
+"Albi, France",43.9277552,2.147899
+"Saint-Germain-en-Laye, Greater Paris, France",,
+"Christchurch, United Kingdom",50.7344198,-1.7651199
+"Bideford, United Kingdom",51.0181448,-4.2064222
+"Chichester, United Kingdom",50.84467705,-0.783114331619324
+"Newport, United Kingdom",51.5882332,-2.9974966
+"Islamabad, Pakistan",33.6945756,73.0643744
+"Whitaker, United Kingdom",53.8096504,-2.298131
+"Muncie, United States",40.1936683,-85.3865113
+"Turin, Italy",45.0677551,7.6824892
+"Piacenza, Italy",45.0534751,9.6947461
+France,46.603354,1.8883335
+"Lamport, United Kingdom",52.3636152,-0.8898315
+"Sao Paulo, Brazil",-23.5506506,-46.6333823
+"Wrocław, Poland",51.1089776,17.0326689
+"Sitges, Spain",41.2366707,1.8228136
+"Buenos Aires, Argentina",-34.6075797,-58.4375796
+"Solothurn, Germany",48.7675865,8.34476234422059
+"Boston, Massachusetts, United States",42.3604823,-71.0595677
+"Providence, Rhode Island, United States",41.8239891,-71.4128342
+"Provo, United States",40.2338438,-111.6585336
+"Brunswick, Maine, United States",43.9145244,-69.9653277
+"Nantucket, Massachusetts, United States",41.2657181,-70.0683143
+"Kalamazoo, Michigan, United States",42.291707,-85.5872285
+"Poughkeepsie, New York, United States",41.7065779,-73.92841
+"Nashville, Tennessee, United States",36.1622296,-86.774353
+"Austin, Texas, United States",30.2711286,-97.7436994
+"Cedar Rapids, Iowa, United States",41.9758872,-91.6704052
+"Cagnes-sur-Mer, France",43.6612012,7.1513834
+"Besançon, France",47.237953,6.0243246
+"Algiers, Algeria",28.0000272,2.9999825
+"Hanover, New Hampshire, United States",43.703622,-72.2886659
+"Brescia, Italy",45.5399392,10.2204897
+"Forli, Italy",44.2226017,12.0409384
+"Fontainebleau, France",48.4049375,2.7015872
+"Arras, France",50.291048,2.7772211
+"Jesi, Italy",43.5219801,13.2443764
+"Laurel, Mississippi, United States",31.739966,-89.132658587035
+"barcelona, Spain",41.3825596,2.1771353
+"Akron, United States",41.0830643,-81.5184853
+"Tempe, Greater Phoenix, United States",,
+"Windham, United States",41.8208345,-72.00512
+"Monmouth, Illinois, United States",40.9114272,-90.6473574
+"Wilkes-Barre, Pennsylvania, United States",41.2464824,-75.8817315
+"Riva del Garda, Italy",45.8847708,10.8396942
+"Bergues, Greater Dunkerque, France",,
+"Rockland, Maine, United States",44.104352,-69.1081239
+"Rovereto, Italy",45.886548,11.0452369
+"Maincy, Greater Melun, France",,
+"Mâcon, France",46.3036683,4.8322266
+"Cincinnati, United States",39.1014537,-84.5124601
+"Ligornetto, Switzerland",45.8623054,8.9524612
+"Varese, Italy",45.8183902,8.823913
+"Venezia, Italy",45.4371908,12.3345899
+"Pavia, Italy",45.1860043,9.1546375
+"Lodi, Italy",45.3138959,9.503263
+"Milano, Italy",45.4667971,9.1904984
+"Huntington, West Virginia, United States",38.4192496,-82.4451539
+"Asheville, North Carolina, United States",35.6009498,-82.554016
+"Taplow, United Kingdom",51.5304391,-0.6889288
+"Compton, Surrey, United Kingdom",51.2093549,-0.7741817
+"Greensburg, United States",40.3014581,-79.5389288
+"Canton, Ohio, United States",40.7989522,-81.3784444
+"Salem, Massachusetts, United States",42.5195292,-70.8967225
+"Fitchburg, Massachusetts, United States",42.5834228,-71.8022955
+"Lawrence, Kansas, United States",38.9719384,-95.2359495
+"Sleepy Hollow, NY, United States",41.085652,-73.8584679
+"Dover, United States",39.158168,-75.5243679
+"Lima, United States",40.742551,-84.1052255
+"Windsor, Greater Slough, United Kingdom",,
+United States,39.7837304,-100.4458824
+"Annandale-on-Hudson, United States",42.0128695,-73.90819
+"Gloucester, United States",42.6159286,-70.6619887
+"Columbus, Georgia, United States",32.4609764,-84.9877093
+"Tenterden, United Kingdom",51.0700956,0.6888267
+"Singapore, Singapore",1.2904753,103.8520359
+"Brighton and Hove, United Kingdom",50.84522125,-0.149758405411392
+"Llanelli, United Kingdom",51.6797331,-4.1620222
+"Palm Beach, Florida, United States",26.6279798,-80.4494173
+"Chattanooga, Tennessee, United States",35.0456297,-85.30968
+"St. Louis, Missouri, United States",38.6272733,-90.1978888
+"Reading, Pennsylvania, United States",40.335345,-75.9279494
+"Canajoharie, New York, United States",42.9056288,-74.5718072
+"Bryn Mawr, Pennsylvania, United States",40.0238245,-75.3173405908547
+"Tacoma, Washington, United States",47.2495798,-122.4398745
+"Harrogate, United Kingdom",53.9921491,-1.5391038
+"Scarborough, United Kingdom",54.2847601,-0.4090338
+"Mount Vernon, Illinois, United States",38.3172715,-88.90312
+"Montclair, New Jersey, United States",40.8259332,-74.2090343
+"Saint Helens, Greater Liverpool, United Kingdom",,
+"Colorado Springs, Colorado, United States",38.8339578,-104.8253484
+"Smallhythe, Kent, England",51.0387428,0.699645321379457
+"Eisenach, Germany",50.9833,10.3166999
+"Greensboro, North Carolina, United States",36.0726355,-79.7919753
+"Greenville, United States",34.851354,-82.3984881
+"Compton Verney, United Kingdom",52.174415,-1.5452356
+"Weimar, Germany",50.9802813,11.3290855
+England,52.7954791,-0.540240236617432
+"Furness Vale, United Kingdom",53.3488211,-1.9888398
+"Allentown, United States",40.6022059,-75.4712793
+"Cape Town, South Africa",-33.9289919,18.417396
+"Volgograd, Russian Federation",48.7106765,44.5168022
+"Cheboksary, Russian Federation",56.1307584,47.2446994
+"Tyumen, Russian Federation",57.1535343,65.5422759
+"Rīga, Latvia",56.9716562,24.1665986020787
+"Taganrog, Russian Federation",47.2136896,38.903365
+"Krasnoyarsk, Russian Federation",56.0082657,92.8706219
+"Barnaul, Russian Federation",53.3473762,83.7784101
+"Yakutsk, Russian Federation",62.0272867,129.732089
+"Aix-les-Bains, France",45.6886292,5.9146362
+"Chapel Hill, United States",35.9131996,-79.0558444
+"Orlando, United States",28.5421175,-81.3790461
+"Jacksonville, Florida, United States",30.3321838,-81.6556509
+"Albany, United States",42.6511674,-73.7549679
+"Cooperstown, New York, United States",42.7006303,-74.9243209
+"New Paltz, New York, United States",41.7464972,-74.0844893
+"Halle, Germany",51.4277972,8.2980833
+"Innsbruck, Austria",47.2654296,11.3927685
+"Linz, Austria",48.3059078,14.286198
+"Bagnols-sur-Ceze, France",44.160481,4.6235831
+"Kettering, United Kingdom",52.3994233,-0.7280039
+"Columbia, South Carolina, United States",34.0007493,-81.0343312
+"Saint-Denis, Greater Paris, France",,
+"Fyvie, United Kingdom",57.4299948,-2.3926464
+"Wycombe, United Kingdom",51.66356185,-0.818083580966309
+"Winchester, VA, United States",39.1852184,-78.1652403
+"Norwich, United Kingdom",52.628606,1.29227
+"Gloucester, United Kingdom",51.8653705,-2.2458191
+"Aylesbury, United Kingdom",51.8161412,-0.8130382
+"Fylde, United Kingdom",53.7929389,-2.89465759789738
+"Grand Rapids, Michigan, United States",42.9632405,-85.6678638
+"Montacute, United Kingdom",50.9492317,-2.7160531
+"Llangollen, United Kingdom",52.9694033,-3.171111
+"Burgh, United Kingdom",52.1166641,1.2584744
+"Henley-on-Thames, United Kingdom",51.5375786,-0.9050286
+"California, United States",36.7014631,-118.7559973
+"Newport Beach, California, United States",33.6170092,-117.92944
+"Mottisfont, United Kingdom",51.0471655,-1.54274770461179
+"Walsall, Greater Birmingham, United Kingdom",,
+"Bronxville, NY, United States",40.9381544,-73.8320783
+"Duluth, Minnesotta, United States",,
+"Lubeck, Germany",53.866444,10.684738
+"Torino, Italy",45.0677551,7.6824892
+"Münster, Germany",51.9501317,7.61330165026119
+"Grasse, France",43.6589011,6.9239103
+"Waddesdon, United Kingdom",51.8456176,-0.9267192
+"Bielefeld, Germany",52.010877,8.540868
+"Lillehammer, Norway",61.14069865,10.4323705340025
+"Ostrava, Czech Republic",49.8349139,18.2820084
+"Dumfries, United Kingdom",55.0699746,-3.6095638
+"Campbeltown, United Kingdom",55.4282582,-5.6029616
+"Great Bookham, Dorking, United Kingdom",,
+"Hawick, United Kingdom",55.4247118,-2.7845277
+"México, Distrito Federal, Mexico",19.3811859,-99.2211221
+"Toluca, Mexico",19.292545,-99.6569006
+"Mexico City, Mexico",19.4326009,-99.1333415
+"Veracruz, Mexico",19.333333,-96.6666669
+"Deleware, United States",30.846397,-95.4402689
+Beograd),44.8178787,20.4568089
+"Northfield, Wisconsin, United States",44.4591665,-91.1000629
+"Trondheim, Norway",63.4305658,10.3951929
+"Chemnitz, Germany",50.8322608,12.9252977
+"Siena, Italy",43.3185536,11.3316533
+"Vatican, Vatican City State)",41.9034912,12.4528349
+"Brugge, Belgium",51.2082905,3.2261497
+"Castres, France",43.6036776,2.2417954
+"Hillerod, Denmark",55.9285735,12.3063909
+"Kristiansand, Norway",58.1467082,7.995766
+"Edmond, Oklahoma, United States",35.6571367,-97.4649037
+"Halifax, Nova Scotia, Canada",44.6491198,-63.5751339
+"Dorchester, United Kingdom",50.7111314,-2.4398485
+"Altrincham, United Kingdom",53.3839662,-2.3525462
+"Caernarfon, United Kingdom",53.1390298,-4.2691852
+"East Clandon, Guildford, United Kingdom",51.2568306,-0.4826122
+"Torpoint, United Kingdom",50.3757288,-4.1991203
+"Detroit, Michigan, United States",42.3486635,-83.0567374
+"Den Haag, Netherlands",52.07494555,4.26968032053645
+"Savannah, Georgia, United States",32.0835407,-81.0998341
+"Mystic, Connecticut, United States",41.3542656,-71.9664619
+"Decatur, Illinois, United States",39.8454163,-88.952415
+"Pasadena, California, United States",34.1476452,-118.1444778
+"Newcastle upon Tyne, United Kingdom",54.9770924,-1.6142058
+"Bangor, United Kingdom",53.2277187,-4.1268821
+"Moss, Norway",59.464916,10.6622880355347
+"Stavanger, Norway",58.9680427,5.7324722
+"Kolkata, India",22.5677459,88.3476023
+"Regensburg, Germany",49.0195333,12.0974869
+"Trier, Germany",49.7596208,6.6441878
+"Würzburg, Germany",49.79245,9.932966
+"Koblenz, Germany",50.3533278,7.5943951
+"Dover, United Kingdom",51.1263985,1.30083991723459
+"Chur, Switzerland",46.855515,9.5254066
+"Bryansk, Russian Federation",53.2423778,34.3668288
+"Rostov Veliky, Russian Federation",,
+"Sumy, Ukraine",50.9042589,34.8050035222872
+"Krasnodar, Russian Federation",45.0354329,38.9757116
+"Vladivostok, Russian Federation",43.1150678,131.8855768
+"Pskov, Russian Federation",57.8173995,28.3343684
+"Bishkek, Kyrgyzstan",42.8767446,74.6069949
+"Tambov, Russian Federation",52.72879,41.4553617
+"Kursk, Russian Federation",51.72703565,36.1922479569211
+"Irkutsk, Russian Federation",52.2895979,104.2805843
+"Charlottesville, United States",38.029306,-78.476678
+"Atcham, United Kingdom",52.6788507,-2.6796721
+"Buscot Park, England",51.66955355,-1.65003736108078
+"Salisbury, United Kingdom",51.0736612,-1.7951175
+"Bregenz, Austria",47.5008652,9.7479477
+"Aurora, Illinois, United States",41.7605849,-88.3200714
+"Ogdensburg, New York, United States",44.694285,-75.4863739
+"Tulsa, Oklahoma, United States",36.1556805,-95.9929112
+"Cody, Wyoming, United States",44.5263107,-109.0563922
+"Fort Worth, Texas, United States",32.753177,-97.3327458
+"Ruidoso Downs, New Mexico, United States",33.3289733,-105.604429
+"College Station, Texas, United States",30.6253463,-96.3271537
+"Yekaterinburg, Russian Federation",56.8391034,60.6082502
+"Rostov-on-Don, Russian Federation",47.2249135,39.7022756
+"Yerevan, Armenia, Armenia",40.1776121,44.5125849
+"Voronezh, Russian Federation",51.6548797,39.212949
+"Penza, Russian Federation",53.2,45.0
+"Ufa, Russian Federation",54.7262869,55.9477285
+"London, Ontario, Canada",42.988576,-81.2466429
+"Owen Sound, Ontario, Canada",44.568948,-80.9493259
+"Vancouver, Canada",49.2608944,-123.1139382
+"Newtownards, Greater Belfast, United Kingdom",,
+"Kingston, Canada",44.2298484,-76.4802834
+"Bedford, United States",40.0271453,-78.5237446
+"New London. Connecticut, United States",41.3556539,-72.0995208
+"New Brunswick, New Jersey, United States",40.4862174,-74.4518172
+"Nikolaev, Ukraine",46.9567798,32.0327259
+"Volsk, Russian Federation",52.0427554,47.3860308
+"Saffron Walden, United Kingdom",52.021569,0.2411256
+"Santa Ana, California, United States",33.7494951,-117.8732212
+"Canterbury, United Kingdom",51.2800275,1.0802533
+"Bourges, France",47.0805693,2.398932
+"Augusta, Georgia, United States",33.4709714,-81.9748428
+"Riga, Latvia",56.9716562,24.1665986020787
+"Lugansk, Ukraine",48.5674507,39.2912928
+"Croydon, United Kingdom",51.3713049,-0.1019569
+"Haworth, United Kingdom",53.83061125,-1.95079383450424
+"Worthing, United Kingdom",50.8116902,-0.3703947
+"Bridport, United Kingdom",50.733785,-2.7589004
+"Wisbech, United Kingdom",52.6651733,0.1606824
+"Newmarket, United Kingdom",52.243851,0.4088225
+"Warminster, United Kingdom",51.1972475,-2.1856279
+"Scunthorpe, United Kingdom",53.5918186,-0.6498696
+"Brodick, United Kingdom",55.5754412,-5.1463402
+"Whitby, United Kingdom",54.4874141,-0.615511
+"Lincolnshire, United Kingdom",53.166667,-0.2499999
+Republic of Korea,36.5748441,139.2394179
+"Leiden, Netherlands",52.1518157,4.48110886662043
+"Schleswig, Germany",54.51851,9.5653284
+"Duisburg, Germany",51.434999,6.759562
+"Bushey, United Kingdom",51.6441737,-0.3622402
+"Wick, United Kingdom",58.4384988,-3.0884176
+"Wells, United Kingdom",51.2091902,-2.6470657
+"Orpington, United Kingdom",51.3805859,0.1063469
+"Clevedon, United Kingdom",51.4360625,-2.852653
+"Stornoway, United Kingdom",58.2092594,-6.3856775
+"Bloomington, IN, United States",39.1670396,-86.534288
+"Syracuse, New York, United States",43.0481221,-76.1474243
+"Duxbury, Massachusetts, United States",42.0417695,-70.6722589
+"Hagen, Greater Dortmund, Germany",,
+"Rostock, Germany",54.14736345,12.109015599915
+"Dortmund, Germany",51.5142273,7.4652789
+"Kiel, Germany",54.3216753,10.1371858
+"Husum, Germany",54.4853638,9.0538156
+"Erfurt, Germany",50.9777974,11.0287364
+"Oldenburg, Germany",53.1389753,8.2146017
+"Dessau-Roblau, Germany",,
+"Rhyl, United Kingdom",53.3209267,-3.4912165
+"Bodmin, United Kingdom",50.470725,-4.7243204
+"Ashbourne, United Kingdom",53.0173327,-1.7342724
+"Hatfield, United Kingdom",51.7634675,-0.225874
+"Shoreham-by-Sea, West Sussex, United Kingdom",50.8344459,-0.2718588
+"Lacock, United Kingdom",51.413844,-2.120872
+"Chichester, West Sussex, United Kingdom",50.84467705,-0.783114331619324
+"Dunster, United Kingdom",51.1827657,-3.447605
+"Blickling, United Kingdom",52.8099215,1.2259634
+"Grantham, United Kingdom",52.9133829,-0.6426581
+"Near Derby, United Kingdom",,
+"Pittsburgh, United States",40.4416941,-79.990086
+"Richmond, Indiana, United States",39.8286897,-84.889852
+"Greenville, South Carolina, United States",34.851354,-82.3984881
+"Darmstadt, Greater Frankfurt, Germany",,
+"Grantham, Lincolnshire, England",52.9133829,-0.6426581
+"Gloucestershire, United Kingdom",51.8333313,-2.1666673
+"Lempertz, Germany",50.9357064,6.9495261
+"Orange, Texas, United States",30.1228634,-93.9041168
+"Chorley, United Kingdom",53.6531979,-2.6294741
+"Chawton, United Kingdom",51.1266817,-1.00679248871568
+"Down - Kent, United Kingdom",51.0946646,0.3867313
+"West Clandon, United Kingdom",51.2607921,-0.5041173
+"Austin, United States",30.2711286,-97.7436994
+"San Antonia, Texas, United States",,
+"Kerrville, Texas, United States",30.0474332,-99.1403188
+"Missoula, Montana, United States",46.8700801,-113.9952795
+"Taipei, Taiwan, Province of China",,
+"Toledo, Spain",39.8560679,-4.0239567
+"Sackville, Canada",45.8999177,-64.3655255
+"Waterville, Maine, United States",44.5520105,-69.631712
+"Lincoln, Nebraska, United States",40.8,-96.6678209
+"Beloit, Wisconsin, United States",42.5083272,-89.0317839
+"Roanoke, Virginia, United States",37.270973,-79.9414312
+"Southampton, New York, United States",40.884267,-72.3895295
+"Cults, United Kingdom",57.1179511,-2.1766874
+"Newport, Rhode Island, United States",41.4899827,-71.3137706
+"Germantown, New York, United States",42.1586775,-78.2802925
+"Brooklyn, N.Y., United States",40.64530975,-73.9550229275334
+"Old Lyme, Connecticut, United States",41.3159315,-72.3289714
+"Durham, NC, United States",35.9940329,-78.8986189
+"Burg Hohenzollern, Germany",48.3235771,8.96738239788669
+"Cádiz, Spain",36.5298292,-6.2925678
+"San Lorenco de El Escorial, Spain",,
+"Athen, Greece",37.9841493,23.7279843
+"Heraklion, Greece",35.3340134,25.1328543
+"Urbino, Italy",43.7262608,12.6363135
+Germany,51.0834196,10.4234469
+"Bramdean, United Kingdom",51.0477273,-1.1258429
+"Kendal, United Kingdom",54.3272621,-2.7482987
+"Horsham, United Kingdom",51.0659819,-0.3189487
+"Rochester, United Kingdom",51.389062,0.5049347
+"The Town Hall Chambers, United Kingdom",51.75230765,-0.339410120037494
+"Chirk, United Kingdom",52.9320109,-3.0563859
+"Saltash, United Kingdom",50.4072966,-4.2093028
+"Deal, United Kingdom",51.2150789,1.4031552
+"Herefordshire, England",52.083333,-2.7499999
+"Welshpool, United Kingdom",52.6600742,-3.1474211
+"Kirkcudbright, United Kingdom",54.8394667,-4.0429905
+"Victoria, British Columbia, Canada",48.4283327,-123.3649268
+"Hudson, New York, United States",42.2528649,-73.7909589
+"Hagerstown, Maryland, United States",39.6419219,-77.720264
+"Charlottsville, Virginia, United States",,
+"Debrecen, Hungary",47.531399,21.6259782
+"Kaposvar, Hungary",46.3560953,17.7877874
+"Chicago, Illinois, United States",41.8755546,-87.6244211
+"Victoria, Canada",48.4283327,-123.3649268
+"Edmonton, Canada",53.5343609,-113.5065084
+"Edmonton, Alberta, Canada",53.5343609,-113.5065084
+"Pomona, California, United States",34.0553813,-117.7517495
+"Ayr, United Kingdom",55.4594119,-4.6326701
+"Mora, Sweden",61.00817,14.5433371
+"Williamstown, United States",42.712207,-73.2035985
+"Lancaster, Pennsylvania, United States",40.03813,-76.3056685
+"Saginaw, Michigan, United States",43.4200387,-83.9490364
+"Hertford, United Kingdom",51.7957409,-0.0785209
+"Middlesborough, United Kingdom",51.6101055,-0.0610962
+"Torquay, United Kingdom",50.4652392,-3.521136
+"Sewerby, United Kingdom",54.1009582,-0.1658485
+"Pinner, United Kingdom",51.5968712,-0.3770141
+"Burwash, United Kingdom",50.9976003,0.3804027
+"Miskin, United Kingdom",51.5194352,-3.3750409
+"Swindon, United Kingdom",51.5613683,-1.7856852
+"Brisbane, Australia",-27.4689681,153.0234991
+"Wednesbury, Greater Birmingham, United Kingdom",,
+"Cordoba, Spain",37.8845065,-4.7793654
+"Tel Aviv-Yafo, Israel",32.0804808,34.7805274
+"Worcester, United Kingdom",52.1911849,-2.2206584
+"Abingdon, United Kingdom",51.6714842,-1.2779714
+"Wigan, United Kingdom",53.5457188,-2.6264623
+"Rufford, United Kingdom",53.1754207,-1.0384786
+"Perm, Russian Federation",58.0149643,56.2467244
+"Winnipeg, Manitoba, Canada",49.8833343,-97.166674
+"Buxton, United Kingdom",53.2594074,-1.9100767
+"Chester, United Kingdom",53.1908873,-2.8908954
+"Mottistone, Isle of Wight, United Kingdom",50.6513187,-1.4262293
+"Barrow-in-Furness, United Kingdom",54.1113351,-3.2289493
+"Watford, United Kingdom",51.6553875,-0.3957424
+"Saint-Vaast-la-Hougue, France",49.5877016,-1.2662183
+"Stroud, United Kingdom",51.745424,-2.2198604
+"Cardiff, England",51.9896896,-2.1357383
+"Brechin, United Kingdom",56.7325485,-2.6588107
+"Treviso, Italy",45.6658505,12.2455414
+"Athens, Georgia, United States",33.9550905,-83.3881867
+"Falmouth, United Kingdom",50.1552197,-5.0688261
+"Wien, Austria",48.2083537,16.3725042
+"Inverness, United Kingdom",57.4790124,-4.2257389
+"Kent, United Kingdom",51.2474823,0.7105077
+"Bradford, United Kingdom",53.7941567,-1.7494777
+"Langholm, United Kingdom",55.1508968,-2.9988824
+"Methlick, United Kingdom",57.4260313,-2.242349
+"Mintlaw, United Kingdom",57.5233046,-2.0049863
+"Vesoul, France",47.6236088,6.1566367
+"Stockton, Caifornia, United States",,
+"Blois, France",47.5876861,1.3337639
+"Stanford, California, United States",37.4265649,-122.170187551249
+"Alcoa, Florida, United States",28.4470872,-81.495421
+"Malden, Massachusetts, United States",42.4250964,-71.0661629
+"Elmira, New York, United States",42.0897965,-76.8077337
+"Moulins, France",46.566142,3.333179
+"Kōriyama-shi, Japan",37.404937,140.333381
+"Alupka, Ukraine",44.4219419,34.0524544
+"Hutton-in-the-Forest, United Kingdom",54.71409925,-2.83909363047906
+"Savannah, United States",32.0835407,-81.0998341
+"Near Sawrey, United Kingdom",54.3526962,-2.97015663052416
+"Goldendale, Washington, United States",45.8206794,-120.8217311
+"Salt Lake City, Utan, United States",,
+"Athens, Greece",37.9841493,23.7279843
+"Metz, France",49.1196964,6.1763552
+"Yelverton, United Kingdom",52.5706177,1.3800223
+"Hastings-on-Hudson, New York, United States",40.9945421,-73.878746
+"Claremont, California, United States",34.0966764,-117.7197784
+"Hempstead, New York, United States",40.7063185,-73.6186839
+"Khabarovsk, Russian Federation",48.481402,135.07694
+"Rybinsk, Russian Federation",58.0503742,38.8346364
+"Orenburg, Russian Federation",51.7674507,55.0971196
+"Vladikavkaz, Russian Federation",43.0245952,44.6821104
+"Pereslavl-Zalessky, Russian Federation",56.7366104,38.8462821
+"Ples, Russian Federation",,
+"Makhachkala, Russian Federation",42.97554,47.4961218
+"Bruxelles, Belgium",50.8465565,4.351697
+"Chisinau, Republic of Moldova",47.0122737,28.8605936
+"Kemerovo, Russian Federation",55.3551248,86.0872319
+"Gorlovka, Ukraine",48.3338727,38.0124050923233
+"Sochi, Russian Federation",43.5854823,39.723109
+"Tbilisi, Georgia",41.6935247,44.8015019
+"Pontoise, France",49.0508845,2.1008067
+"Schweinfurt, Germany",50.0499945,10.233302
+"Meaux, Greater Paris, France",,
+"La Roche-sur-Yon, France",46.6705431,-1.4269697
+"South Hadley, Massachusetts, United States",42.2584245,-72.5745331
+"Monhegan Island, Maine, United States",43.76526565,-69.313341109602
+"Charlotte, North Carolina, United States",35.2270869,-80.8431267
+"Middlesbrough, United Kingdom",54.5760419,-1.2344046
+"Førde, Norway",61.4622729,5.79429144608987
+"Broken Hill, Australia",-31.9649999,141.4511111
+"Little Rock, United States",34.7464809,-92.2895947
+"Saint-Malo, France",48.6454528,-2.0154179
+"Montreuil, Greater Paris, France",,
+"Miyazaki City, Miyazaki, Japan",,
+"Oklahoma City, Oklahoma, United States",35.4729886,-97.5170535
+"Shimane, Japan",34.9418212,132.537439
+"Nancy, France",48.6937223,6.1834097
+"Kitakyushu, Japan",33.881691,130.866
+"East Hampton, New York, United States",40.9637919,-72.1851728
+"Duluth, Minnesota, United States",46.7729322,-92.1251217
+"Winter Park, Florida, United States",28.6000625,-81.3427437436485
+"Greenwich, Connecticut, United States",41.0264862,-73.6284597
+"Valparaiso, United States",41.4730948,-87.0611411
+"Glens Falls, New York, United States",43.309941,-73.6444469
+"Erie, Pennsylvania, United States",42.1290657,-80.085242
+"Chaux-de-Fonds, Switzerland",47.103287,6.8324545
+"Greifswald, Germany",54.095791,13.3815238
+"Assen, Netherlands",52.99037165,6.55337577067568
+"Komaki, Japan",35.30643,136.934444
+"Zwolle, Netherlands",52.51456525,6.09772035967769
+"Groningen, Netherlands",53.2217925,6.55824533479853
+"'s-Hertogenbosch, Netherlands",51.7099516,5.29191881791502
+"Ciudad de México, Mexico",19.4326009,-99.1333415
+"Cockermouth, United Kingdom",54.6614709,-3.3590115
+"Fuefuki-shi, Japan",35.599518,138.683609
+"Wiltshire, United Kingdom",51.25,-1.9166669
+"Harewood, Greater Leeds, United Kingdom",,
+"Hobart, Australia",-42.8825087,147.3281233
+"Barnstaple, United Kingdom",51.0804057,-4.0600466
+"Tivoli, United States",42.058528,-73.9089129
+"Ilminster, United Kingdom",50.9266666,-2.9101249
+"Huntingdon, United Kingdom",52.3314292,-0.1847722
+"Lexington, Virginia, United States",37.7840208,-79.4428156
+"Nottingham, Pennsylvania, United States",39.748442,-76.0185578
+"St. Johnsbury, Vermonnt, United States",,
+"Polenovo, Tula Region, Russian Federation",,
+"Roswell, New Mexico, United States",33.3943282,-104.5229517
+"Vevey, Switzerland",46.4634985,6.8427295
+"Ornans, France",47.09472425,6.15174630448453
+"Mantua, Italy",45.1566683,10.7917191
+"Waltham, Massachusetts, United States",42.3756401,-71.2358003
+"Pully, Lausanne, Switzerland",46.51507275,6.65370464822687
+"Ancona, Italy",43.6170137,13.5170982
+"Davos, Switzerland",46.7961744,9.8237266
+"Ludwigshafen, Greater Mannheim, Germany",,
+"Baden-Baden, Germany",48.7580777,8.2415239
+"Mildura, Victoria, Australia",-34.1847264,142.1624972
+"Limerick, Ireland",52.661252,-8.6301238
+"Christchurch, New Zealand",-43.5309549,172.6366455
+Ireland,52.865196,-7.9794598
+"Helena, Montana, United States",46.5927122,-112.0361089
+"Great Falls, Montana, United States",47.5048851,-111.2918907
+"Norman, Oklahoma, United States",35.2225717,-97.4394815
+"Shreveport, Louisiana, United States",32.5221828,-93.7651943
+"Newhall, California, United States",34.3798765,-118.5291916
+"Pacific Palisades, United States",34.0480643,-118.5264705
+"Jackson Hole, Wyoming, United States",43.684103,-110.443624734453
+"Corning, New York, United States",42.1428521,-77.0546902
+"Calgary, Alberta, Canada",51.02532675,-114.049868389119
+"Bartlesville, United States",36.7494864,-95.9782965
+"Yarpole, United Kingdom",52.2797379,-2.7798621
+"Daytona Beach, United States",29.2108147,-81.022833
+"Gloucester, Massachusetts, United States",42.6159286,-70.6619887
+"Minneapolis, Minnesotta, United States",,
+"Ogunquit, Maine, United States",43.2489755,-70.59922
+"Newton Abbot, United Kingdom",50.5296441,-3.6112096
+"Santa Fe, New Mexico, United States",35.6869996,-105.9377996
+"Taos, United States",36.4072485,-105.5730664
+"Capetown, South Africa",-33.9224047,18.4157172
+"Springfield, Ohio, United States",39.9242266,-83.8088171
+"Lueneburg, Germany",53.248706,10.4078555
+"Bochum, Germany",51.4818036,7.2196595
+"Pont-Saint-Esprit, France",44.2538589,4.6456631
+"Cambrai, France",50.1759602,3.2356613
+"Worms, Germany",49.6615131,8.32120408588846
+"Daventry, United Kingdom",52.2574393,-1.1639597
+"Fort Lauderdale, Florida, United States",26.1223084,-80.1433785
+"Saarbrucken, Germany",49.234362,6.996379
+"Cottesbrooke, United Kingdom",52.355812,-0.9633157
+"Weston-under-Lizard, United Kingdom",52.6970822,-2.2935665
+"Gorlitz, Germany",51.1517428,14.9844025
+"Dachau, Greater Munich, Germany",,
+"Wiesbaden, Greater Frankfurt, Germany",,
+"Duren, Germany",50.8031684,6.4820806
+"St Joseph, United States",39.7686055,-94.8466321
+"Nice, France",43.7009358,7.2683912
+"Mount Vernon, New York, United States",40.9125992,-73.8370785
+"Newport, RI, United States",41.4899827,-71.3137706
+"Brest, France",48.3905283,-4.4860087
+"Ann Arbor, Michigan, United States",42.2681569,-83.731229
+"Uppsala, Sweden",59.8594126,17.64112
+"Milwaukee, United States",43.0349931,-87.9224969
+"Trenton, New Jersey, United States",40.217058,-74.7429459
+"Middletown, Connecticut, United States",41.5623209,-72.6506487
+"Purchase, New York, United States",41.0409305,-73.7145745
+"West Hartford, United States",41.7620447,-72.7420398
+"Limoges, France",45.8354243,1.2644847
+"Petergof, Greater Saint Petersburg, Russian Federation",,
+"Zug, Switzerland",47.1679898,8.5173652
+"Kochel am See, Germany",47.6531098,11.3631895
+"Syosset, New York, United States",40.8262101,-73.5020679
+"Villeneuve d'Ascq, Greater Lille, France",,
+"Abteiberg, Germany",50.7891675,12.7344967
+"Ulm, Germany",48.3973944,9.9932755
+"Nagoya, Japan",35.15792,136.90448
+"Murnau, Germany",47.6778816,11.2011903
+"Liège, Belgium",50.6451381,5.5734203
+"Osaka, Japan",34.704365,135.501887
+"Viareggio, Italy",43.8672392,10.2506055
+"Ferrara, Italy",44.8371856,11.6186451
+"Haifa, Israel",32.8191218,34.9983856
+"Darmstadt, Germany",49.872775,8.651177
+"Liege, Belgium",50.6451381,5.5734203
+"Tucson, Arizona, United States",32.2217422,-110.9264758
+"Huntington, New York, United States",40.868154,-73.4256759
+"Washington, Dc, United States",38.8949549,-77.0366455
+"Saint Paul, Minnesota, United States",44.9504037,-93.1015025
+"Albuquerque, New Mexico, United States",35.0841034,-106.650985
+"Limoux, France",43.0538068,2.2176533
+"Storrs, Connecticut, United States",41.8084314,-72.249523
+"Mulhouse, France",47.7494188,7.3399355
+"King's Lynn, Norfolk, United Kingdom",52.754891,0.3964614
+"Folzano, Italy",45.5002138,10.2037391936364
+"Holkham, United Kingdom",52.9591025,0.8143613
+"Strangford, United Kingdom",54.3705992,-5.5561415
+"Moneymore, United Kingdom",54.6920653,-6.6649674
+"Beauvais, France",49.4409001,2.0866699
+"Hokkaido, Japan",43.43395355,142.95144677396
+"Lucca, Italy",43.8428381,10.502876
+"Leeuwarden, Netherlands",53.1997344,5.80065308992463
+"Ripon, Yorkshire, United Kingdom",54.1368788,-1.5213193
+"Bassano del Grappa, Italy",45.7669109,11.7343469
+"Verdun, France",49.1589278,5.3867277
+"Lisboa, Portugal",38.7077926,-9.136506
+"Cesena, Italy",44.136352,12.2422442
+"Roma, Italy",41.8935085,12.4825526
+"Pistoia, Italy",43.9336213,10.9174238
+"Bratislava, Slovakia",48.1359085,17.1597440625
+"Como, Italy",45.8106805,9.0863028
+"Caesarea, Israel",32.5114971,34.9057861
+"Arkhangelskoye, Greater Moscow, Russian Federation",,
+"Provo, Utah, United States",40.2338438,-111.6585336
+"Des Moines, United States",41.5910641,-93.6037148
+"Città di San Marino, San Marino",43.9363996,12.4466991
+"Cassibile, Italy",36.9759414,15.1969971
+"Augsburg, Germany",48.3668041,10.8986971
+"Zanesville, United States",39.9403453,-82.0131923
+"Laren, Netherlands",52.24253135,5.21624403043807
+"Havana, Cuba",23.1379911,-82.3658561
+"Framingham, Massachusetts, United States",42.2792625,-71.4161719
+"Tashkent, Uzbekistan",41.3123363,69.2787079
+"Moskva, Russian Federation",55.7506828,37.6174976
+"Elista, Russian Federation",46.3069981,44.2701877
+"Kherson, Ukraine",46.65086815,32.6023027991877
+"La Rochelle, France",46.1591126,-1.1520433
+"Appleton, Wisconsin, United States",44.2611337,-88.4067603
+"Shrewsbury, United Kingdom",52.7078866,-2.7540093
+"Tarrytown, New York, United States",41.0762077,-73.858746
+"Manitowoc, Wisconsin, United States",44.0886059,-87.657584
+"Hazebrouck, France",50.7226113,2.5360331
+"Périgeaux, France",,
+"Glendale, California, United States",34.142498,-118.2485959
+"Shawnee, Oklahoma, United States",35.3272928,-96.9253003
+"Saransk, Russian Federation",54.1867088,45.1838307
+"Keene, New Hampshire, United States",42.933597,-72.2784263
+"Lewisburg, Pennsylvania, United States",40.9645293,-76.88441
+"Bethlehem, Pennsylvania, United States",40.6178915,-75.378652
+"Romsey, United Kingdom",50.9932664,-1.48950567948512
+"Wrexham, United Kingdom",53.0465068,-2.9938136
+"Doe Lea, United Kingdom",53.1918309,-1.3123389
+"Durham, United Kingdom",54.7764152,-1.5758538
+"Hope Square, United Kingdom",51.4515172,-2.6221777
+"Long Melford, United Kingdom",52.0715603,0.7153823
+"Twickenham, United Kingdom",51.4467941,-0.3283388
+"Wilton, United Kingdom",51.0805315,-1.860705
+"Glastonbury, United Kingdom",51.14804,-2.7165769
+"Luton, United Kingdom",51.89107295,-0.423030307620178
+"Great Torrington, United Kingdom",50.9520536,-4.1428752
+"Kingston upon Thames, United Kingdom",51.4096275,-0.306262
+"Innerleithen, United Kingdom",55.6190744,-3.0633842
+"Llandeilo, United Kingdom",51.8853935,-3.9925143
+"Warwick, United Kingdom",52.2850815,-1.5785411
+"Upton, United Kingdom",51.7965932,-0.8806454
+"Downpatrick, United Kingdom",54.3279335,-5.7164899
+"Abergwili, United Kingdom",51.8655434,-4.2719008
+"Taunton, United Kingdom",51.015024,-3.1029809
+"Milton-under-Wychwood, United Kingdom",51.8626854,-1.6167819
+"Alloa, United Kingdom",56.1156137,-3.7922422
+"Musselburgh, Greater Edinburgh, United Kingdom",,
+"Hovikodden, Greater Oslo, Norway",,
+"Itó, Guyana",,
+"Norrköping, Sweden",58.5909124,16.1903511
+"Linköping, Sweden",58.4098135,15.6245252
+"Céret, France",42.485804,2.7488069
+"Skagen, Denmark",57.7259703,10.5844602
+"Aschaffenburg, Germany",49.9740542,9.1493636
+"Houston, Texas, United States",29.7589382,-95.3676973
+"Maastricht, Netherlands",50.85798545,5.69698818182211
+"Riverside, United Kingdom",51.5205472,0.1081363
+"Issy-les-Moulineaux, Greater Paris, France",,
+"Mantes-la-Jolie, Greater Paris, France",,
+Belgium,50.6407351,4.66696
+"Palermo, Italy",38.11127,13.3534422
+"Alnwick, United Kingdom",55.4135412,-1.7072796
+"Vaduz, Liechtenstein",47.1392862,9.5227962
+"El Paso, Texas, United States",31.7600372,-106.4872869
+"Gotha, Germany",50.9462725,10.6945265
+"Gdansk, Poland",54.3482259,18.6542888
+"Arundel, United Kingdom",50.8540612,-0.5534495
+"Uzhhorod, Ukraine",48.6223502,22.3021255
+"Novosibirsk, Russian Federation",55.0282215,82.9234476
+"Pavlovsk, Greater Saint Petersburg, Russian Federation",,
+"Vinnitsa, Ukraine",49.2320162,28.467975
+"Gunby, United Kingdom",53.1786612,0.1965437
+"Midhurst, United Kingdom",50.98508925,-0.746283705688975
+"Keele, Staffordshire, United Kingdom",53.0038078,-2.2877424
+"Rothbury, United Kingdom",55.309632,-1.9117292
+"Sudbury, Suffolk, United Kingdom",52.0386628,0.7296722
+"Vicenza, Italy",45.5488306,11.5478825
+"Castelfranco Veneto, Italy",45.6728109,11.9252448
+"Maser, Italy",45.807541,11.9724872
+"Verona, Italy",45.4384958,10.9924122
+"Gifu, Japan",35.7867449,137.0460777
+"Marciana, Italy",42.7894222,10.1685346
+"Vasto, Italy",42.12434,14.705923
+"Montagnana, Italy",45.2333207,11.4657779
+"Vrboska, Croatia",43.1807021,16.6716111
+"Palm Springs, California, United States",33.8246269,-116.5403029
+"Melrose, United Kingdom",55.5975944,-2.7199681
+"Channel Islands, Jersey",49.2352963,-2.16757055
+"Charleroi, Belgium",50.4120332,4.4436244
+"Oviedo, Spain",43.3533424,-5.87951423952683
+"Aragon, Spain",41.3787291,-0.7639372
+"Manila, Philippines",14.5906216,120.9799696
+"Berkeley, California, United States",37.8708393,-122.2728638
+"Richmond, Virginia, United States",37.5385087,-77.4342799
+"Oregon, Illinois, United States",42.0147513,-89.3323278
+"Poitiers, France",46.5802596,0.340196
+"Giza, Egypt",30.0170059,31.2134513
+"Lancashire, United Kingdom",53.86117155,-2.54711144031047
+"Girton, Greater Cambridge, United Kingdom",,
+"Saltcoats, United Kingdom",55.6392811,-4.7796511
+"Plainfield, New Jersey, United States",40.6337136,-74.4073736
+"Aberdeen, Ireland",53.3513967,-6.2966811
+"Hythe, United Kingdom",51.0691421,1.0841634
+"Yalta, Russian Federation",53.8875508,40.4753948
+"Novokuznetsk, Russian Federation",53.7576081,87.1360984
+"Vitebsk, Belarus",55.1930197,30.2070437
+"Alupka, Russian Federation",44.4204046,34.0483715
+"Udine, Italy",46.0634632,13.2358377
+"Holly Springs, Mississippi, United States",34.7675967,-89.4486893
+"Davenport, Iowa, United States",41.5236436,-90.5776367
+"Tuscaloosa, Alabama, United States",33.2668398,-87.4862181
+"Terre Haute, Indiana, United States",39.4667025,-87.4139118
+"Winston_Salem, North Carolina, United States",,
+"Eugene, Oregon, United States",44.10118085,-123.152383713818
+"Norton, Massachusetts, United States",41.9667666,-71.1869938
+"Aix-en-Provence, France",43.5298424,5.4474738
+"Roubaix, France",50.6915893,3.1741734
+"Malaga, Spain",36.721086,-4.4220023
+"Muskegon, Michigan, United States",43.2341813,-86.248392
+"Gray, France",47.445541,5.592143
+"Autun, France",46.9510313,4.2989478
+"Clermont-Ferrand, France",45.7774551,3.0819427
+"Saint-Omer, France",50.7519911,2.2536678
+"Fontaine-Chaalis, France",49.1716947,2.6840298
+"Versailles, France",48.8035403,2.1266886
+"Stratford-upon-Avon, United Kingdom",52.1923414,-1.7057876
+"Toul, France",48.6762624,5.8941759
+"Le Mans, France",48.0077781,0.1995339
+"Long Beach, California, United States",33.78538945,-118.158049215311
+"Lugano, Switzerland",46.0050102,8.9520281
+"Leverkusen, Germany",51.0324743,6.9881194
+"Emden, Germany",53.3670442,7.2058004
+"St. Petersburg, Florida, United States",27.7703796,-82.6695084
+"Ljubljana, Slovenia",46.049865,14.5068921
+"Agen, France",44.2015624,0.6176324
+"Granville, France",48.8376284,-1.5959212
+"Semur-en-Auxois, France",47.4902149,4.3328705
+"Dunkirk, France",51.0347708,2.3772525
+"Évreux, France",49.0183639,1.1375865
+"Anholt, Germany",51.8470694,6.4278809
+"Richmond-upon-Thames - Greater London, United Kingdom",,
+"New Brunswick, United States",40.4862174,-74.4518172
+"Aachen, Germany",50.776351,6.083862
+"Woburn, Bedfordshire, United Kingdom",51.9887573,-0.6194405
+"Ladybank, United Kingdom",56.2781129,-3.1266164
+"Leek, United Kingdom",53.1057636,-2.0242836
+"Wivenhoe, United Kingdom",51.8674915,0.9627477
+"Salt Lake City, Utah, United States",40.7670126,-111.8904307
+"Viborg, Denmark",56.4469128,9.4059354
+"Norwich, Connecticut, United States",41.5242649,-72.0759104
+"Waterbury, Connecticut, United States",41.5581525,-73.0514965
+"Turnhout, Belgium",51.3233812,4.948461
+"Ipswich, United Kingdom",52.0579495,1.1526345
+"Quatt, United Kingdom",52.4911694,-2.3609672
+"Randers, Denmark",56.4800019,10.0891444
+"Littlehampton, United Kingdom",50.8122039,-0.5366908
+"Windsor, Canada",42.30423,-83.0298609
+"Gouda, Netherlands",52.01811935,4.7111221346978
+"Doylestown, Pennsylvania, United States",40.310004,-75.1304839
+"High Wycombe, United Kingdom",51.627422,-0.7484152
+"Brookings, South Dakota, United States",44.311461,-96.7984399
+"San Gimignano, Italy",43.4677993,11.0432115
+"Cobalt Business Park, United Kingdom",55.0233356,-1.5120223
+"Nuneaton, United Kingdom",52.5246182,-1.4684487
+"Halifax, Canada",44.6491198,-63.5751339
+"San Juan Capistrano, California, United States",33.5016932,-117.6625508
+"Valparaiso, Chile",-33.0458455,-71.6196748
+"Bendigo, Victoria, Australia",-36.7588766,144.2825931
+"Twin Cities, Minnesotta, United States",,
+"Ticonderoga, New York, United States",43.848889,-73.4233469
+"Nunnington, United Kingdom",54.2050678,-0.980994365048858
+"Mumbai, India",18.9321862,72.8308337
+"Vizille, France",45.0758358,5.7715863
+"Silkeborg, Denmark",56.169453,9.5495141
+"Paris, Kentucky, United States",38.2097987,-84.2529868
+"Frankfort, Kentucky, United States",38.2009055,-84.8732835
+"Bar-le-Duc, France",48.7736785,5.1621546
+"Brno, Czech Republic",49.1922443,16.6113382
+"Lübeck, Germany",53.866444,10.684738
+"Seaton Sluice, United Kingdom",55.0840248,-1.4731801
+"Macclesfield, United Kingdom",53.2606635,-2.1255157
+"Soues, United Kingdom",51.0489576,1.4431801
+"Vodňany, Czech Republic",49.1481579,14.1750718
+"Cellardyke, United Kingdom",56.2245767,-2.6885959
+"Dunfermline, United Kingdom",56.0714428,-3.4591479
+"Wellington, United Kingdom",52.7000357,-2.5176602
+"Arbroath, United Kingdom",56.5578653,-2.5862077
+"Saint Louis, Missouri, United States",38.6272733,-90.1978888
+"Troy, New York, United States",42.7284117,-73.691785
+"Rock Island, United States",41.5094771,-90.5787476
+"Deerfield, Massachusetts, United States",42.5453345,-72.6046808
+"Kestle Mill, United Kingdom",50.3936371,-5.0251037
+"Enfield, United Kingdom",51.6517122,-0.083214
+"Sutton, United Kingdom",51.360398,-0.1906995
+"Wheaton, Illinois, United States",41.8646959,-88.1101708
+"Wymondham, United Kingdom",52.5764773,1.117928
+"Blyth, United Kingdom",55.1241236,-1.5018083
+"Honesdale, Pennsylvania, United States",41.5767552,-75.258787
+"Hartlebury, United Kingdom",52.3357637,-2.2343445
+"Caldicot, United Kingdom",51.5845192,-2.759768
+"Ilkeston, United Kingdom",52.9710869,-1.3071709
+"Ashington, United Kingdom",55.182294,-1.5708472
+"Samarkand, Uzbekistan",39.6547869,66.9758026
+"Annan, United Kingdom",54.9882208,-3.2604129
+"Canyon, Texas, United States",34.9799898,-101.9191852
+"Firenze, Italy",43.7698712,11.2555757
+"Perugia, Italy",43.1119613,12.3890104
+"Warrington, United Kingdom",53.40180345,-2.56803697272251
+Guernsey,49.46229125,-2.58120215032944
+"Coniston, Cumbria, United Kingdom",54.3686401,-3.0751134
+"Lowestoft, United Kingdom",52.4766308,1.7537638
+"Istanbul, Turkey",41.0096334,28.9651646
+"Staunton, Virginia, United States",38.1495947,-79.0725569
+"Renishaw, United Kingdom",53.2946503,-1.3269577
+"Esbjerg, Denmark",55.4664892,8.4520751
+Finland,63.2467777,25.9209164
+"St. Ingbert, Germany",49.2788369,7.1158276
+"Flensburg, Germany",54.7833021,9.4333264
+"Le Puy en Velay, France",45.0459739,3.8855537
+"Shrivenham, United Kingdom",51.5979927,-1.6608616
+"Maldon, United Kingdom",51.731198,0.6791849
+"Bayreuth, Germany",49.9427202,11.5763079
+"Auvers-sur-Oise, France",49.0701875,2.1718687
+"Bishop's Castle, United Kingdom",52.4933868,-2.9976184
+"Southwold, United Kingdom",52.3256455,1.6809345
+"Hemel Hempstead, United Kingdom",51.7511784,-0.4725279
+"Waltham Abbey, United Kingdom",51.6892068,-0.0009448
+"Springville City, Utah, United States",40.15956105,-111.615323827541
+"Launceston, United Kingdom",50.6365062,-4.3604431
+"Nashville, Indiana, United States",39.2072708,-86.251101
+"Lexington, Kentucky, United States",38.0464066,-84.4970392
+"Bude, United Kingdom",50.8285252,-4.546936
+"Lynmouth, United Kingdom",51.229864,-3.829065
+"Washington, United Kingdom",54.898614,-1.5288269
+"New Ulm, United States",44.2821195,-94.4518551125641
+"Watertown, Massachusetts, United States",42.3709299,-71.182832
+Canada,61.0666922,-107.991707
+"Norton Fitzwarren, United Kingdom",51.0266956,-3.1500971
+"Great Yarmouth, United Kingdom",52.6072426,1.7310768
+"Stranraer, United Kingdom",54.9023513,-5.0270569
+"Chelmsford, United Kingdom",51.7345436,0.4724544
+"Skipton, United Kingdom",53.9618497,-2.0160286
+"Eindhoven, Netherlands",51.44855695,5.45012252185714
+"Valletta, Malta",35.8989818,14.5136759
+"Llandrindod Wells, United Kingdom",52.2405358,-3.3793803
+"Llandudno, United Kingdom",53.322475,-3.824325
+"Oxford, Ohio, United States",39.5103048,-84.7420518
+"Lexington, United States",38.0464066,-84.4970392
+"Braunton, United Kingdom",51.1083317,-4.1611379
+"Sansepolcro Arezzo, Italy",43.5700776,12.1403766
+"Godalming, United Kingdom",51.1857892,-0.6149073
+"Lyndhurst, United Kingdom",50.8653408,-1.58145960838574
+"Retford, United Kingdom",53.3187417,-0.9463981
+"Bradford-on-Avon, United Kingdom",51.3470852,-2.2511976
+"Krefeld, Greater Dusseldorf, Germany",,
+"Rotherham, United Kingdom",53.4309799,-1.3554597
+"Wellington, New Zealand, New Zealand",-41.2887638,174.7772239
+"Alkmaar, Netherlands",52.63373645,4.7402031936764
+"Swaffham, United Kingdom",52.6481171,0.6909259
+"Braemar, United Kingdom",57.0070229,-3.398565
+"Guildford, United Kingdom",51.237195,-0.5811778
+"Dorking, United Kingdom",51.232113,-0.3247822
+"Douglas, United Kingdom",55.555668,-3.8425725
+"Derry Hill, United Kingdom",53.8867638,-1.7478273
+"Dennis, Massachusetts, United States",41.7353872,-70.1939086
+"Santander, Spain",43.4623102,-3.8101066
+"Lincoln, United Kingdom",53.2336301,-0.5392171
+"Sheffield, England",53.3806626,-1.4702277
+"Haderslev, Denmark",55.2500715,9.4997871
+"Lynn, Massachusetts, United States",42.466763,-70.9494938
+"Roubaix, Greater Lille, France",,
+"Alexandria, United States",38.8051095,-77.0470228
+"Sint-Martens-Latem, Belgium",51.020971,3.6397549
+"Chertsey, United Kingdom",51.392296,-0.5038293
+"Patmos, Greece",37.32475975,26.5381315773938
+"Odense, Denmark",55.3997225,10.3852104
+"Sonderjylland, Denmark",55.0545994,9.42556188655304
+"Kutná Hora, Czech Republic",49.9486561,15.2681123
+"Hradec Králové, Czech Republic",50.2094963,15.832719
+"Liberec, Czech Republic",50.7702648,15.0583947
+"Kirkintilloch, United Kingdom",55.9351941,-4.145868
+"Santiago, Chile",-33.4377967,-70.650445
+"Kelmarsh, United Kingdom",52.4087035,-0.9167241
+"Stockton-on-Tees, United Kingdom",54.564094,-1.3129163
+"Ripon, United Kingdom",54.1368788,-1.5213193
+"Bloomington, Indiana, United States",39.1670396,-86.534288
+"Perpignan, France",42.6953868,2.8844713
+"Helensburgh, United Kingdom",56.0083612,-4.7320189
+"Anstruther, United Kingdom",56.2231279,-2.7004835
+"Fleet, United Kingdom",51.2828601,-0.831633347197901
+"Ashby-de-la-Zouch, United Kingdom",52.7443974,-1.4755889
+"Dunblane, United Kingdom",56.185001,-3.9627498
+"Hoorn, Netherlands",52.62254545,5.06772658814782
+"Bewdley, United Kingdom",52.3754763,-2.3162407
+"Meudon, Greater Paris, France",,
+"Wallingford, United Kingdom",51.5982316,-1.1252157
+"Glasgow, Scotland",55.856656,-4.2435816
+"Concord, New Hampshire, United States",43.207106,-71.5370215
+"Galashiels, United Kingdom",55.6163301,-2.8071648
+"Ceres, United Kingdom",56.292877,-2.9699669
+"Borehamwood, United Kingdom",51.6604863,-0.2706505
+"Holborn, United Kingdom",51.5171149,-0.1200656
+"West Bridgford, United Kingdom",52.928384,-1.1252549
+"Bath, Greater Bristol, United Kingdom",,
+"Chadds Ford, Pennsylvania, United States",39.8717773,-75.5913177
+"Letchworth Garden City, United Kingdom",51.9767243,-0.2305198
+"Pisa, Italy",43.7159395,10.4018624
+"Swanage, United Kingdom",50.6086976,-1.957197
+"Murom, Russian Federation",55.5738,42.0447
+"Costessey, United Kingdom",52.6592947,1.2100682
+"Batu Gajah, United Kingdom",,
+"Izhevsk, Russian Federation",56.85973395,53.1975006325009
+"Badajoz, Spain",38.8764686,-6.9733663
+"Wroclaw, Poland",51.1089776,17.0326689
+"Cornwall, Connecticut, United States",41.8437058,-73.3292847
+"Cricklade, United Kingdom",51.6414188,-1.8579413
+"Prato, Italy",43.880598,11.0969262
+"Bennington, Vermont, United States",42.8783183,-73.1971691
+"Carmarthen, United Kingdom",51.8591257,-4.3115906
+"Auburn, New York, United States",42.9320202,-76.5672028
+"Anaheim, Greater Los Angeles, United States",,
+"Newton Stewart, United Kingdom",54.959045,-4.4836736
+Jersey,49.21230655,-2.12559985964288
+"Geelong, Australia",-38.1492812,144.3598269
+"Ostend, Belgium",51.19996685,2.87227558236094
+"Gudhjem, Denmark",55.2112235,14.9704119
+"Saint Helier, Jersey",49.1856637,-2.1102276
+"Bexhill, United Kingdom",50.8424384,0.4675723
+"Montefalco, Italy",42.8918739,12.6500673
+"Lerwick, United Kingdom",60.155451,-1.1468722
+"Tolpuddle, United Kingdom",50.7495779,-2.2958487
+"Broadway, United Kingdom",52.0353825,-1.8618608
+"Riverside, California, United States",33.9533546,-117.3961622
+"La Spezia, Italy",44.107033,9.8282255
+"Sobral, Romania",,
+"Morosaglia, Corsica, France",42.4368399,9.304545
+"Espoo, Finland",60.2241869,24.6603626
+Austria,47.2000338,13.199959
+"Mariefred, Sweden",59.2599454,17.2229487
+"Coburg, Germany",50.258112,10.964463
+"Old Town, United Kingdom",55.9493515,-3.1928115
+"Nördlingen, Germany",48.8516578,10.4885873
+"Sauchen, United Kingdom",57.188007,-2.4995188
+"Heilbronn, Germany",49.142291,9.218655
+"Runcorn, United Kingdom",53.3357763,-2.7318634
+"Jackson, Mississippi, United States",32.4104385,-90.162064888255
+"Mansfield, United Kingdom",53.1419377,-1.1985847
+"Harvard, Massachusetts, United States",42.36782045,-71.1266617287448
+"Isla Vista, United States",34.4133801,-119.861513
+"Newbury, United Kingdom",51.4020055,-1.3236424
+"Jedburgh, United Kingdom",55.4777195,-2.5529225
+"Cremona, Italy",45.1346168,10.0251103
+"Granada, Spain",37.1830197,-3.6021919
+"Kaliningrad, Russian Federation",54.7066422,20.5105166
+"Montpelier, Vermont, United States",44.260015,-72.5753598
+"Nevers, France",46.9945997,3.1591285
+"Kirkleatham, United Kingdom",54.59154725,-1.08931964461925
+"Brecon, United Kingdom",51.9472577,-3.391653
+"Castle Lodge, United Kingdom",53.041855,-0.097987
+"Margate, United Kingdom",51.3881317,1.3842066
+"Château-Thierry, France",49.0439711,3.40299
+"Mainz, Greater Frankfurt, Germany",,
+"Slough, United Kingdom",51.5111014,-0.5940681
+"Ash Vale, United Kingdom",51.2684917,-0.7237212
+"Triest, Italy",45.6500335,13.7706559
+"Kingston, New York, United States",41.928781,-74.0023699
+"Hawarden, United Kingdom",53.1847774,-3.0266606
+"Copenehagen, Denmark",,
+"Goslar, Germany",51.9059936,10.4266284
+"Delft, Netherlands",51.9994572,4.362724538544
+"Dartmouth, United Kingdom",50.3514839,-3.5838439
+"Ptuj, Slovenia",46.4197508,15.871799
+"Lapworth, United Kingdom",52.3386071,-1.7606535
+"Olney, United Kingdom",52.1539179,-0.7013941
+"Caserta, Greater Naples, Italy",,
+"Dunkeld, United Kingdom",56.5655711,-3.5862545
+"Newtonmore, United Kingdom",57.0660071,-4.119191
+"Benthall, United Kingdom",52.6160776,-2.4924832
+"Bovington, United Kingdom",50.6997724,-2.2447364
+"Kirkcaldy, United Kingdom",56.109939,-3.1607883
+"Bolham, United Kingdom",50.9239854,-3.494348
+Haiti,19.1399952,-72.3570971
+"Hannover, Germany",52.3744779,9.7385532
+"Watchet, United Kingdom",51.179892,-3.3306406
+"Monterey, United States",36.600256,-121.8946387
+"Monterey, California, United States",36.600256,-121.8946387
+"Esztergom, Hungary",47.7857051,18.7403659
+"Shute, United Kingdom",50.7725619,-3.0623393
+"Brighouse, United Kingdom",53.702746,-1.7803372
+"Saint Augustine, United States",29.8946952,-81.3145394
+"Loreto, Italy",43.440968,13.6087836
+"St. Augustine, Florida, United States",29.8946952,-81.3145394
+"Pilsen, Czech Republic",49.7477415,13.3775249
+"Cirencester, United Kingdom",51.7170188,-1.9685298
+"Chatham, United Kingdom",51.3804845,0.5292758
+"Vejle, Denmark",55.7000057,9.5333238
+"Clydebank, United Kingdom",55.9153078,-4.4096967
+"Kielce, Poland",50.8717883,20.6308354
+"Recife, Brazil",-8.064193,-34.8781516
+"Mantova, Italy",45.1566683,10.7917191
+"Sezentendre, Greater Budapest, Hungary",,
+"East Hendred, United Kingdom",51.5968072,-1.3356081
+"Ullapool, United Kingdom",57.8978237,-5.1586646
+"Zaporizhia, Ukraine",46.4582887,34.8642856
+"Newcastle, New South Wales, Australia",-32.927288,151.7812534
+"Easton, Pennsylvania, United States",40.6916081,-75.2099865
+"Falkland, United Kingdom",56.252459,-3.2105424
+"Bridlington, United Kingdom",54.0871383,-0.196451
+"Nashville, United States",36.1622296,-86.774353
+"Solingen, Germany",51.1712468,7.0838996
+"Keighley, Greater Bradford, United Kingdom",,
+"Braintree, United Kingdom",51.8790108,0.5501584
+"Hereford, United Kingdom",52.0553813,-2.7151734
+"Bury, United Kingdom",52.2460367,0.7125173
+"Cromer, United Kingdom",52.9311367,1.3012758
+"Vendôme, France",47.7955178,1.0661684
+"Newcastle-under-Lyme, United Kingdom",53.0088256,-2.2332497
+"Galmpton, United Kingdom",50.2497086,-3.8367701
+"Portadown, United Kingdom",54.4241327,-6.4412133
+"Certosa di Pavia, Italy",45.2543547,9.1278876
+"Leuven, Belgium",50.879202,4.7011675
+"Biggar, United Kingdom",55.6244917,-3.5215794
+"Miskolc, Hungary",48.1031517,20.7902158
+"Austin, United Kingdom",51.4991444,-0.1092285
+"Bruton, Isle of Man",,
+"Breschia, Italy",,
+"Monmouth, United Kingdom",51.8098882,-2.716044
+"Anglesey, United Kingdom",53.2783197,-4.33147237084652
+"Pioria, Illinois, United States",,
+"Woburn, United States",42.4792618,-71.1522765
+"Rockford, Illinois, United States",42.2713945,-89.0939659
+"Chambéry, France",45.5662672,5.9203636
+"Worksop, United Kingdom",53.30488,-1.1235719
+"Kirkwall, United Kingdom",58.9818247,-2.958726
+"Nairn, United Kingdom",57.5848102,-3.8737954
+"Loanhead, United Kingdom",55.9228899,-3.9417092
+"Lugo, Spain",43.0396042,-7.45660706650957
+"Epsom, United Kingdom",51.3326098,-0.2678211
+"Northfield, Vermont, United States",44.151174,-72.6567079
+"Vire, France",48.8517468,-0.887259345831838
+"Newark, Nottinghamshire, United Kingdom",53.0781867,-0.8100706
+"Tregynon, United Kingdom",52.5789833,-3.3327167
+"Arlington, United Kingdom",50.8458768,0.191918
+"Sainte Menehould, France",49.0904192,4.8967637
+"Forres, United Kingdom",57.609864,-3.6132149
+"Keswick, United Kingdom",54.6009281,-3.1376089
+"Montevideo, Uruguay",-34.9059038,-56.1913568
+"Duffryn, Greater Newport, United Kingdom",,
+"Wideopen, United Kingdom",55.045797,-1.6217733
+"Pori, Finland",61.4867236,21.7910016
+"Arezzo, Italy",43.4640246,11.8604618783394
+"Sacramento, California, United States",38.5815719,-121.4943995
+"Woking, United Kingdom",51.3201891,-0.5564725
+"Burlington House Piccadilly, United Kingdom",51.5092768,-0.139738035435573
+"Lagny-sur-Marne, France",48.8735584,2.7121663
+"Lethbridge, Canada",49.694285,-112.8515619
+"Providence. Rhode Island, United States",41.8239891,-71.4128342
+"Dubuque, United States",42.5006217,-90.6647966
+"Péronne, France",49.9289578,2.9321899
+"Sorø, Denmark",55.4365822,11.5629363
+"Newark-on-Trent, United Kingdom",53.0781867,-0.8100706
+"Lichfield, United Kingdom",52.6843696,-1.8275285
+"Toreby, Lolland, Denmark",54.7800375,11.2987285
+"Kaunas, Lithuania, Lithuania",54.89405595,23.9166901024052
+"East Grinstead, West Sussex, United Kingdom",51.1322179,-0.011766
+"Knowle, United Kingdom",51.4337828,-2.5667464
+"Devizes, United Kingdom",51.3525546,-1.9959052
+"Toulon, France",43.1257311,5.9304919
+"Schlesswig, Germany",,
+"Drawsteignton, United Kingdom",,
+"Aurora, New York, United States",42.7539591,-76.7024484
+"Louviers, France",49.2157245,1.1646335
+"Ukiah, United States",39.1501662,-123.207786
+"Whitchurch, United Kingdom",52.9704092,-2.6852136
+"Middlwtown, Virginia, United States",,
+"Kabul, Afghanistan",34.5260131,69.1776476
+"Libourne, France",44.9133742,-0.2427216
+"Boulder, Colorado, United States",40.0149856,-105.2705455
+"Douglas, Isle of Man",54.149774,-4.477902
+"Carrickfergus, United Kingdom",54.7136165,-5.8073111
+"Dundalk, Ireland",54.0046033,-6.4008878
+"Anchorage Alaska, United States",61.2163129,-149.8948522
+"Auxerre, France",47.7954001,3.58452
+"Chesterfield, United Kingdom",53.2352134,-1.4264096
+"Volterra, Italy",43.400337,10.860019
+"Drumoak, United Kingdom",57.0824014,-2.3466509
+"Carlton, United Kingdom",54.5896712,-1.389564
+"Spiceland, Indiana, United States",39.838379,-85.4388607
+"Coalbrookdale, United Kingdom",52.6396813,-2.491122
+"Cavan, Ireland",54.03497495,-7.29370218255837
+"Weybridge, United Kingdom",51.3727175,-0.4549296
+"Battle, United Kingdom",50.9177711,0.4836541
+"Prestonpans, United Kingdom",55.9593948,-2.98424
+"Haddington, United Kingdom",55.9556144,-2.7793169
+"De Rijp, Netherlands",52.5561734,4.84224698126194
+"Lake Maggiore, Italy",45.95118205,8.63426735107315
+"Writtle, United Kingdom",51.7295714,0.4249042
+"Yonkers, N.Y., United States",40.9312099,-73.8987468
+"Yeovil, United Kingdom",50.9420432,-2.6317846
+"Penrith, United Kingdom",54.6639133,-2.7522046
+"Rabat, Morocco",34.0224046,-6.8345426
+"Winter Park, United States",28.6000625,-81.3427437436485
+"Thames Ditton, United Kingdom",51.389182,-0.3290768
+"Vilnius, Lithuania",54.6870458,25.2829111
+"Newton Saint Loe, United Kingdom",51.3797756,-2.4271684
+"Burlington, Vermont, United States",44.4723989,-73.211494
+"Middlebury, Vermont, United States",44.014299,-73.1672289
+"Ditchling, United Kingdom",50.9211934,-0.1143214
+"Amman, Jordan",31.9515694,35.9239625
+"Jackson, New Hampshire, United States",44.144276,-71.1811069
+"Camberley, United Kingdom",51.3392845,-0.746098
+"Pushkin, Greater Saint Petersburg, Russian Federation",,
+"Castellon de la Plana, Spain",39.9859953,-0.0374352
+"Aalborg, Denmark",57.0482206,9.9193939
+"Antwerpen, Belgium",51.2211097,4.3997081
+"Earls Colne, United Kingdom",51.9309663,0.6937642
+"Vatican City, Italy",,
+"Sale, United Kingdom",53.4245221,-2.3183898
+"Cartersville, United States",34.180725,-84.7529081410782
+"Baton Route, Louisnaia, United States",,
+"Leominster, United Kingdom",52.2273558,-2.7375332
+"Hanbury, United Kingdom",52.2688447,-2.0527597
+"Kingswear, United Kingdom",50.3484702,-3.572295
+"Pitmedden, United Kingdom",57.3384959,-2.182409
+"Cold Spring, New York, United States",41.4200938,-73.954583
+"Champlain, Canada",46.441406,-72.3439409
+"Tourcoing, Greater Lille, France",,
+"Las Condes, Chile",-33.42478675,-70.5174806230693
+"Fleetwood, United Kingdom",53.9246318,-3.0076371
+"Hobart, Tasmania, Australia",-42.8825087,147.3281233
+"Ringwood East, Australia",-37.8130807,145.2530126
+"Messina, Italy",38.1937571,15.5542082
+"Bexley, United Kingdom",51.4416793,0.150488
+"Laon, France",49.564665,3.620686
+"Langres, France",47.8655638,5.3314162
+"Orvieto, Italy",42.7186152,12.1087907
+"Tromsø, Norway",69.6492969,18.9548489
+"Potters Bar, United Kingdom",51.702588,-0.1955648
+"Chippenham, United Kingdom",51.4587621,-2.1159031
+"Drammen, Norway",59.7284584,10.1778206261388
+"Woodstock, United Kingdom",51.8474887,-1.3545342
+"Memmingen, Germany",47.9867696,10.181319
+"Pedralbes, Spain",41.3901401,2.112218
+"San Juan, Puerto Rico",18.38423905,-66.0534398736473
+"Río Piedras, Puerto Rico",18.3980541,-66.0523961
+"Bamberg, Germany",49.8926723,10.8876149
+"Stow-on-the-Wold, United Kingdom",51.9303426,-1.7230153
+"Selborne, United Kingdom",51.1003062,-0.921242762879237
+"Miraflores, Peru",-12.12149795,-77.0259063168439
+"Victoriaville, Canada",46.055126,-71.9573589
+"Muiden, Greater Amsterdam, Netherlands",,
+"Southwell, United Kingdom",53.0775498,-0.9548829
+"Woodbridge, United Kingdom",52.0940952,1.3201301
+"Oshawa, Canada",43.9172764,-78.8614873
+"Gorno-Altaisk, Russian Federation",51.9577738,85.9641795
+"Buffalo, New York, United States",42.8867166,-78.8783921
+"Denver, India",39.6732999,-104.973122
+"Salfrod, United Kingdom",,
+"Velletri, Italy",41.6867015,12.7770433
+"St. John, New Brunswick, Canada",45.2780145,-66.0558749
+"Olivet, United States",42.4414273,-84.9241541
+"Thetford, United Kingdom",52.4156001,0.748712
+"Ankara, Turkey",39.9215219,32.8537929
+"Güstrow, Germany",53.7936523,12.1759661
+"Montpellier, Vermont, United States",,
+"Montserrat, Spain",39.3576494,-0.6030999
+"Bourg-en-Bresse, France",46.2051192,5.2250324
+"Tournus, France",46.5636138,4.9104079
+"Denbigh, United Kingdom",53.1853776,-3.4178288
+"Sittingbourne, United Kingdom",51.3397366,0.7342319
+"Folkestone, United Kingdom",51.0887105,1.1663557
+"Muscat, Oman",23.5997857,58.5451305
+"Gravesend, United Kingdom",51.4422972,0.3696206
+"Wantage, United Kingdom",51.5878072,-1.4249257
+"Fulwood, United Kingdom",53.3650134,-1.543243
+"Northumberland, United Kingdom",55.25,-2.0005589
+"Harwich, United Kingdom",51.9445801,1.2898522
+"Snape, United Kingdom",52.1695036,1.5004691
+"Windsor, United Kingdom",51.4814958,-0.6133182
+"Brownsea Island, United Kingdom",50.69172365,-1.97186740945811
+"Nefyn, United Kingdom",52.9356211,-4.5191694
+"Beckenham, United Kingdom",51.4070938,-0.0303182
+"Riccarton, United Kingdom",55.95898845,-3.57256766491463
+"Morez, France",46.5270731,6.01616871446755
+"Diss, United Kingdom",52.3767319,1.1089978
+"Augusta, Maine, United States",44.310517,-69.7792601
+"Pommersfelden, Germany",49.7672835,10.8179673
+"Konstanz, Germany",47.659216,9.1750718
+"Carpentras, France",44.0554997,5.048752
+"Tarbes, France",43.232858,0.0781021
+"Tewkesbury, United Kingdom",51.9937857,-2.1549573
+"Beaune, France",47.0239064,4.8380426
+"Bremerhaven, Germany",53.5522264,8.5865509
+"Saint Petersburg, Russian Federation",59.9387318,30.3162286
+"Dole, France",47.0921047,5.4925463
+"Sherborne Saint John, United Kingdom",51.30430945,-1.09433325421299
+"Saint John's, Canada",47.5614849,-52.7125838
+"Gatineau, Canada",45.4563052,-75.7228827
+"New Milford, Connecticut, United States",41.5867418,-73.4117652831255
+"Concord, Massachusetts, United States",42.4605189,-71.3488962
+"Ely, United Kingdom",52.3998376,0.2630951
+"King's Lynn, United Kingdom",52.754891,0.3964614
+"Berrington, United Kingdom",52.3038103,-2.6297034
+"La Fère, France",49.6632869,3.3661672
+"Culloden Moor, United Kingdom",57.4798607,-4.08774678666361
+"Crathes, United Kingdom",57.0589093,-2.4154526
+"Horup, Sweden",55.4437114,14.1213546
+"Jaegerspris, Denmark",55.8505813,11.9916517
+Denmark,55.670249,10.3333283
+"Foxborough, United States",42.0653768,-71.2478307
+"West Point, New York, United States",41.3915173,-73.9556251
+"Haslemere, United Kingdom",51.0876062,-0.7097767
+"Fort Riley, Kansas, United States",39.058327,-96.8215534
+"Pickering, United Kingdom",54.2465905,-0.7761461
+"Concord, United States",43.207106,-71.5370215
+"Castle Douglas, United Kingdom",54.9383964,-3.9225438
+"Deinze, Belgium",50.9840526,3.5274017
+"Gatehouse of Fleet, United Kingdom",54.8836315,-4.1837346
+Tuscany),43.4586541,11.1389204
+"Salcombe, United Kingdom",50.2388158,-3.772612
+"Elstow, United Kingdom",52.1153339,-0.4681273
+"Aberdare, United Kingdom",51.713353,-3.4455549
+"Nahant, Massachusetts, United States",42.4264859,-70.918937
+"București, Romania",44.4361414,26.1027202
+"Talaton, United Kingdom",50.7876222,-3.3240853
+"Chicago, Illinoise, United States",,
+"Epinal, France",48.1745653,6.449823
+"Totnes, United Kingdom",50.4322991,-3.6870436
+"Moncton, Canada",46.097331,-64.7989694
+"Kortrijk, Belgium",50.8276199,3.2659948
+"Sturbridge, Massachusetts, United States",42.108428,-72.078687
+"Berkeley, United Kingdom",51.6913643,-2.4585246
+"Bexleyheath, United Kingdom",51.4634854,0.1480552
+"Brookville, Indiana, United States",39.4231065,-85.0127375
+"Columbia, Missouri, United States",38.951883,-92.3337365
+"Fano, Italy",43.8424173,13.0146632
+"Pesaro, Italy",43.9098114,12.9131228
+"Fort Wayne, Indiana, United States",41.0799898,-85.1386014
+"Poggio a Caiano, Italy",43.8160891,11.0546502
+"Carmignano, Italy",45.1496279,11.6494087
+"Evansville, Indiana, United States",37.9747645,-87.5558482
+"Greencastle, Indiana, United States",39.6444898,-86.8647315
+"Niort, France",46.3239455,-0.4645211
+"Sandhurst, United Kingdom",51.3434698,-0.774
+"Murmansk, Russian Federation",68.9706637,33.0749718
+"Beijing, China",39.9059631,116.391248
+"Cognac, France",45.6931647,-0.3250174
+"La Jolla, California, United States",32.8472711,-117.2742085
+"Viterbo, Italy",42.4164974,12.1039438
+"Chitchester, United Kingdom",,
+"St. Pölten, Austria",48.2043985,15.6229118
+"Anderson, Indiana, United States",40.1053196,-85.680254
+"Jegenstorf, Switzerland",47.0498143,7.5085719
+"boston, United States",42.3604823,-71.0595677
+"Albany, New York, United States",42.6511674,-73.7549679
+"Munster, Germany",51.9501317,7.61330165026119
+"Collegeville, Pennsylvania, United States",40.1856597,-75.4515709
+"Bethleham, Pennsylvania, United States",,
+"Helston, United Kingdom",50.1016731,-5.2730319
+"Digne-les-Bains, France",44.0918144,6.2351431
+"Somerton, United Kingdom",51.0537141,-2.7315543
+"Fremont, California, United States",37.5482697,-121.9885718
+"Gibraltar, Gibraltar",36.1451465,-5.3484847
+"Oxborough, Norfolk, United Kingdom",52.58254,0.5723137
+"Béziers, France",43.341279,3.2166203
+"Wilmington, North Carolina, United States",34.2257282,-77.9447106
+"Rovigo, Italy",45.0698166,11.78882
+"Edenkoben, Germany",49.282236,8.1284357
+"Wurzburg, Germany",49.79245,9.932966
+"Belfort, France",47.6379599,6.8628942
+"Olomouc, Czech Republic",49.5940567,17.251143
+"Oxted, United Kingdom",51.2566507,-0.0041976
+"Caterham, United Kingdom",51.2819693,-0.0771031
+"Sioux City, Iowa, United States",42.4966815,-96.4058781
+"Lafayette, Indiana, United States",40.4167022,-86.8752868
+"Bergamo, Comoros",,
+"Kozmodemyansk, Russian Federation",56.3324346,46.5462855
+"Butler, United Kingdom",51.4727919,-2.5371502
+"Tenby, United Kingdom",51.6726128,-4.7050442
+"Stony Brook, Long Island, New York, United States",,
+"Rickmansworth, United Kingdom",51.6390009,-0.4718405
+"Topeka, Kansas, United States",39.0490111,-95.6775556
+"Westport, Connecticut, United States",41.1414855,-73.3578954
+"Swarthmore, Pennsylvania, United States",39.902057,-75.3499119
+"Madison, Wisconsin, United States",43.074761,-89.3837612
+"Greater Florence, Italy",,
+"Maltby, United Kingdom",53.4264287,-1.2070443
+"Bordighera, Italy",43.7850512,7.6591094
+"Spokane, Washington, United States",47.6588603,-117.4247133
+"Toronto, Ontatio, Canada",,
+"Dhaka, Bangladesh",23.7593572,90.3788136
+"Cork, Ireland",51.8979282,-8.4705805
+"Fredericksburg, Virginia, United States",38.3031837,-77.4605398
+"Forfar, United Kingdom",56.6444658,-2.888507
+"Glenesk, United Kingdom",51.4625377,0.0626499
+"Ipswich, Massachusetts, United States",42.679273,-70.8411582
+"Champs-sur-Marne, France",48.8516672,2.6009206
+"Chestnut Hill, Massachusetts, United States",42.330653,-71.1622756
+"Wickenburg, Arkansas, United States",,
+"Glendale, United States",34.142498,-118.2485959
+"Saint Peter Port, Guernsey",49.4568142,-2.5389978
+"Maribo, Denmark",54.7758018,11.5054333
+"Litchfield, Connecticut, United States",41.767249,-73.2543048
+"Syracuse, Italy",37.0646139,15.2907196
+"Isle of Wight, United Kingdom",50.6710482,-1.33271101331995
+"Balerno, United Kingdom",55.88454195,-3.34377230574602
+"Sete, France",43.4017377,3.6941845
+"Arles, France",43.6776223,4.6309653
+"Gainsborough, United Kingdom",53.3968736,-0.7739576
+"Stavroupoli, Greece",41.1989907,24.7063601
+"Glencoe, United Kingdom",56.6822314,-5.100468
+"Khimki, Russian Federation",55.8892847,37.4449896
+"Colombo, Sri Lanka",6.9349969,79.853845
+"Helmsley, United Kingdom",54.2457833,-1.0583789
+"Mt. Kisco, New York, United States",41.204262,-73.7270759
+"Saint Lucia, Australia",-27.4976036,153.0079711
+"Nicosia, Cyprus",35.1739302,33.364726
+"Castlemain, Victoria, Australia",,
+"Warabrook, Australia",-32.8816666,151.7177778
+"Manly, New South Wales, Australia",-33.8038503,151.2908235
+"Moraga, California, United States",37.8347106,-122.1295595
+"Saint-Quentin, France",49.8486111,3.2863888
+"East Lansing, Michigan, United States",42.7355416,-84.4852468
+"Colombiers, France",44.1956236,5.9927144
+"Louveciennes, Greater Paris, France",,
+"Cumnock, United Kingdom",55.4532369,-4.2669241
+"Châlons-en-Champagne, France",48.9566218,4.3628851
+"Hawaii, United States",21.2160437,-157.9752029
+"København, Denmark",55.6867243,12.5700724
+"Shasta State Historic Park, United States",40.5989144,-122.492812467524
+"Berkeley, United States",37.8708393,-122.2728638
+"Veenhuizen, Netherlands",53.0286447,6.40220157372615
+"Saint-Etienne, France",45.4401467,4.3873058
+"Reno, Nevada, United States",39.52927,-119.8136743
+"La Piscine, France",,
+Portugal,40.033265,-7.8896262
+"Romans-sur-Isère, France",45.0458886,5.0528681
+"Lisieux, France",49.1460831,0.2255168
+"Chernigov, Ukraine",51.494099,31.294332
+"Al Ain, United Arab Emirates",24.2258413,55.7474052
+"La Habana, Cuba",23.1379911,-82.3658561
+"Martigues, France",43.4057279,5.0548176
+"Jennings, United States",38.9957749,-85.63592
+"Fecamp, France",49.7577729,0.374891
+"Lancaster, PA, United States",40.03813,-76.3056685
+"Huddersfield, England",53.6467031,-1.7832076
+"Frankfurt-am-Main, Germany",50.110653,8.682093
+"Hamilton, Canada",43.255205,-79.8682019
+"Rugby, United Kingdom",52.3726682,-1.2620037
+Madrid),40.4167047,-3.7035824
+"L'Isle-Adam, France",49.1125294,2.2186324
+"Massillon, Vatican City State)",,
+"Tehran, Islamic Republic of Iran",35.7006177,51.401375
+"Belmont, California, United States",37.5202145,-122.2758007
+"Livorno, Italy",43.5426309,10.3160295
+"Carpi, Italy",44.7835699,10.8854523
+"Feltre, Italy",46.0163755,11.9062541
+"Meiningen, Germany",50.5695563,10.4305056395344
+"Gullane, United Kingdom",56.0350435,-2.8307088
+"Provincetown, United States",42.058436,-70.1786374
+Bermuda,32.3018217,-64.7603582
+"Duluth, Minnisota, United States",46.7729322,-92.1251217
+"Vincentown, New Jersey, United States",39.9340023,-74.7484937
+"Longniddry, United Kingdom",55.9745237,-2.8946677
+"Pont-Aven, France",47.85474,-3.7462555
+"Castello, Italy",46.0280867,9.0541987
+"Rudolstadt, Germany",50.7206063,11.3401985
+"Allendale, Michigan, United States",42.9722455,-85.9536534
+"Maesteg, United Kingdom",51.6034032,-3.6535281
+"Llanystumdwy, United Kingdom",52.922637,-4.2712577
+"New Hope, Pennsylvania, United States",40.3642728,-74.9512784
+"Chester, Pennsylvania, United States",39.849557,-75.3557457
+"Kansas City, United States",39.0844687,-94.5630297
+"Oshkosh, Wisconsin, United States",44.0206919,-88.5408573
+"Jersey City, New Jersey, United States",40.7281575,-74.0776416
+"West Chester, Pennsylvania, United States",39.9597213,-75.6059637
+"St Moritz, Switzerland",46.4960592,9.8386578
+"Vulaines-sur-Seine, Greater Fontainebleau, France",,
+"Melbourne,, Australia",-37.8142175,144.9631608
+"Spanbroek, Netherlands",52.68836315,4.943773668957
+"Sydney, New South Wales, Australia",-33.8548156,151.2164539
+"cuernavaca, Mexico",18.9218274,-99.2342281
+"Harrisburg, Pennsylvania, United States",40.2663107,-76.8861121
+"Lewiston, United States",44.100351,-70.2147763
+"Correggio, Italy",44.770561,10.7797829
+"Szczecin, Poland",53.4302122,14.5509784
+"Recanati, Italy",43.4035085,13.5486016
+"Lesi, Italy",45.8657468,11.0748676
+"Schwäbisch Hall, Germany",49.1123963,9.7369047
+"Asolo, Italy",45.8007265,11.9142444
+"Covington, Ohio, United States",40.1172727,-84.3538366
+"Uddevalla, Sweden",58.3490555,11.9382855
+"New York, NY, United States",40.7305991,-73.9865811
+"Glen Cove, New YOrk, United States",40.8623217,-73.6337388
+"Pontypridd, United Kingdom",51.59928,-3.3416385
+"Middle Wallop, United Kingdom",51.1393682,-1.5811101
+"Seymour, Indiaia, United States",,
+"Naples, Florida, United States",26.1420358,-81.7948102
+"Ravenna, Italy",44.4161414,12.2017617
+"Peterhead, United Kingdom",57.5068566,-1.7830751
+"Cento, Italy",44.7274395,11.2903029
+"Langwarrin, Victoria, Australia",-38.1545828,145.1973931
+"Toowoomba, Queensland, Australia",-27.5610192,151.953351
+"Benalla, Victoria, Australia",-36.5489709,145.9883521
+"Melbourne, Victoria, Australia",-37.8142175,144.9631608
+"Olten, Switzerland",47.3496571,7.903787
+"Coxwold, United Kingdom",54.18722,-1.1818591
+"Bautzen, Germany",51.1840794,14.4270706662008
+"Pietermaritzburg, South Africa",-29.5999999,30.3788889
+Egypt,26.2540493,29.2675469
+"Camerino, Italy",43.1357641,13.0683092
+"Saint-Jean-Cap-Ferrat, Greater Nice, France",,
+"Neuburg an der Donau, Germany",48.7371951,11.1795268
+"Baton Rouge, Louisiana, United States",30.4507462,-91.1545509
+"Quincy, United States",39.9356016,-91.4098726
+"Mikkeli, Finland",61.6877956,27.2726569
+"Morpeth, United Kingdom",55.1717715,-1.6863009
+"Chicoutimi, Quebec, Canada",48.405959,-71.0691829
+"Guelph, Ontario, Canada",43.546557,-80.2499769
+"Arolsen, Germany",51.3816043,9.0147661
+"Gardena, California, United States",33.888658,-118.3076479
+"Winona, United States",44.049963,-91.6393151
+"Boissy-Saint-Léger, France",48.7498882,2.5121047
+"San Simeon, California, United States",35.6438587,-121.1907532
+"Donaueschingen, Germany",47.9481666,8.4998444
+"Salenstein, Switzerland",47.6694793,9.05922
+"Ciechanów, Poland",52.8814075,20.6110759
+"Dornoch, United Kingdom",57.8805039,-4.0294398
+"Livingston, United Kingdom",55.8878144,-3.52634
+"Oxford, United States",34.3664127,-89.5187663
+"Frankfurt am Main, Germany",50.110653,8.682093
+"Le Prieure, France",49.0698772,1.7747104
+"Belluno, Italy",46.1375185,12.2181711
+"Athina, Greece",37.9841493,23.7279843
+"Berea, Kentucky, United States",37.568694,-84.2963223
+"Hampton, Virginia, United States",37.0300969,-76.3452056
+"Hartford Connecticut, United States",41.7645491,-72.6908672
+"Bassano Romano, Italy",42.2182308,12.1925496
+"Tremezzo, Italy",45.983484,9.218538
+"Clamecy, France",49.4286111,3.3619444
+"Castenedolo, Italy",45.4715763,10.29831
+"Bomarzo, Italy",42.481928,12.248764
+"Lovere, Italy",45.8168815,10.0752136
+"Iseo, Italy",45.6595554,10.0510489
+"Machynlleth, United Kingdom",52.5905755,-3.8517265
+"Ridgefield, Connecticut, United States",41.2814842,-73.4981791
+"Magdeburg, Germany",52.1315889,11.6399609
+"Fort Ticonderoga, New York, United States",43.841449,-73.3876187
+"Laguna, California, United States",38.4210209,-121.4238413
+"Searsport, Maine, United States",44.4584089,-68.9241994
+"Dedham, United Kingdom",51.9584423,0.9943287
+"Blair Atholl, United Kingdom",56.7637368,-3.8478089
+"Lucknow, India",26.8381,80.9346001
+"Vero Beach, United States",27.6387163,-80.3975398
+"Franklin, North Carolina, United States",36.1028596,-78.2787228
+"Carona del Mar, California, United States",,
+"Costa Mesa, California, United States",33.6633386,-117.9033169
+"Algonquin Park, Canada, Canada",43.5375185,-79.6186093
+"Sarnia, Ontario, Canada",42.9923449,-82.3800378
+"Recklinghausen, Greater Dortmund, Germany",,
+"Lubbock, Texas, United States",33.5778631,-101.8551664
+"Cazenovia, New York, United States",42.9300668,-75.8526914
+"Ondarroa, Spain",43.3207293,-2.4207496
+"Abbeville, France",50.1060835,1.8337029
+"Schaffhausen, Switzerland",47.6960491,8.634513
+"Mallorca, Spain",39.6594496,2.986239
+"Grantown-on-Spey, United Kingdom",57.3295089,-3.6104017
+"Sandbank, United Kingdom",55.9812457,-4.9481321
+"roanne, France",46.0363902,4.0738682
+"Lindsborg, Kansas, United States",38.5736176,-97.6744837
+"Künzelsau, Germany",49.2803765,9.6901512
+"Réunion, France",-21.1309331,55.5265771
+"Zwickau, Germany",50.7185043,12.4939267
+"Kroměříž, Czech Republic",49.2984191,17.3929804
+"Orono, Maine, United States",44.883607,-68.6727909
+"Minneapolis, MN, United States",44.9772995,-93.2654691
+"Lons le Saunier, France",46.6739021,5.5586167
+"Salins-les-Bains, France",46.9404794,5.8786339
+"Glarus, Switzerland",47.0422116,9.0674041
+"Pullman, Washington, United States",46.7304268,-117.1738949
+"Chiari, Italy",45.5364624,9.928846
+"Ariccia, Greater Rome, Italy",,
+"Pannonhalma, Hungary",47.5502015,17.7541679
+"Mechelen, Belgium",51.0281381,4.4803453
+"Compton, United Kingdom",51.5155951,-1.2451998
+"Figueres, Spain",42.2666314,2.9638434
+"Coruna, Spain",43.1538815,-8.58094170455789
+"Las Palmas de Gran Canaria, Spain",28.1287799,-15.4350513
+"Latisana, Italy",45.7784884,12.996219
+"Verbania Pallanza, Italy",45.943827,8.4722836
