@@ -56,7 +56,7 @@ shinyServer(function(input, output) {
                      options=list(displayMode = "Markers", 
                                   mapType='normal', 
                                   colorAxis = "{colors:['red', 'grey']}",
-                                  useMapTypeControl=TRUE, enableScrollWheel='TRUE'))
+                                  useMapTypeControl=TRUE, enableScrollWheel=TRUE))
     
   })
   

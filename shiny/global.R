@@ -66,10 +66,12 @@ KmeansPainting <- function(label, num_paintings = 10) {
 
 
 # geolocation map
-geolocation = read.csv('../data/geolocation_map.csv')
-geolocation <- geolocation %>% mutate(latlon = paste(latitude, longitude, sep=":"))
-
-
+geolocation <- read.csv('../data/geolocation_map.csv')
+geolocation <- geolocation %>% na.omit() %>% mutate(
+  latlon = sprintf("%.2f:%.2f", as.numeric(latitude), as.numeric(longitude)))
+# geolocation['latlon'] = apply(geolocation, 1, function(row) {
+#   sprintf("%.2f:%.2f", as.numeric(row['latitude']), as.numeric(row['longitude']))
+# })
 
 image_path <- function(author_id, painting_id) {
   return(paste0('../data/images_athenaeum/full/', author_id, '/', painting_id, '.jpg'))
