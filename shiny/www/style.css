@@ -19,6 +19,22 @@
 	max-height: 700px;
 }
 
+.content {
+	padding: 0px;
+}
+
+.tab-pane {
+	padding: 15px;
+}
+
+#shiny-tab-paintingLoc {
+	padding: 0px;
+}
+
+#paintingLoc {
+  height: calc(100vh - 50px) !important;
+}
+
 #painting img {
 	max-height: 400px; 
 	max-width: 100%; 
