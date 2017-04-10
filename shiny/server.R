@@ -51,13 +51,25 @@ shinyServer(function(input, output) {
   })
   
   # Painting Locations
-  output$paintingLoc <- renderGvis({
-    gvisMap(geolocation,locationvar="latlon",tipvar="location_str",
-                     options=list(displayMode = "Markers", 
-                                  mapType='normal', 
-                                  colorAxis = "{colors:['red', 'grey']}",
-                                  useMapTypeControl=TRUE, enableScrollWheel=TRUE))
-    
+  # output$paintingLoc <- renderGvis({
+  #   gvisMap(geolocation,locationvar="latlon",tipvar="location_str",
+  #                    options=list(displayMode = "Markers", 
+  #                                 mapType='normal', 
+  #                                 colorAxis = "{colors:['red', 'grey']}",
+  #                                 useMapTypeControl=TRUE, enableScrollWheel=TRUE))
+  #   
+  # })
+  
+  output$paintingLoc <- renderLeaflet({
+    color_map <- colorNumeric('YlOrRd', sqrt(geolocation$num_paintings))
+    leaflet(geolocation) %>% addTiles() %>%
+      addCircles(lng = ~longitude, lat = ~latitude, weight = 0,
+                 radius = ~sqrt(num_paintings) * 1000,
+                 popup = ~paste0(location_str, ' [', num_paintings, ' paintings]'),
+                 fillColor = ~color_map(sqrt(num_paintings)),
+                 #color = ~color_map(sqrt(num_paintings)),
+                 opacity = 1,
+                 fillOpacity = 0.6)
   })
   
   # Painting Samples

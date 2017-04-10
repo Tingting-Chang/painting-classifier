@@ -64,7 +64,7 @@ shinyUI(dashboardPage(
                                  htmlOutput("medias"))
                 ))),
       tabItem(tabName = "paintingLoc",
-              htmlOutput("paintingLoc")),
+              leafletOutput("paintingLoc")),
       tabItem(tabName = "paintingSam",
               htmlOutput("paintPlt")
               ),

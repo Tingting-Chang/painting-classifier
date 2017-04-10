@@ -3,6 +3,7 @@ library(shiny)
 library(ggplot2)
 library(dplyr)
 library(shinydashboard)
+library(leaflet)
 
 addResourcePath(prefix = 'images', '../data/images_athenaeum/full')
 
@@ -66,9 +67,10 @@ KmeansPainting <- function(label, num_paintings = 10) {
 
 
 # geolocation map
-geolocation <- read.csv('../data/geolocation_map.csv')
-geolocation <- geolocation %>% na.omit() %>% mutate(
-  latlon = sprintf("%.2f:%.2f", as.numeric(latitude), as.numeric(longitude)))
+geolocation <- read.csv('../data/geolocation_map.csv') %>% na.omit() %>%
+  arrange(desc(num_paintings))
+# geolocation <- geolocation %>% na.omit() %>% mutate(
+#   latlon = sprintf("%.2f:%.2f", as.numeric(latitude), as.numeric(longitude)))
 # geolocation['latlon'] = apply(geolocation, 1, function(row) {
 #   sprintf("%.2f:%.2f", as.numeric(row['latitude']), as.numeric(row['longitude']))
 # })
