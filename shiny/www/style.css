@@ -35,7 +35,7 @@
   height: calc(100vh - 50px) !important;
 }
 
-#painting img {
+#painting_to_guess img {
 	max-height: 400px; 
 	max-width: 100%; 
 	height: auto;

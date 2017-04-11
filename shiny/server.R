@@ -104,30 +104,64 @@ shinyServer(function(input, output) {
     paste0(outKHtml, "</div>")
   })
   
+  cur_painting <- reactiveValues(painter = -1, painting = -1, prediction = -1)
   
-
-   cur_painter <- -1
-   cur_painting <- -1
+  game_state <- reactiveValues(user_guessed = 0, model_guessed = 0, total_attempts = 0,
+                               message = NULL)
+  
+  observeEvent(game_state$total_attempts,{
+    new_painting <- painting_predictions %>%
+      select(author_id, painting_id, predicted_author) %>%
+      sample_n(1)
+    cur_painting$painter <- new_painting[[1,1]]
+    cur_painting$painting <- new_painting[[1,2]]
+    cur_painting$prediction <- new_painting[[1,3]]
+  })
    
-   generate_painting <- function() {
-     new_painting <- painting_sizes %>% select(author_id, painting_id) %>% sample_n(1)
-     cur_painter <<- new_painting[[1,1]]
-     cur_painting <<- new_painting[[1,2]]
-   }
-   
-   output$painting <- renderImage({
-     if(cur_painter == -1 || cur_painting == -1) {
-       generate_painting()
+   output$painting_to_guess <- renderImage({
+     # if(cur_painter == -1 || cur_painting == -1 || cur_prediction == -1) {
+     #   generate_painting()
+     # }
+     # 
+     if(cur_painting$painting == -1) {
+       return(NULL)
      }
-     
-     list(src = image_path(cur_painter, cur_painting),
+     list(src = image_path(cur_painting$painter, cur_painting$painting),
           filetype = 'image/jpeg')
+   }, deleteFile = FALSE)
+   
+   output$game_points <- renderText({
+     # if(cur_painter == -1 || cur_painting == -1 || cur_prediction == -1) {
+     #   generate_painting()
+     # }
+     # paste0('<p align = "right"><strong>', cur_painter, ' ', cur_painting, '</strong></p>')
+     if(game_state$total_attempts == 0) {
+       return('<p align = "right"><strong>No attempts made</strong></p>')
+     } else {
+       return(paste0('<p align = "right"><strong>User: ', game_state$user_guessed, '/',
+                     game_state$total_attempts, ' (',
+                     round(game_state$user_guessed / game_state$total_attempts * 100),
+                     '%)<br>Our model: ', game_state$model_guessed, '/',
+                     game_state$total_attempts,' (',
+                     round(game_state$model_guessed / game_state$total_attempts * 100),
+                     '%)</strong></p>'))
+     }
    })
    
-   output$points <- renderText({
-     if(cur_painter == -1 || cur_painting == -1) {
-       generate_painting()
+   observeEvent(input$game_select, {
+     game_state$message = game_answer_message(cur_painting$painter,
+                                              input$game_option == cur_painting$painter)
+     if(input$game_option == cur_painting$painter) {
+       game_state$user_guessed <- game_state$user_guessed + 1
      }
-     paste0('<p align = "right"><strong>', cur_painter, ' ', cur_painting, '</strong></p>')
+     if(cur_painting$prediction == cur_painting$painter) {
+       game_state$model_guessed <- game_state$model_guessed + 1
+     }
+     game_state$total_attempts <- game_state$total_attempts + 1
+     #generate_painting()
+   })
+   
+   output$game_message <- renderText({
+     paste(game_state$message, cur_painting$painter, cur_painting$painting)
    })
 })

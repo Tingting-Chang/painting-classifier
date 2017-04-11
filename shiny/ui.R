@@ -75,10 +75,13 @@ shinyUI(dashboardPage(
               h2("Who painted this?"),
               p("If you know a thing or two about paintings, it's time to put your skills to the test,
                 by comparing yourself with the machine learning model we developed."),
-              htmlOutput("points"),
-              fixedRow(column(8, imageOutput("painting")),
+              fixedRow(column(8, imageOutput("painting_to_guess")),
                        column(4,
-                              p("radio buttons"))))
+                              htmlOutput("game_points"),
+                              radioButtons("game_option", "Select the author",
+                                           predictions_choices),
+                              actionButton("game_select", "Select"),
+                              htmlOutput("game_message"))))
   )
   
   
