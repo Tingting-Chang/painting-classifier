@@ -104,6 +104,81 @@ shinyServer(function(input, output) {
     paste0(outKHtml, "</div>")
   })
   
+  #############################
+  # Paintings color histogram #
+  #############################
+  cur_histogram_painting <- reactiveValues(hist = get_sample_painting_histogram())
+  
+  observeEvent(input$histogram_reset, {
+    cur_histogram_painting$hist <- get_sample_painting_histogram()
+  })
+  
+  output$painting_color_hist <- renderImage({
+    list(src = image_path(cur_histogram_painting$hist['author_id'],
+                          cur_histogram_painting$hist['painting_id']),
+         filetype = 'image/jpeg')
+  }, deleteFile = FALSE)
+  
+  output$colorHistPaintingDesc <- renderText({
+    painting_record <- painting_sizes %>%
+      filter(author_id == cur_histogram_painting$hist['author_id'],
+             painting_id == cur_histogram_painting$hist['painting_id']) %>%
+      select(author_id, painting_title) %>%
+      inner_join(authors %>% select(author_id, first_name, last_name), by = 'author_id')
+      
+    result <- paste0('<p><strong>Author:</strong> ', painting_record[[1, 'last_name']])
+    if(!is.null(painting_record[[1, 'first_name']]) &&
+       length(painting_record[[1, 'first_name']]) > 0) {
+      result <- paste0(result, ', ', painting_record[[1, 'first_name']])
+    }
+    result <- paste0(result, '<br><strong>Title:</strong> ',
+                     painting_record[[1, 'painting_title']],
+                     '</p>')
+  })
+  
+  color.hist.options <- list(bar = '{groupWidth: "100%"}',
+                             legend = '{ position: "none" }',
+                             hAxis = '{textPosition: "none"}',
+                             vAxis = '{textPosition: "none", gridlines: {count: 0}}',
+                             backgroundColor = '{fill: "transparent"}',
+                             theme = 'maximized',
+                             titlePosition = 'in'
+                             #chartArea = '{left:"3%",top:"3%",width:"94%",height:"94%"}'
+                             )
+  
+  output$colorHuePlot <- renderGvis({
+    to.plot <- data.frame(x = 1:20,
+                          frequency = cur_histogram_painting$hist[3:22],
+                          frequency.style = color_hist_repr[1:20])
+    gvisColumnChart(to.plot, xvar = 'x', yvar = c('frequency', 'frequency.style'),
+                    options = c(color.hist.options,
+                                list(title = 'Hue',
+                                     height = 200)))
+  })
+  
+  output$colorSatPlot <- renderGvis({
+    to.plot <- data.frame(x = 1:5,
+                          frequency = cur_histogram_painting$hist[23:27],
+                          frequency.style = color_hist_repr[21:25])
+    gvisColumnChart(to.plot, xvar = 'x', yvar = c('frequency', 'frequency.style'),
+                    options = c(color.hist.options,
+                                list(title = 'Saturation',
+                                     height = 100)))
+  })
+  
+  output$colorValPlot <- renderGvis({
+    to.plot <- data.frame(x = 1:5,
+                          frequency = cur_histogram_painting$hist[28:32],
+                          frequency.style = color_hist_repr[26:30])
+    gvisColumnChart(to.plot, xvar = 'x', yvar = c('frequency', 'frequency.style'),
+                    options = c(color.hist.options,
+                                list(title = 'Value',
+                                     height = 100)))
+  })
+  
+  #########################
+  # Painter guessing game #
+  #########################
   cur_painting <- reactiveValues(painter = -1, painting = -1, prediction = -1)
   
   game_state <- reactiveValues(user_guessed = 0, model_guessed = 0, total_attempts = 0,
@@ -119,10 +194,6 @@ shinyServer(function(input, output) {
   })
    
    output$painting_to_guess <- renderImage({
-     # if(cur_painter == -1 || cur_painting == -1 || cur_prediction == -1) {
-     #   generate_painting()
-     # }
-     # 
      if(cur_painting$painting == -1) {
        return(NULL)
      }
@@ -131,10 +202,6 @@ shinyServer(function(input, output) {
    }, deleteFile = FALSE)
    
    output$game_points <- renderText({
-     # if(cur_painter == -1 || cur_painting == -1 || cur_prediction == -1) {
-     #   generate_painting()
-     # }
-     # paste0('<p align = "right"><strong>', cur_painter, ' ', cur_painting, '</strong></p>')
      if(game_state$total_attempts == 0) {
        return('<p align = "right"><strong>No attempts made</strong></p>')
      } else {
@@ -158,7 +225,6 @@ shinyServer(function(input, output) {
        game_state$model_guessed <- game_state$model_guessed + 1
      }
      game_state$total_attempts <- game_state$total_attempts + 1
-     #generate_painting()
    })
    
    output$game_message <- renderText({

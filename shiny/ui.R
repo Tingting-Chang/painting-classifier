@@ -11,7 +11,8 @@ shinyUI(dashboardPage(
                menuItem("Data Exploration", tabName = "xplore", icon = icon("bar-chart-o"),
                         menuSubItem("EDA", tabName = 'rawDataPlt'),
                         menuSubItem("Painting Sample", tabName = 'paintingSam'),
-                        menuSubItem("Painting Location", tabName = 'paintingLoc')),
+                        menuSubItem("Painting Location", tabName = 'paintingLoc'),
+                        menuSubItem("Color Histograms", tabName = 'colorHistograms')),
                menuItem("Exploring similarities", tabName = "kmeans", icon = icon("picture-o")),
                menuItem("Who painted this?", tabName = "game", icon = icon("gamepad")),
                menuItem("Github",icon = icon("github"),
@@ -68,6 +69,18 @@ shinyUI(dashboardPage(
       tabItem(tabName = "paintingSam",
               htmlOutput("paintPlt")
               ),
+      tabItem(tabName = "colorHistograms",
+              h2("Color Histograms"),
+              p("All our non neural network models based their predictions on the color
+                histograms of paintings. It is therefore important to learn how these are
+                generated, in order to properly understand the advantages and limitations
+                of this process."),
+              fluidRow(column(6, imageOutput("painting_color_hist")),
+                       column(6, htmlOutput("colorHuePlot"),
+                              htmlOutput("colorSatPlot"),
+                              htmlOutput("colorValPlot"))),
+              htmlOutput("colorHistPaintingDesc"),
+              actionButton("histogram_reset", "New painting")),
       tabItem(tabName = "kmeans",
               "K-means",
               htmlOutput("kmeansPlt")),

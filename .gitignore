@@ -12,4 +12,6 @@
 /data/zipped*
 *.z*
 /budget
+.RData
+
 

@@ -16,6 +16,8 @@ print("paintings loaded")
 kmeans_centers <- read.csv('../data/kmeans_centers.csv')
 print("k-means centroids loaded")
 color_hist <- read.csv('../data/color_hist_kmeans_206552.csv')
+color_hist_repr <- unlist(read.csv('../data/histogram_color_representatives.csv', header = F,
+                                    stringsAsFactors = F))
 print("painting color histograms loaded")
 # painting = read.csv('data/athenaeum_paintings.csv')
 print("main tables loaded")
@@ -112,4 +114,8 @@ game_answer_message <- function(author_id, correct = F) {
                     filter(author_id == author_id) %>%
                     select(pretty_name))[[1,1]], '!</p>'))
   }
+}
+
+get_sample_painting_histogram <- function() {
+  return(unlist(color_hist %>% sample_n(1)))
 }
