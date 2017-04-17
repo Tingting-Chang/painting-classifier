@@ -26,8 +26,8 @@ def neural_net1(num_classes = 3, initial_rate=0.04,
     ##########
     # Inputs #
     ##########
-    image_full_input = Input(shape = (None, None, 3), name = 'full')
-    image_resized_input = Input(shape = (200, 200, 3), name = 'resized_200')
+    image_full_input = Input(shape = (3, None, None), name = 'full')
+    image_resized_input = Input(shape = (3, 200, 200), name = 'resized_200')
     image_meta_input = Input(shape = (1,), name = 'metadata')
     
     ############################
@@ -37,7 +37,7 @@ def neural_net1(num_classes = 3, initial_rate=0.04,
                          activation = activations_conv)(image_resized_input) #99*99*rf1
     resized_200_max = MaxPooling2D((3, 3), strides = (2, 2))(resized_200) #49*49*rf1
     resized_200_avg = AveragePooling2D((3, 3), strides = (2, 2))(resized_200) #49*49*rf1
-    resized_200 = Concatenate()([resized_200_max, resized_200_avg]) #49*49*2rf1
+    resized_200 = Concatenate(axis = 1)([resized_200_max, resized_200_avg]) #49*49*2rf1
     resized_200 = Conv2D(resized_filters2, kernel_size = (3, 3), strides = (2, 2),
                          activation = activations_conv)(resized_200) #24*24*rf2
     resized_200_max = MaxPooling2D((2, 2))(resized_200) #12*12*rf2
@@ -46,12 +46,12 @@ def neural_net1(num_classes = 3, initial_rate=0.04,
     #early_200_max = GlobalMaxPooling2D()(resized_200)
     #early_200_avg = GlobalAveragePooling2D()(resized_200)
     
-    resized_200 = Concatenate()([resized_200_max, resized_200_avg]) #12*12*2rf2
+    resized_200 = Concatenate(axis = 1)([resized_200_max, resized_200_avg]) #12*12*2rf2
     resized_200 = Conv2D(resized_filters3, kernel_size = (3, 3), strides = (1, 1),
                          activation = activations_conv)(resized_200) #10*10*rf3
     resized_200_max = MaxPooling2D((2, 2))(resized_200) #5*5*rf3
     resized_200_avg = AveragePooling2D((2, 2))(resized_200) #5*5*rf3
-    resized_200 = Concatenate()([resized_200_max, resized_200_avg]) #5*5*2rf3
+    resized_200 = Concatenate(axis = 1)([resized_200_max, resized_200_avg]) #5*5*2rf3
     resized_200 = Flatten()(resized_200)
     resized_200 = Dense(resized_dense1, activation = activations_dense)(resized_200)
     resized_200 = Dropout(resized_dropout)(resized_200)
@@ -63,7 +63,7 @@ def neural_net1(num_classes = 3, initial_rate=0.04,
                    activation = activations_conv)(image_full_input) # min 64
     full1_max = MaxPooling2D((3, 3), strides = (2, 2))(full1)
     full1_avg = AveragePooling2D((3, 3), strides = (2, 2))(full1) # min 31
-    full1 = Concatenate()([full1_max, full1_avg])
+    full1 = Concatenate(axis = 1)([full1_max, full1_avg])
     full1 = Conv2D(full1_filters2, kernel_size = (3, 3), strides = (2, 2),
                     activation = activations_conv)(full1) # min 15
     full1_max = MaxPooling2D((3, 3), strides = (2, 2))(full1)
@@ -72,7 +72,7 @@ def neural_net1(num_classes = 3, initial_rate=0.04,
     early_1_max = GlobalMaxPooling2D()(full1)
     early_1_avg = GlobalAveragePooling2D()(full1)
     
-    full1 = Concatenate()([full1_max, full1_avg])
+    full1 = Concatenate(axis = 1)([full1_max, full1_avg])
     full1 = Conv2D(full1_filters3, kernel_size = (3, 3), strides = (2, 2),
                     activation = activations_conv)(full1) # min 3
     #full1_max = MaxPooling2D((3, 3), strides = (2, 2))(full1)
