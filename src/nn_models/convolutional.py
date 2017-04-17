@@ -99,7 +99,9 @@ def neural_net1(num_classes = 3, initial_rate=0.04,
     
     net = Model(inputs = [image_full_input, image_resized_input, image_meta_input],
                 outputs = predictions)
+    net_activations = Model(inputs = [image_full_input, image_resized_input, image_meta_input],
+                            outputs = combined)
     adadelta = Adadelta(lr = initial_rate)
     net.compile(optimizer = adadelta, loss = 'categorical_crossentropy',
                 metrics = ['accuracy'])
-    return net
+    return net, net_activations
