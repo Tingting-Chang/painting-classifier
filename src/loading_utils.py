@@ -74,6 +74,12 @@ class HeightWidthRatio(object):
         data['height_width_ratio'] = data['height_px'].astype(np.float) / data['width_px']
         return data
 
+class HeightWidthLogRatio(HeightWidthRatio):
+    def transform(self, data):
+        data = super(HeightWidthLogRatio, self).transform(data)
+        data['height_width_ratio'] = np.log(data['height_width_ratio'])
+        return data
+
 class ImageLoaderGenerator(object):
     def __init__(self, thumb):
         self.thumb = thumb

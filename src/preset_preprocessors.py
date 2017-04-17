@@ -14,7 +14,7 @@ def images_generator_author(num_authors):
     prep.with_pipeline('input').set_loader(
             loader.select_loader(['author_id', 'painting_id', 'height_px', 'width_px']))
     prep.add_operation(operations.CategoricalFilter('author_id', top_categories = num_authors))
-    prep.add_operation(loading_utils.HeightWidthRatio()).add_operation(operations.ColumnDrop(['height_px', 'width_px']))
+    prep.add_operation(loading_utils.HeightWidthLogRatio()).add_operation(operations.ColumnDrop(['height_px', 'width_px']))
     relay = consumers.SimpleDataRelay()
     prep.set_consumer(relay)
     prep.with_pipeline('metadata').set_loader(relay).add_operation(operations.Selector(['height_width_ratio']))
@@ -35,7 +35,7 @@ def images_generator_movement(num_movements):
     prep.with_pipeline('input').set_loader(
             loader.select_loader(['author_id', 'painting_id', 'sup_art_movement', 'height_px', 'width_px']))
     prep.add_operation(operations.CategoricalFilter('sup_art_movement', top_categories = num_movements))
-    prep.add_operation(loading_utils.HeightWidthRatio()).add_operation(operations.ColumnDrop(['height_px', 'width_px']))
+    prep.add_operation(loading_utils.HeightWidthLogRatio()).add_operation(operations.ColumnDrop(['height_px', 'width_px']))
     relay = consumers.SimpleDataRelay()
     prep.set_consumer(relay)
     prep.with_pipeline('metadata').set_loader(relay).add_operation(operations.Selector(['height_width_ratio']))
