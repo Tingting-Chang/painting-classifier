@@ -26,6 +26,8 @@ def neural_net1(num_classes = 3, initial_rate=0.04,
     ##########
     # Inputs #
     ##########
+    K.set_image_dim_ordering('th')
+    
     image_full_input = Input(shape = (3, None, None), name = 'full')
     image_resized_input = Input(shape = (3, 200, 200), name = 'resized_200')
     image_meta_input = Input(shape = (1,), name = 'metadata')

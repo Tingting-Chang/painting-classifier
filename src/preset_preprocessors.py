@@ -26,7 +26,7 @@ def images_generator_author(num_authors):
     prep.with_pipeline('full').set_loader(relay).add_operation(operations.Selector(['author_id', 'painting_id']))
     prep.with_pipeline('indices').set_loader(relay).add_operation(operations.Selector(['author_id', 'painting_id']))
     generator = Generator(prep, {'resized_200': loading_utils.ImageLoaderGenerator('resized_200'),
-                            'full': loading_utils.ImageLoaderGenerator('half')}, operations.SeparateDictKey('response'))
+                            'full': loading_utils.ImageLoaderGenerator('full')}, operations.SeparateDictKey('response'))
     return generator, response_dummifier
 
 def images_generator_movement(num_movements):
@@ -47,5 +47,5 @@ def images_generator_movement(num_movements):
     prep.with_pipeline('full').set_loader(relay).add_operation(operations.Selector(['author_id', 'painting_id']))
     prep.with_pipeline('indices').set_loader(relay).add_operation(operations.Selector(['author_id', 'painting_id']))
     generator = Generator(prep, {'resized_200': loading_utils.ImageLoaderGenerator('resized_200'),
-                            'full': loading_utils.ImageLoaderGenerator('half')}, operations.SeparateDictKey('response'))
+                            'full': loading_utils.ImageLoaderGenerator('full')}, operations.SeparateDictKey('response'))
     return generator, response_dummifier
