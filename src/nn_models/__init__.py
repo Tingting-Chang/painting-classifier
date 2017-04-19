@@ -1,16 +1,18 @@
 #!/usr/bin/env python
 import os, sys
 
+import numpy as np
+
 from keras.models import load_model
 from keras.callbacks import CSVLogger, ReduceLROnPlateau, EarlyStopping, ModelCheckpoint
-from ..enqueuer import Enqueuer
+#from ..enqueuer import Enqueuer
 
 
 
 def fit_generator(net, train_generator, valid_generator = None, plot=False,
                         epochs=3000, save_to='nn_trained',
                         lr_reduce_after = 20, early_stopping = 50,
-                        nb_worker = 5, max_q_size = 10):
+                        nb_worker = 5, max_q_size = 10, class_counts = None):
     
     '''Trains a neural network by using batch generation.
         
@@ -34,6 +36,8 @@ def fit_generator(net, train_generator, valid_generator = None, plot=False,
     nb_worker -- (int, 5) number of threads to be used on train/validation batch
         generation
     max_q_size -- (int, 10) maximum number of batches generated at a time
+    class_counts -- (Numpy Array or Pandas Series, None) the bin counts for
+        all the elements in each class. If provided, the training will be balanced
     '''
     
     if not os.path.exists(save_to):
@@ -46,9 +50,9 @@ def fit_generator(net, train_generator, valid_generator = None, plot=False,
     lrreducer = ReduceLROnPlateau(factor = 0.2, patience = lr_reduce_after)
     callbacks = [checkpoint, logger, earlystopping, lrreducer]
     
-    enqueued_train_generator = Enqueuer(train_generator, workers = nb_worker,
-                max_q_size = max_q_size)
-    enqueued_train_generator.start()
+    #enqueued_train_generator = Enqueuer(train_generator, workers = nb_worker,
+                #max_q_size = max_q_size)
+    #enqueued_train_generator.start()
 
     #if valid_generator:
         #enqueued_valid_generator = Enqueuer(valid_generator, workers = nb_worker,
@@ -57,10 +61,15 @@ def fit_generator(net, train_generator, valid_generator = None, plot=False,
     #else:
         #enqueued_valid_generator = None
     
+    if class_counts is not None:
+        class_weights = dict(zip(range(len(class_counts)), get_balanced_class_weights(class_counts)))
+    else:
+        class_weights = None
+    
     history = net.fit_generator(train_generator, steps_per_epoch = train_generator.n_batches(),
             epochs = epochs, callbacks = callbacks, validation_data = valid_generator,
             validation_steps = valid_generator.n_batches() if valid_generator is not None else None,
-            max_q_size=1, workers=1, pickle_safe = False)
+            max_q_size=1, workers=1, pickle_safe = False, class_weight = class_weights)
 
     if plot:
         plot_net(history)
@@ -94,3 +103,6 @@ def plot_net(history, save_to = None):
             pyplot.show()
     except RuntimeError as e:
         print "Unable to show plot", e
+
+def get_balanced_class_weights(class_counts):
+    return sum(class_counts) / (len(class_counts) * class_counts.astype(np.float32))

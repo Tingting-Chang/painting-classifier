@@ -15,7 +15,6 @@ from keras.layers.merge import Concatenate
 from keras.models import Model
 from keras import backend as K
 
-
 def neural_net1(num_classes = 3, initial_rate=0.04,
             resized_filters1 = 32, resized_filters2 = 64, resized_filters3 = 48,
             resized_dense1 = 30, resized_dropout = 0.3,
