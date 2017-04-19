@@ -107,6 +107,20 @@ class Dummifier(object):
     def get_output_columns(self):
         return self.output_cols if self.output_cols is not None else self.output_cols_fitted
 
+class SeriesDummifier(Dummifier):
+    def __init__(self):
+        self.output_cols = None
+        self.kwargs = {}
+        self.output_cols_fitted = None
+        self.categories_counts = None
+    
+    def fit(self, data):
+        self.categories_counts = data.value_counts()
+        self.output_cols = list(self.categories_counts.index)
+        
+    def get_counts(self):
+        return self.categories_counts
+
 class CategoricalMapper(object):
     
     def __init__(self, column, top_categories = 3, inplace = True,
