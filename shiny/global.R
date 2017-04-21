@@ -109,9 +109,10 @@ game_answer_message <- function(author_id, correct = F) {
   if(correct) {
     return('<p style = "color:green;">You guessed right!</p>')
   } else {
+    author_id_ <- author_id
     return(paste0('<p style = "color:red;">You guessed wrong! The correct painter was ',
                  (predictions_authors %>%
-                    filter(author_id == author_id) %>%
+                    filter(author_id == author_id_) %>%
                     select(pretty_name))[[1,1]], '!</p>'))
   }
 }
