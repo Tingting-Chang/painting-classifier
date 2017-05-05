@@ -2,6 +2,7 @@
 import os, sys
 
 import numpy as np
+import pandas as pd
 
 from keras.models import load_model
 from keras.callbacks import CSVLogger, ReduceLROnPlateau, EarlyStopping, ModelCheckpoint
@@ -78,7 +79,7 @@ def fit_generator(net, train_generator, valid_generator = None, plot=False,
 def predict_generator(net, generator, output_cols, ids):
     y_pred = net.predict_generator(generator, steps = generator.n_batches(),
                             max_q_size = 10, nb_worker=1, pickle_safe = True)
-    df = DataFrame(y_pred, columns = [str(x) for x in output_cols])
+    df = pd.DataFrame(y_pred, columns = [str(x) for x in output_cols])
     return pd.concat((ids.reset_index(drop = True), df), axis = 1)
 
 def load_net(file_name):
